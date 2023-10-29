@@ -1,7 +1,11 @@
+import Banner from './components/Banner'
+import Programs from './components/Programs'
+
 function HomePage() {
   return (
     <main className="">
-      <h1>Create Success Shortcuts & Land Your Dream Job!</h1>
+      <Banner />
+      <Programs />
     </main>
   )
 }
