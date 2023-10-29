@@ -37,7 +37,7 @@ const dataProgram = [
 
 function CardProgram({ program }) {
   return (
-    <section className="min-h-[32em] bg-white flex flex-col justify-between gap-5 shadow-md rounded-xl">
+    <div className="min-h-[32em] bg-white flex flex-col justify-between gap-5 shadow-md rounded-xl">
       <div className="flex flex-col gap-4 px-8 pt-6">
         <p
           className={`${
@@ -65,19 +65,19 @@ function CardProgram({ program }) {
         priority={false}
         className="w-80 self-end"
       />
-    </section>
+    </div>
   )
 }
 
 function Programs() {
   return (
-    <div className="container flex flex-col xl:flex-row gap-10 -mt-20">
+    <section className="container flex flex-col xl:flex-row gap-10 -mt-20">
       {dataProgram.length > 0
         ? dataProgram.map((program, index) => (
             <CardProgram key={index} program={program} />
           ))
         : null}
-    </div>
+    </section>
   )
 }
 

@@ -43,13 +43,13 @@ const dataBenefit = [
 
 function Card({ title, desc, icon }) {
   return (
-    <section className="flex flex-col gap-5 justify-center items-center text-center shadow-md p-5 rounded-md">
+    <div className="flex flex-col gap-5 justify-center items-center text-center shadow-md p-5 rounded-md">
       <div className="w-fit bg-gradient-to-t from-orange-2 to-orange-3 p-4 md:p-6 rounded-lg">
         {icon}
       </div>
       <p className="font-bold text-xl lg:text-2xl">{title}</p>
       <p className="lg:text-base text-sm text-slate-500">{desc}</p>
-    </section>
+    </div>
   )
 }
 
@@ -58,7 +58,12 @@ function Benefit() {
     <section className="container flex flex-col mt-16">
       <div className="flex flex-col items-center gap-3 text-center py-6">
         <h2 className="font-black text-2xl lg:text-4xl">
-          Why Choose QarirGenerator ?
+          Why Choose{' '}
+          <span className="relative">
+            <span className="relative z-10">QarirGenerator</span>
+            <span className="h-3 w-24 xl:w-36 absolute right-0 bottom-0 lg:bottom-1 z-0 bg-orange-1"></span>
+          </span>
+          ?
         </h2>
         <p className="lg:text-lg text-base lg:w-1/2">
           Qarirgenerator Has Been Proven To Produce Competent Graduates In The
