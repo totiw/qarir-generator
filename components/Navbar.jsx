@@ -7,6 +7,7 @@ import Link from 'next/link'
 // Icons
 import { BiSolidDownArrow } from 'react-icons/bi'
 import { BsGlobe2 } from 'react-icons/bs'
+import { LuMenu } from 'react-icons/lu'
 
 function Navbar() {
   return (
@@ -19,11 +20,11 @@ function Navbar() {
           className="w-32 h-auto"
           priority
         />
-        <button className="flex flex-row items-center gap-3">
+        <button className="hidden md:flex flex-row items-center gap-3">
           <span className="font-semibold">Course And Location</span>
           <BiSolidDownArrow size=".6em" color="#000000" />
         </button>
-        <Link href="/enterprise" className="font-semibold">
+        <Link href="/enterprise" className="hidden md:flex font-semibold">
           Enterprise
         </Link>
       </div>
@@ -34,11 +35,14 @@ function Navbar() {
         >
           Book A Call
         </Link>
-        <span className="text-slate-300">|</span>
-        <button className="flex flex-row items-center gap-3 font-bold">
+        <span className="hidden lg:flex text-slate-300">|</span>
+        <button className="hidden lg:flex flex-row items-center gap-3 font-bold">
           <BsGlobe2 size="1.5em" color="#000000" />
           <span>English</span>
           <BiSolidDownArrow size=".6em" color="#000000" />
+        </button>
+        <button className="md:hidden flex">
+          <LuMenu size="1.6em" color="#000000" />
         </button>
       </div>
     </header>
