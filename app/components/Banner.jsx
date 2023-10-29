@@ -34,7 +34,7 @@ function Banner() {
   return (
     <div className="bg-gradient-to-t from-orange-4 to-white flex flex-col gap-10 min-h-[80vh]">
       {/* Header */}
-      <div className="w-4/5 mx-auto flex flex-col">
+      <div className="container flex flex-col">
         <div className="flex flex-col-reverse xl:flex-row xl:items-center">
           <div className="xl:w-2/3 flex flex-col gap-8">
             <h1 className="inline-block xl:flex xl:flex-col xl:gap-5 font-extrabold text-3xl xl:text-5xl leading-normal">
@@ -74,7 +74,7 @@ function Banner() {
         </div>
       </div>
       {/* Sponsor */}
-      <div className="w-4/5 mx-auto flex flex-col xl:flex-row gap-10 md:gap-20 pb-40 pt-5">
+      <div className="container flex flex-col xl:flex-row gap-10 md:gap-20 pb-40 pt-5">
         <div className="flex flex-col gap-5">
           <p className="text-lg font-semibold">Talents</p>
           <span className="flex flex-row items-center gap-2">
