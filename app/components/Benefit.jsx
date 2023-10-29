@@ -1,5 +1,3 @@
-'use client'
-
 // Icons
 import People from './icons/People'
 import Lamp from './icons/Lamp'
@@ -43,8 +41,8 @@ const dataBenefit = [
 
 function Card({ title, desc, icon }) {
   return (
-    <div className="flex flex-col gap-5 justify-center items-center text-center shadow-md p-5 rounded-md">
-      <div className="w-fit bg-gradient-to-t from-orange-2 to-orange-3 p-4 md:p-6 rounded-lg">
+    <div className="bg-white flex flex-col gap-5 justify-center items-center text-center shadow-md p-5 pb-24 rounded-md mt-20">
+      <div className="w-fit bg-gradient-to-t from-orange-2 to-orange-3 p-4 md:p-6 rounded-lg -mt-16">
         {icon}
       </div>
       <p className="font-bold text-xl lg:text-2xl">{title}</p>
@@ -70,7 +68,7 @@ function Benefit() {
           Industry Through The Bootcamp Program.
         </p>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
         {dataBenefit.length > 0
           ? dataBenefit.map((benefit, index) => (
               <Card

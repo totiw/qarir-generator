@@ -9,7 +9,7 @@ function People({ height, color }) {
     >
       <mask
         id="mask0_5_4598"
-        style={{ 'mask-type': 'alpha' }}
+        style={{ maskType: 'alpha' }}
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"

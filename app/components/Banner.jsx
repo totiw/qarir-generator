@@ -1,5 +1,3 @@
-'use client'
-
 // Next Dependncies
 import Image from 'next/image'
 import Link from 'next/link'

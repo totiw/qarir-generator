@@ -37,7 +37,7 @@ const dataProgram = [
 
 function CardProgram({ program }) {
   return (
-    <div className="min-h-[32em] bg-white flex flex-col justify-between gap-5 shadow-md rounded-xl">
+    <div className="min-h-[32em] bg-white flex flex-col justify-between gap-5 shadow-md rounded-xl overflow-hidden">
       <div className="flex flex-col gap-4 px-8 pt-6">
         <p
           className={`${

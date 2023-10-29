@@ -9,7 +9,7 @@ function Stars({ height, color }) {
     >
       <mask
         id="mask0_190_505"
-        style={{ 'mask-type': 'alpha' }}
+        style={{ maskType: 'alpha' }}
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"
