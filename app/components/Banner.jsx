@@ -14,7 +14,6 @@ import Glints from '../../public/glint_color.png'
 import Kitabisa from '../../public/kitabisa_color.png'
 import Mekari from '../../public/mekari_color.png'
 import Bri from '../../public/bri_color.png'
-import '../style/homepage.css'
 
 // Icons
 import { MdGroups } from 'react-icons/md'
@@ -32,23 +31,24 @@ function Banner() {
   ]
 
   return (
-    <div className="bg-gradient-to-t from-orange-4 to-white flex flex-col gap-10 min-h-[80vh]">
+    <section className="bg-gradient-to-t from-orange-4 to-white flex flex-col gap-10 min-h-[80vh]">
       {/* Header */}
       <div className="container flex flex-col">
         <div className="flex flex-col-reverse xl:flex-row xl:items-center">
-          <div className="xl:w-2/3 flex flex-col gap-8">
-            <h1 className="inline-block xl:flex xl:flex-col xl:gap-5 font-extrabold text-3xl xl:text-5xl leading-normal">
+          <div className="xl:w-2/3 flex flex-col gap-10">
+            <h1 className="inline-block xl:flex xl:flex-col xl:gap-5 font-black text-3xl xl:text-5xl leading-normal">
               <span>
                 Create
                 <span className="banner-title hidden sm:inline self-start">
                   Success Shortcuts
                 </span>
                 <span className="banner-title sm:hidden mx-1">Success</span>
+                <br className="sm:hidden" />
                 <span className="banner-title sm:hidden">Shortcuts</span>
               </span>
               <span>& Land Your Dream Job!</span>
             </h1>
-            <p className="xl:w-10/12 text-slate-500 text-sm md:text-lg">
+            <p className="lg:w-11/12 xl:w-10/12 text-slate-500 text-sm md:text-lg">
               Welcome to the Career Accelerator that helps you go further than
               you are in school. Built to be the best, by the best, our
               highly-qualified trainers, personal coaches, intensive classes,
@@ -74,7 +74,7 @@ function Banner() {
         </div>
       </div>
       {/* Sponsor */}
-      <div className="container flex flex-col xl:flex-row gap-10 md:gap-20 pb-40 pt-5">
+      <div className="container flex flex-col xl:flex-row gap-10 md:gap-20 pb-40">
         <div className="flex flex-col gap-5">
           <p className="text-lg font-semibold">Talents</p>
           <span className="flex flex-row items-center gap-2">
@@ -101,7 +101,7 @@ function Banner() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

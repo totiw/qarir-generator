@@ -37,7 +37,7 @@ const dataProgram = [
 
 function CardProgram({ program }) {
   return (
-    <div className="h-[500px] bg-white flex flex-col justify-between gap-5 shadow-md rounded-xl">
+    <section className="min-h-[32em] bg-white flex flex-col justify-between gap-5 shadow-md rounded-xl">
       <div className="flex flex-col gap-4 px-8 pt-6">
         <p
           className={`${
@@ -48,7 +48,7 @@ function CardProgram({ program }) {
         >
           {program.label}
         </p>
-        <h3 className="text-4xl font-bold">{program.title}</h3>
+        <h3 className="text-2xl lg:text-4xl font-bold">{program.title}</h3>
         <p className="text-slate-500">{program.desc}</p>
         <Link
           href="#"
@@ -65,7 +65,7 @@ function CardProgram({ program }) {
         priority={false}
         className="w-80 self-end"
       />
-    </div>
+    </section>
   )
 }
 
