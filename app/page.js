@@ -2,6 +2,7 @@ import Banner from './components/Banner'
 import Programs from './components/Programs'
 import Benefit from './components/Benefit'
 import Classes from './components/Classes'
+import Alumni from './components/Alumni'
 
 import './style/homepage.css'
 
@@ -12,6 +13,7 @@ function HomePage() {
       <Programs />
       <Benefit />
       <Classes />
+      <Alumni />
     </main>
   )
 }

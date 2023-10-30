@@ -31,7 +31,7 @@ const dataClasses = [
 
 function Card({ thumbnail, title, link }) {
   return (
-    <div className="bg-white p-6 flex flex-col items-center gap-10 rounded-lg">
+    <div className="bg-white p-6 flex flex-col items-center gap-10 rounded-lg shadow-md">
       <div className="relative flex justify-center">
         <Image
           src={thumbnail}
@@ -55,7 +55,7 @@ function Card({ thumbnail, title, link }) {
 function Classes() {
   return (
     <section className="mt-40">
-      <div className="bg-[#00263D] relative text-white flex flex-col py-20 pb-56 z-0">
+      <div className="bg-blue-1 relative text-white flex flex-col py-20 pb-56 z-0">
         <div className="container flex flex-col items-center gap-8 text-center">
           <span className="absolute right-6 top-6">
             <Quote height="90" color="#FF9500" />
