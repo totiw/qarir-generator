@@ -4,6 +4,7 @@ import Benefit from './components/Benefit'
 import Classes from './components/Classes'
 import Alumni from './components/Alumni'
 import Contact from './components/Contact'
+import Partnership from './components/Partnership'
 
 import './style/homepage.css'
 
@@ -16,6 +17,7 @@ function HomePage() {
       <Classes />
       <Alumni />
       <Contact />
+      <Partnership />
     </main>
   )
 }
