@@ -30,7 +30,7 @@ function Contact() {
         className="absolute -left-10 lg:left-auto lg:right-0 h-full max-w-fit z-0"
       />
       <div className="container relative z-10 h-full">
-        <div className="flex flex-col gap-2 lg:w-1/3 justify-center h-full text-white">
+        <div className="flex flex-col gap-4 lg:gap-3 lg:w-1/3 justify-center h-full text-white">
           <h2 className="font-black text-3xl lg:text-4xl">
             Looking for <br /> Financial Aid?
           </h2>
