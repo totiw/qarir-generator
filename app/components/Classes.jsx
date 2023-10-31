@@ -57,11 +57,11 @@ function Classes() {
     <section className="mt-40">
       <div className="bg-blue-1 relative text-white flex flex-col py-20 pb-56 z-0">
         <div className="container flex flex-col items-center gap-8 text-center">
-          <span className="absolute right-6 top-6">
-            <Quote height="90" color="#FF9500" />
+          <span className="absolute right-6 top-6 w-14 lg:w-20">
+            <Quote height="auto" color="#FF9500" />
           </span>
-          <span className="absolute bottom-10 lg:bottom-6 left-6">
-            <Quote height="90" color="#FF9500" />
+          <span className="absolute bottom-28 lg:bottom-6 left-6 w-14 lg:w-20 rotate-180">
+            <Quote height="auto" color="#FF9500" />
           </span>
           <h2 className="lg:w-1/2 text-2xl lg:text-4xl font-black">
             More Than A Bootcamp. Get Hired At Top Tech Companies.
