@@ -40,6 +40,7 @@ function Contact() {
           </p>
           <Link
             href="http://wa.me/+6281110014420?text=Hi%2C+I%27m+interested+to+know+about+QarirGenerator+Bootcamp%2C+My+Name+is....."
+            target="_blank"
             className="bg-orange-1 py-3 px-8 md:self-start rounded-full text-center text-white font-bold"
           >
             Contact Us
