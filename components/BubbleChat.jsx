@@ -1,7 +1,10 @@
 'use client'
 
+// Next dependencies
 import Link from 'next/link'
 import { useState } from 'react'
+
+// Icons
 import { HiOutlineChatBubbleLeftRight } from 'react-icons/hi2'
 import { IoCloseCircleOutline } from 'react-icons/io5'
 

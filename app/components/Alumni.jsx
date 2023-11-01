@@ -9,6 +9,7 @@ import Person4 from '../../public/balad_al_barokah.jpeg'
 import Person5 from '../../public/andhimas_iben_d.jpeg'
 import Person6 from '../../public/agnes_friska_cyntia_puspitasari.jpeg'
 
+// DUMMY DATA
 const dataAlumni = [
   {
     name: 'Hieronymus Kopong Bali',

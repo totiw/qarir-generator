@@ -6,6 +6,7 @@ import HandShake from './icons/HandShake'
 import Globe from './icons/Globe'
 import Stars from './icons/Stars'
 
+// DUMMY DATA
 const dataBenefit = [
   {
     title: 'Passionate Trainers',
@@ -56,7 +57,7 @@ function Benefit() {
     <section className="container flex flex-col mt-16">
       <div className="flex flex-col items-center gap-3 text-center py-6">
         <h2 className="font-black text-2xl lg:text-4xl">
-          Why Choose{' '}
+          Why Choose
           <span className="relative">
             <span className="relative z-10">QarirGenerator</span>
             <span className="h-3 w-24 xl:w-36 absolute right-0 bottom-0 lg:bottom-1 z-0 bg-orange-1"></span>

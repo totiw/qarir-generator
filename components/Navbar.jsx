@@ -1,8 +1,11 @@
 'use client'
 
+// Next dependencies
 import Image from 'next/image'
-import LogoBrand from '../public/logo_horizontal_color.png'
 import Link from 'next/link'
+
+// Assets
+import LogoBrand from 'public/logo_horizontal_color.png'
 
 // Icons
 import { BiSolidDownArrow } from 'react-icons/bi'

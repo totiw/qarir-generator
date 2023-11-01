@@ -1,5 +1,7 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
+
+// Components
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import BubbleChat from '@/components/BubbleChat'

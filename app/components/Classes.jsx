@@ -11,6 +11,7 @@ import Video3 from '../../public/video_3.png'
 import { FaPlayCircle } from 'react-icons/fa'
 import Quote from './icons/Quote'
 
+// DUMMY DATA
 const dataClasses = [
   {
     thumbnail: Video1,

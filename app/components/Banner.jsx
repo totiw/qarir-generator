@@ -17,6 +17,7 @@ import Bri from '../../public/bri_color.png'
 import { MdGroups } from 'react-icons/md'
 
 function Banner() {
+  // DUMMY DATA
   const sponsors = [
     { image: Shopee },
     { image: Tokopedia },

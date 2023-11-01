@@ -10,7 +10,7 @@ import './style/homepage.css'
 
 function HomePage() {
   return (
-    <main className="">
+    <main>
       <Banner />
       <Programs />
       <Benefit />
