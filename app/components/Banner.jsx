@@ -55,7 +55,7 @@ function Banner() {
               online, offline or both.
             </p>
             <Link
-              href="#"
+              href="#programs"
               className="bg-orange-1 py-3 px-8 md:self-start rounded-full text-center text-white font-bold"
             >
               Browse Classes

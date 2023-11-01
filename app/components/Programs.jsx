@@ -183,7 +183,10 @@ function CardProgram({ program }) {
 
 function Programs() {
   return (
-    <section className="container flex flex-col xl:flex-row gap-10 -mt-20">
+    <section
+      id="programs"
+      className="container flex flex-col xl:flex-row gap-10 pt-20 -mt-40"
+    >
       {dataProgram.length > 0
         ? dataProgram.map((program, index) => (
             <CardProgram key={index} program={program} />

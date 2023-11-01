@@ -8,3 +8,7 @@ body {
   background: rgb(249, 249, 249);
   font-family: 'Figtree', sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+}
