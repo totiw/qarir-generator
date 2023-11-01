@@ -18,12 +18,12 @@ function BubbleChat() {
           onClick={() => seIsPop(false)}
           size="1.5em"
           color="#000000"
-          className="absolute bg-white rounded-full shadow-lg -left-10 top-0"
+          className="absolute bg-white rounded-full shadow-lg -left-2 md:-left-5 -top-2 md:top-1"
         />
         <Link
           href="http://wa.me/+6281110014420?text=Hi%2C+I%27m+interested+to+know+about+QarirGenerator+Bootcamp%2C+My+Name+is....."
           target="_blank"
-          className="leading-10"
+          className="leading-10 md:text-base text-xs"
         >
           How may i assist you to find your best career future? 🙂
         </Link>
