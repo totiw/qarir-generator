@@ -1,12 +1,10 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
-// import dynamic from 'next/dynamic'
 
 // Components
-// const Navbar = dynamic(() => import('@/components/Navbar'), { ssr: false })
-// const Footer = dynamic(() => import('@/components/Footer'), { ssr: false })
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import BubbleChat from '@/components/BubbleChat'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
+        <BubbleChat />
         <Navbar />
         {children}
         <Footer />
