@@ -3,6 +3,7 @@
 // Next dependencies
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 // Assets
 import LogoBrand from 'public/logo_horizontal_color.png'
@@ -13,6 +14,8 @@ import { BsGlobe2 } from 'react-icons/bs'
 import { LuMenu } from 'react-icons/lu'
 
 function Navbar() {
+  const pathname = usePathname()
+
   return (
     <header className="bg-white">
       <div className="container flex flex-row justify-between py-3">
@@ -33,12 +36,14 @@ function Navbar() {
           </Link>
         </div>
         <div className="flex flex-row items-center gap-4">
-          <Link
-            href="https://calendar.app.google/6xrDJSLWZhcYxYrs9"
-            className="bg-orange-1 flex items-center rounded-full py-2 px-5 font-bold text-white"
-          >
-            Book A Call
-          </Link>
+          {pathname === '/' && (
+            <Link
+              href="https://calendar.app.google/6xrDJSLWZhcYxYrs9"
+              className="bg-orange-1 flex items-center rounded-full py-2 px-5 font-bold text-white"
+            >
+              Book A Call
+            </Link>
+          )}
           <span className="hidden lg:flex text-slate-300">|</span>
           <button className="hidden lg:flex flex-row items-center gap-3 font-bold">
             <BsGlobe2 size="1.5em" color="#000000" />
