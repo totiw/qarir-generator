@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .container {
+    @apply md:w-4/5 mx-auto px-5 md:px-0;
+  }
+}
+
 body {
   background: rgb(249, 249, 249);
   font-family: 'Figtree', sans-serif;
