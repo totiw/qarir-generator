@@ -87,6 +87,9 @@ function Navbar() {
     },
   ]
 
+  const ctaColor =
+    pathname === '/data-science/indonesia' ? 'bg-blue-2' : 'bg-orange-1'
+
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev)
     setlanguageOpen(false)
@@ -186,10 +189,10 @@ function Navbar() {
           </Link>
         </div>
         <div className="flex flex-row items-center gap-4">
-          {pathname === '/' && (
+          {pathname !== '/enterprise' && (
             <Link
               href="https://calendar.app.google/6xrDJSLWZhcYxYrs9"
-              className="bg-orange-1 flex items-center rounded-full py-2 px-5 font-bold text-white"
+              className={`${ctaColor} flex items-center rounded-full py-2 px-5 font-bold text-white`}
             >
               Book A Call
             </Link>

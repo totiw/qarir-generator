@@ -3,6 +3,7 @@
 // Next dependencies
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 // Assets
 import DataScience from 'public/data_science_2.png'
@@ -31,6 +32,7 @@ const dataProgram = [
         name: 'indonesia',
         thumbnail: Indonesia,
         active: true,
+        link: '/data-science/indonesia',
       },
       {
         name: 'istanbul',
@@ -131,16 +133,18 @@ function CardProgram({ program }) {
               <div key={index} className="flex flex-col gap-2">
                 <div className="relative">
                   {!destination.active && <Label />}
-                  <Image
-                    src={destination.thumbnail}
-                    alt="destination"
-                    quality={100}
-                    priority={false}
-                    className="w-24 h-24 rounded-lg"
-                  />
+                  <Link href={destination?.link ?? '#'}>
+                    <Image
+                      src={destination?.thumbnail}
+                      alt="destination"
+                      quality={100}
+                      priority={false}
+                      className="w-24 h-24 rounded-lg"
+                    />
+                  </Link>
                 </div>
                 <p className="font-bold text-sm capitalize px-1">
-                  {destination.name}
+                  {destination?.name}
                 </p>
               </div>
             ))
