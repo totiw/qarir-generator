@@ -1,10 +1,10 @@
-import Banner from './components/Banner'
-import Programs from './components/Programs'
-import Benefit from './components/Benefit'
-import Classes from './components/Classes'
-import Alumni from './components/Alumni'
-import Contact from './components/Contact'
-import Partnership from './components/Partnership'
+import Banner from './_components/Banner'
+import Programs from './_components/Programs'
+import Benefit from './_components/Benefit'
+import Classes from './_components/Classes'
+import Alumni from './_components/Alumni'
+import Contact from './_components/Contact'
+import Partnership from './_components/Partnership'
 
 import './style/homepage.css'
 
