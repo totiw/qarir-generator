@@ -19,7 +19,9 @@ function Banner() {
               QarirGenerator for Business,
               <br />
               <span>
-                <span className="banner-title self-start">Train Your Team</span>
+                <span className="enterprise banner-title self-start">
+                  Train Your Team
+                </span>
                 or Let Us
               </span>
               Handle Your Project.
