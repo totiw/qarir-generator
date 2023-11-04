@@ -156,7 +156,7 @@ function Navbar() {
             <div
               className={`${
                 menuOpen ? 'flex' : 'hidden'
-              } flex-row gap-5 bg-gray-50 w-[55vw] border border-slate-200 rounded-md shadow-sm absolute z-10 bottom-0 translate-y-60 p-5`}
+              } flex-wrap xl:flex-nowrap flex-row gap-5 bg-gray-50 w-[55vw] border border-slate-200 rounded-md shadow-sm absolute z-10 top-0 translate-y-14 p-5`}
             >
               {dataLocations.length > 0
                 ? dataLocations.map((location, index) => (
@@ -215,15 +215,15 @@ function Navbar() {
             <div
               className={`${
                 languageOpen ? 'flex' : 'hidden'
-              } absolute bottom-0 right-0 translate-y-44 flex flex-col gap-5 bg-gray-50 p-4 border rounded-md shadow-sm`}
+              } w-52 absolute bottom-0 right-0 translate-y-40 flex flex-col gap-5 bg-gray-50 p-2 border rounded-md shadow-sm`}
             >
-              <span className="flex items-center gap-2 bg-white p-3 shadow-sm rounded-md">
+              <span className="flex items-center gap-2 bg-white p-3 shadow-sm rounded-md font-bold text-sm">
                 <English height="24" />
                 English
               </span>
-              <span className="flex items-center gap-2 bg-white p-3 shadow-sm rounded-md">
+              <span className="flex items-center gap-2 bg-white p-3 shadow-sm rounded-md font-bold text-sm">
                 <Indonesia height="24" />
-                Indonesia
+                Bahasa Indonesia
               </span>
             </div>
           </div>
