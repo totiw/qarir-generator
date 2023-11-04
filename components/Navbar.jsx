@@ -331,8 +331,10 @@ function Navbar() {
                   </button>
                   <div
                     className={`${
-                      menuLinksOpen ? 'max-h-screen py-5' : 'max-h-0 opacity-0'
-                    } flex flex-col gap-5 origin-top transition-all duration-500 ease-in-out`}
+                      menuLinksOpen
+                        ? 'max-h-screen py-5'
+                        : 'max-h-0 opacity-0 translate-y-52'
+                    } relative flex flex-col gap-5 origin-top transition-all duration-500 ease-in-out`}
                   >
                     {dataLocations.length > 0
                       ? dataLocations.map((location, index) => (
@@ -346,8 +348,8 @@ function Navbar() {
                   </div>
                   <Link
                     href="/enterprise"
-                    alt="enterprise page"
-                    className="font-bold text-base"
+                    alt="enterprise"
+                    className="font-bold text-base cursor-pointer"
                   >
                     Enterprise
                   </Link>

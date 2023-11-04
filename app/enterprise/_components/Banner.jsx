@@ -10,11 +10,11 @@ import { MdThumbUp } from 'react-icons/md'
 
 function Banner() {
   return (
-    <section className="bg-gradient-to-t from-green-2 to-white flex flex-col gap-10 min-h-[80vh]">
+    <section className="bg-gradient-to-t from-green-2 to-white flex flex-col justify-center items-center gap-10 min-h-[80vh]">
       {/* Header */}
       <div className="container flex flex-col">
         <div className="flex flex-col-reverse xl:flex-row xl:items-center">
-          <div className="xl:w-2/3 flex flex-col gap-10">
+          <div className="xl:w-7/12 flex flex-col gap-10">
             <h1 className="inline-block xl:flex xl:flex-col xl:gap-4 -tracking-normal font-black text-4xl xl:text-5xl leading-normal">
               QarirGenerator for Business,
               <br />
@@ -37,8 +37,14 @@ function Banner() {
             >
               Find Solution
             </Link>
+            <div className="flex flex-row items-center gap-3">
+              <MdThumbUp size="2em" color="#1AD079" />
+              <p className="font-bold text-xl">
+                Over 100+ organizations satisfied with our work
+              </p>
+            </div>
           </div>
-          <div className="xl:w-1/3">
+          <div className="xl:w-5/12">
             <Image
               src={BannerImage}
               quality={100}
@@ -48,13 +54,6 @@ function Banner() {
             />
           </div>
         </div>
-      </div>
-      {/* Sponsor */}
-      <div className="container flex flex-row xl:items-center gap-5 pb-5 sm:pb-40">
-        <MdThumbUp size="2em" color="#1AD079" />
-        <p className="font-bold text-xl">
-          Over 100+ organizations satisfied with our work
-        </p>
       </div>
     </section>
   )
