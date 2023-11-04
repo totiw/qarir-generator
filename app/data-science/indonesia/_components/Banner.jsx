@@ -54,7 +54,7 @@ function Banner() {
             src={BannerImage}
             quality={100}
             alt="banner image"
-            priority
+            priority={false}
             className="w-full"
           />
         </div>
