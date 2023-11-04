@@ -20,22 +20,57 @@ import Rect2 from '@/app/_components/icons/Rect2'
 import { BiSolidDownArrow } from 'react-icons/bi'
 import { BsGlobe2 } from 'react-icons/bs'
 import { LuMenu } from 'react-icons/lu'
+import { IoClose } from 'react-icons/io5'
+
+function Card({ location, toggleMenuMobel }) {
+  return (
+    <div className="flex flex-col gap-3">
+      <span className="flex flex-row items-center gap-3 capitalize font-bold text-base">
+        {location.thumbnail}
+        {location.name}
+        {!location.active && (
+          <p className="bg-red-500 py-1 px-3 flex flex-row items-center rounded-full text-xs text-white">
+            soon
+          </p>
+        )}
+      </span>
+      <span className="flex flex-col gap-2 capitalize text-sm">
+        {location?.courses?.length > 0 &&
+          location.courses.map((course, index) => (
+            <Link
+              onClick={toggleMenuMobel}
+              href={course.link ?? ''}
+              alt={`link course ${course.name}`}
+              key={index}
+            >
+              {course.name}
+            </Link>
+          ))}
+      </span>
+      <hr />
+    </div>
+  )
+}
 
 function Navbar() {
   const menuRef = useRef(null)
   const languageRef = useRef(null)
   const pathname = usePathname()
   const [menuOpen, setMenuOpen] = useState(false)
+  const [menuLinksOpen, setMenuLinksOpen] = useState(false)
+  const [menuMobileOpen, setMenuMobileOpen] = useState(false)
   const [languageOpen, setlanguageOpen] = useState(false)
 
   const dataLocations = [
     {
       name: 'indonesia',
       thumbnail: <Indonesia height="28" />,
+      active: true,
       courses: [
         {
           name: 'data science bootcamp',
           thumbnail: <Rect1 height="28" />,
+          link: '/data-science/indonesia',
         },
         {
           name: 'digital marketing bootcamp',
@@ -46,6 +81,7 @@ function Navbar() {
     {
       name: 'istanbul',
       thumbnail: <Istanbul height="28" />,
+      active: true,
       courses: [
         {
           name: 'data science bootcamp',
@@ -60,6 +96,7 @@ function Navbar() {
     {
       name: 'tokyo',
       thumbnail: <Tokyo height="28" />,
+      active: false,
       courses: [
         {
           name: 'data science bootcamp',
@@ -74,6 +111,7 @@ function Navbar() {
     {
       name: 'seoul',
       thumbnail: <Seoul height="28" />,
+      active: false,
       courses: [
         {
           name: 'data science bootcamp',
@@ -88,7 +126,11 @@ function Navbar() {
   ]
 
   const ctaColor =
-    pathname === '/data-science/indonesia' ? 'bg-blue-2' : 'bg-orange-1'
+    pathname === '/data-science/indonesia' ? 'blue-2' : 'orange-1'
+
+  const toggleMenuMobel = () => {
+    setMenuMobileOpen((prev) => !prev)
+  }
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev)
@@ -133,6 +175,7 @@ function Navbar() {
   return (
     <header className="bg-white">
       <div className="container flex flex-row justify-between py-3">
+        {/* Links */}
         <div className="flex flex-row items-center gap-10">
           <Link href="/">
             <Image
@@ -188,11 +231,15 @@ function Navbar() {
             Enterprise
           </Link>
         </div>
+
+        {/* CTA & Language */}
         <div className="flex flex-row items-center gap-4">
           {pathname !== '/enterprise' && (
             <Link
               href="https://calendar.app.google/6xrDJSLWZhcYxYrs9"
-              className={`${ctaColor} flex items-center rounded-full py-2 px-5 font-bold text-white`}
+              className={`bg-${
+                ctaColor ?? ''
+              } flex items-center rounded-full py-2 px-5 font-bold text-white`}
             >
               Book A Call
             </Link>
@@ -230,9 +277,98 @@ function Navbar() {
               </span>
             </div>
           </div>
-          <button className="md:hidden flex">
+          <button
+            onClick={toggleMenuMobel}
+            className="md:hidden flex opacity-50"
+          >
             <LuMenu size="1.6em" color="#000000" />
           </button>
+        </div>
+
+        {/* Mobile Ver */}
+        <div
+          className={`${
+            menuMobileOpen ? 'translate-x-0' : '-translate-x-full'
+          } md:hidden fixed top-0 left-0 bottom-0 right-0 z-50 bg-gradient-to-t from-orange-4 to-white flex duration-200 ease-in-out transition-all`}
+        >
+          <div className="container flex flex-col gap-10 py-5">
+            {/* Navbar */}
+            <div className="flex flex-row justify-between items-center">
+              <Link onClick={toggleMenuMobel} href="/" alt="qarir home page">
+                <Image
+                  src={LogoBrand}
+                  alt="qarir logo mobile version"
+                  priority={false}
+                  quality={100}
+                  className="w-32"
+                />
+              </Link>
+              <button onClick={toggleMenuMobel} type="button" className="p-1">
+                <IoClose size="1.5em" color="#000000" className="opacity-50" />
+              </button>
+            </div>
+            {/* Links & Language */}
+            <div className="flex flex-col gap-5">
+              {/* LINKS */}
+              <div className="flex flex-col gap-3">
+                <p className="font-bold text-base uppercase text-gray-400">
+                  menu
+                </p>
+                <div className="flex flex-col gap-3">
+                  <button
+                    onClick={() => setMenuLinksOpen((prev) => !prev)}
+                    type="button"
+                    className=" flex flex-row items-center gap-2 font-bold text-base"
+                  >
+                    Course And Location
+                    <BiSolidDownArrow
+                      size=".6em"
+                      color="#000000"
+                      className={`${
+                        menuLinksOpen ? 'rotate-180' : 'rotate-0'
+                      } transition-all duration-500 ease-in-out`}
+                    />
+                  </button>
+                  <div
+                    className={`${
+                      menuLinksOpen ? 'max-h-screen py-5' : 'max-h-0 opacity-0'
+                    } flex flex-col gap-5 origin-top transition-all duration-500 ease-in-out`}
+                  >
+                    {dataLocations.length > 0
+                      ? dataLocations.map((location, index) => (
+                          <Card
+                            key={index}
+                            location={location}
+                            toggleMenuMobel={toggleMenuMobel}
+                          />
+                        ))
+                      : null}
+                  </div>
+                  <Link
+                    href="/enterprise"
+                    alt="enterprise page"
+                    className="font-bold text-base"
+                  >
+                    Enterprise
+                  </Link>
+                </div>
+              </div>
+              {/* LANGUAGE */}
+              <div className="flex flex-col gap-3">
+                <p className="font-bold text-base uppercase text-gray-400">
+                  language
+                </p>
+                <div className="flex flex-row gap-5 font-bold text-sm">
+                  <span className="bg-white flex flex-row items-center gap-2 p-3 px-4 rounded-md shadow-orange-2 shadow-lg ">
+                    <English height="24" /> English
+                  </span>
+                  <span className="bg-white flex flex-row items-center gap-2 p-3 px-4 rounded-md shadow-orange-2 shadow-lg ">
+                    <Indonesia height="24" /> Bahasa Indonesia
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
