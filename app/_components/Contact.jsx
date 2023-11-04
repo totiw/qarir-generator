@@ -7,7 +7,7 @@ import Background from '../../public/ilustration_2.png'
 
 function Contact() {
   return (
-    <section className="relative h-[320px] mt-28">
+    <section className="relative h-[320px] mt-28 overflow-hidden">
       <div
         className="hidden lg:block absolute z-10 top-0 bottom-0 left-0 right-0"
         style={{
