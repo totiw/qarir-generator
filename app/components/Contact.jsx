@@ -35,8 +35,9 @@ function Contact() {
             Looking for <br /> Financial Aid?
           </h2>
           <p className="font-medium text-base">
-            Finances shouldn't be the main obstacle to accessing our bootcamps.
-            We're always finding new ways to facilitate payments and fundings.
+            Finances shouldn&apos;t be the main obstacle to accessing our
+            bootcamps. We&apos;re always finding new ways to facilitate payments
+            and fundings.
           </p>
           <Link
             href="http://wa.me/+6281110014420?text=Hi%2C+I%27m+interested+to+know+about+QarirGenerator+Bootcamp%2C+My+Name+is....."
