@@ -64,10 +64,10 @@ function Classes() {
           <span className="absolute bottom-28 lg:bottom-6 left-6 w-14 lg:w-20 rotate-180">
             <Quote height="auto" color="#FF9500" />
           </span>
-          <h2 className="lg:w-1/2 text-2xl lg:text-4xl font-black">
+          <h2 className="homepage section heading">
             More Than A Bootcamp. Get Hired At Top Tech Companies.
           </h2>
-          <p className="lg:w-1/2 font-medium">
+          <p className="homepage section desc !opacity-100">
             QarirGenerator helps you land your dream job. Our career managers
             guide you at the end of your bootcamp with 7.1 NPS Score (Highest in
             Education Field)

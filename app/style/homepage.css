@@ -13,3 +13,13 @@
     @apply font-medium;
   }
 }
+
+.homepage.section {
+  &.heading {
+    @apply font-black text-2xl lg:text-4xl text-center w-full lg:w-1/2;
+  }
+
+  &.desc {
+    @apply font-medium text-base lg:text-lg opacity-60 text-center w-full lg:w-1/2;
+  }
+}

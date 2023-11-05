@@ -56,7 +56,7 @@ function Benefit() {
   return (
     <section className="container flex flex-col mt-16">
       <div className="flex flex-col items-center gap-3 text-center py-6">
-        <h2 className="font-black text-2xl lg:text-4xl">
+        <h2 className="homepage section heading sm:!w-full">
           Why Choose
           <span className="relative">
             <span className="relative z-10">QarirGenerator</span>
@@ -64,7 +64,7 @@ function Benefit() {
           </span>
           ?
         </h2>
-        <p className="lg:text-lg text-base lg:w-1/2">
+        <p className="homepage section desc">
           Qarirgenerator Has Been Proven To Produce Competent Graduates In The
           Industry Through The Bootcamp Program.
         </p>

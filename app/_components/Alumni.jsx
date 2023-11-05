@@ -74,10 +74,8 @@ function Alumni() {
   return (
     <section className="container mt-32 flex flex-col gap-10">
       <div className="flex flex-col items-center gap-5">
-        <h2 className="text-black font-black text-2xl lg:text-4xl text-center w-full lg:w-1/2">
-          Alumni Success Story
-        </h2>
-        <p className="font-medium text-base lg:text-lg opacity-60 text-center w-full lg:w-2/4">
+        <h2 className="homepage section heading">Alumni Success Story</h2>
+        <p className="homepage section desc">
           Our main focus is to provide the best learning experience for
           students, here are some testimonials from our alumni
         </p>

@@ -8,13 +8,13 @@ import { usePathname } from 'next/navigation'
 
 // Assets
 import LogoBrand from 'public/logo_horizontal_color.png'
-import Indonesia from '@/app/_components/icons/Indonesia'
-import Istanbul from '@/app/_components/icons/Istanbul'
-import Tokyo from '@/app/_components/icons/Tokyo'
-import Seoul from '@/app/_components/icons/Seoul'
-import English from '@/app/_components/icons/English'
-import Rect1 from '@/app/_components/icons/Rect1'
-import Rect2 from '@/app/_components/icons/Rect2'
+import Indonesia from '@/components/icons/Indonesia'
+import Istanbul from '@/components/icons/Istanbul'
+import Tokyo from '@/components/icons/Tokyo'
+import Seoul from '@/components/icons/Seoul'
+import English from '@/components/icons/English'
+import Rect1 from '@/components/icons/Rect1'
+import Rect2 from '@/components/icons/Rect2'
 
 // Icons
 import { BiSolidDownArrow } from 'react-icons/bi'
@@ -174,7 +174,7 @@ function Navbar() {
 
   return (
     <header className="bg-white">
-      <div className="container flex flex-row justify-between py-3">
+      <nav className="container flex flex-row justify-between py-3">
         {/* Links */}
         <div className="flex flex-row items-center gap-10">
           <Link href="/">
@@ -374,7 +374,7 @@ function Navbar() {
             </div>
           </div>
         </div>
-      </div>
+      </nav>
     </header>
   )
 }
