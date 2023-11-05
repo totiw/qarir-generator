@@ -5,6 +5,7 @@ import Classes from './_components/Classes'
 import Alumni from './_components/Alumni'
 import Contact from './_components/Contact'
 import Partnership from './_components/Partnership'
+import Article from './_components/Article'
 
 import './style/homepage.css'
 
@@ -18,6 +19,7 @@ function HomePage() {
       <Alumni />
       <Contact />
       <Partnership />
+      <Article />
     </main>
   )
 }
