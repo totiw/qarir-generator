@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 // Assets
 import Video1 from 'public/video_1.png'
-import Video2 from 'public/video_2.png'
-import Video3 from 'public/video_3.png'
+import Ilustration1 from 'public/ilustration_10.png'
+import Ilustration2 from 'public/ilustration_blue.png'
 
 // Icons
 import { AiTwotoneCalendar } from 'react-icons/ai'
@@ -13,13 +13,15 @@ import { AiTwotoneCalendar } from 'react-icons/ai'
 function Card({ article }) {
   return (
     <article className="flex flex-row gap-5">
-      <Image
-        src={article.thumbnail}
-        alt="featured article"
-        priority={false}
-        quality={100}
-        className="h-28 w-auto rounded-lg"
-      />
+      <div className="2xl:w-full h-fit 2xl:h-28 overflow-hidden rounded-lg">
+        <Image
+          src={article.thumbnail}
+          alt="featured article"
+          priority={false}
+          quality={100}
+          className="w-80"
+        />
+      </div>
       <div className="flex flex-col gap-2">
         <h3 className="font-bold text-lg">Digital Marketing Offline Class</h3>
         <p className="text-sm font-medium">
@@ -59,13 +61,13 @@ function Article() {
     {
       title: 'Digital Marketing Offline Class',
       desc: 'Turning my dream of working as a performance specialist into reality by starting to learn Digital Marketing Bootcamp!',
-      thumbnail: Video2,
+      thumbnail: Ilustration1,
       date: '25 Sept 2024',
     },
     {
       title: 'Digital Marketing Offline Class',
       desc: 'Turning my dream of working as a performance specialist into reality by starting to learn Digital Marketing Bootcamp!',
-      thumbnail: Video3,
+      thumbnail: Ilustration2,
       date: '25 Sept 2024',
     },
   ]
@@ -79,7 +81,7 @@ function Article() {
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-14 xl:gap-10 py-10">
-        <article className="2xl:w-2/3 flex flex-col md:flex-row items-center gap-10">
+        <article className="2xl:w-2/3 flex flex-col md:flex-row items-center gap-5 p-5 shadow-md rounded-lg">
           <Image
             src={Video1}
             alt="featured article"
