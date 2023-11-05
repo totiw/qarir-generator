@@ -213,13 +213,15 @@ function Navbar() {
                       </span>
                       {location?.courses?.length > 0
                         ? location.courses.map((course, index) => (
-                            <span
+                            <Link
+                              onClick={toggleMenu}
+                              href={course?.link ?? ''}
                               key={index}
                               className="bg-white shadow-sm p-3 rounded-md flex flex-row items-center gap-2 capitalize font-bold text-sm text-left"
                             >
                               {course.thumbnail}
                               {course.name}
-                            </span>
+                            </Link>
                           ))
                         : null}
                     </div>
