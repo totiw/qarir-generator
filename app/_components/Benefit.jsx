@@ -56,10 +56,11 @@ function Benefit() {
   return (
     <section className="container flex flex-col mt-16">
       <div className="flex flex-col items-center gap-3 text-center py-6">
-        <h2 className="homepage section heading sm:!w-full">
+        <h2 className="homepage section heading">
           Why Choose
+          <br className="sm:hidden" />
           <span className="relative">
-            <span className="relative z-10">QarirGenerator</span>
+            <span className="relative z-10 sm:ml-2">QarirGenerator</span>
             <span className="h-3 w-24 xl:w-36 absolute right-0 bottom-0 lg:bottom-1 z-0 bg-orange-1"></span>
           </span>
           ?

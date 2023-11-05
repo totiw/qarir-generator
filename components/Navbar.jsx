@@ -349,6 +349,7 @@ function Navbar() {
                       : null}
                   </div>
                   <Link
+                    onClick={toggleMenuMobel}
                     href="/enterprise"
                     alt="enterprise"
                     className="font-bold text-base cursor-pointer"
