@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
+import 'aos/dist/aos.css' // You can also use <link> for styles
 
 // Components
 import Navbar from '@/components/Navbar'

@@ -13,7 +13,17 @@ function Banner() {
     <section className="bg-gradient-to-t from-green-2 to-white flex flex-col justify-center items-center min-h-[80vh] pb-10 xl:p-0">
       {/* Header */}
       <div className="container flex flex-col">
-        <div className="flex flex-col-reverse xl:flex-row xl:items-center">
+        <div
+          data-aos="fade-up"
+          data-aos-offset="0"
+          data-aos-delay="0"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="false"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="flex flex-col-reverse xl:flex-row xl:items-center"
+        >
           <div className="xl:w-7/12 flex flex-col gap-10">
             <h1 className="inline-block xl:flex xl:flex-col xl:gap-4 -tracking-normal font-black text-4xl xl:text-5xl leading-normal">
               QarirGenerator for Business,

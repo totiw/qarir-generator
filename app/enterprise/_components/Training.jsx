@@ -42,7 +42,17 @@ function Training() {
     `Post-Training Support`,
   ]
   return (
-    <section className="container flex flex-col items-center gap-10 text-center py-6 mt-16">
+    <section
+      data-aos="fade-up"
+      data-aos-offset="-300"
+      data-aos-delay="0"
+      data-aos-duration="1200"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+      className="container flex flex-col items-center gap-10 text-center py-6 mt-16"
+    >
       <h2 className="font-black text-2xl lg:text-4xl">
         Train Your
         <span className="relative">

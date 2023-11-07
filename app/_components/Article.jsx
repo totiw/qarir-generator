@@ -12,7 +12,17 @@ import { AiTwotoneCalendar } from 'react-icons/ai'
 
 function Card({ article }) {
   return (
-    <article className="flex flex-row gap-5">
+    <article
+      data-aos="fade-up"
+      data-aos-offset="-300"
+      data-aos-delay="50"
+      data-aos-duration="1200"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+      className="flex flex-row gap-5"
+    >
       <div className="2xl:w-full h-fit 2xl:h-28 overflow-hidden rounded-lg">
         <Image
           src={article.thumbnail}
@@ -74,14 +84,46 @@ function Article() {
   return (
     <section className="container mt-32 flex flex-col gap-10">
       <div className="flex flex-col items-center gap-5">
-        <h2 className="homepage section heading">Featured Article</h2>
-        <p className="homepage section desc">
+        <h2
+          data-aos="fade-up"
+          data-aos-offset="-300"
+          data-aos-delay="0"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="homepage section heading"
+        >
+          Featured Article
+        </h2>
+        <p
+          data-aos="fade-up"
+          data-aos-offset="-300"
+          data-aos-delay="50"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="homepage section desc"
+        >
           Discover our engaging featured article, an expertly crafted, concise
           read on a captivating topic
         </p>
       </div>
       <div className="flex flex-col xl:flex-row gap-14 xl:gap-10 py-10">
-        <article className="2xl:w-2/3 flex flex-col md:flex-row items-center gap-5 p-5 shadow-md rounded-lg">
+        <article
+          data-aos="fade-up"
+          data-aos-offset="-300"
+          data-aos-delay="0"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="2xl:w-2/3 flex flex-col md:flex-row items-center gap-5 p-5 shadow-md rounded-lg"
+        >
           <Image
             src={Video1}
             alt="featured article"

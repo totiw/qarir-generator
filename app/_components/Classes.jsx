@@ -32,7 +32,17 @@ const dataClasses = [
 
 function Card({ thumbnail, title, link }) {
   return (
-    <div className="bg-white p-6 flex flex-col items-center gap-10 rounded-lg shadow-md">
+    <div
+      data-aos="fade-up"
+      data-aos-offset="-300"
+      data-aos-delay="0"
+      data-aos-duration="1200"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+      className="bg-white p-6 flex flex-col items-center gap-10 rounded-lg shadow-md"
+    >
       <div className="relative flex justify-center">
         <Image
           src={thumbnail}
@@ -64,15 +74,45 @@ function Classes() {
           <span className="absolute bottom-28 lg:bottom-6 left-6 w-14 lg:w-20 rotate-180">
             <Quote height="auto" color="#FF9500" />
           </span>
-          <h2 className="homepage section heading">
+          <h2
+            data-aos="fade-up"
+            data-aos-offset="-300"
+            data-aos-delay="0"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="homepage section heading"
+          >
             More Than A Bootcamp. Get Hired At Top Tech Companies.
           </h2>
-          <p className="homepage section desc !opacity-100">
+          <p
+            data-aos="fade-up"
+            data-aos-offset="-300"
+            data-aos-delay="50"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="homepage section desc"
+          >
             QarirGenerator helps you land your dream job. Our career managers
             guide you at the end of your bootcamp with 7.1 NPS Score (Highest in
             Education Field)
           </p>
-          <div className="flex flex-col lg:flex-row gap-24 py-10">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="-300"
+            data-aos-delay="0"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="flex flex-col lg:flex-row gap-24 py-10"
+          >
             <div className="basis-1/4 classes-stats">
               <span>3K+</span>
               <span>Alumni</span>
@@ -89,7 +129,17 @@ function Classes() {
         </div>
       </div>
       <div className="relative container flex flex-col items-center gap-10 -mt-40 z-10">
-        <h2 className="text-2xl lg:text-4xl font-black text-white">
+        <h2
+          data-aos="fade-up"
+          data-aos-offset="-300"
+          data-aos-delay="0"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="text-2xl lg:text-4xl font-black text-white"
+        >
           See Our Class!!
         </h2>
         <div className="flex flex-col lg:flex-row gap-10">

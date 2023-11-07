@@ -1,6 +1,10 @@
+'use client'
+
 // Next Dependncies
+import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import AOS from 'aos'
 
 // Assets
 import BannerImage from 'public/ilustration_1.png'
@@ -29,10 +33,22 @@ function Banner() {
     { image: Bri },
   ]
 
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
     <section className="bg-gradient-to-t from-orange-4 to-white flex flex-col gap-10 min-h-[80vh]">
       {/* Header */}
-      <div className="container flex flex-col">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="false"
+        data-aos-once="false"
+        className="container flex flex-col"
+      >
         <div className="flex flex-col-reverse xl:flex-row xl:items-center">
           <div className="xl:w-2/3 flex flex-col gap-10">
             <h1 className="inline-block xl:flex xl:flex-col xl:gap-5 font-black text-3xl xl:text-5xl leading-normal">
@@ -73,7 +89,15 @@ function Banner() {
         </div>
       </div>
       {/* Sponsor */}
-      <div className="container flex flex-col xl:flex-row gap-10 md:gap-20 pb-40">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="false"
+        data-aos-once="false"
+        className="container flex flex-col xl:flex-row gap-10 md:gap-20 pb-40"
+      >
         <div className="flex flex-col gap-5">
           <p className="text-lg font-semibold">Talents</p>
           <span className="flex flex-row items-center gap-2">

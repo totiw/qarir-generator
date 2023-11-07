@@ -51,7 +51,17 @@ const dataAlumni = [
 
 function Card({ name, role, desc, thumbnail }) {
   return (
-    <div className="bg-white flex flex-col gap-5 p-10 shadow-sm rounded-lg h-80 w-96 lg:w-auto">
+    <div
+      data-aos="fade-up"
+      data-aos-offset="-300"
+      data-aos-delay="0"
+      data-aos-duration="1200"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+      className="bg-white flex flex-col gap-5 p-10 shadow-sm rounded-lg h-80 w-96 lg:w-auto"
+    >
       <div className="flex flex-row gap-10">
         <Image
           src={thumbnail}
@@ -74,8 +84,30 @@ function Alumni() {
   return (
     <section className="container mt-32 flex flex-col gap-10">
       <div className="flex flex-col items-center gap-5">
-        <h2 className="homepage section heading">Alumni Success Story</h2>
-        <p className="homepage section desc">
+        <h2
+          data-aos="fade-up"
+          data-aos-offset="-300"
+          data-aos-delay="0"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="homepage section heading"
+        >
+          Alumni Success Story
+        </h2>
+        <p
+          data-aos="fade-up"
+          data-aos-offset="-300"
+          data-aos-delay="50"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="homepage section desc"
+        >
           Our main focus is to provide the best learning experience for
           students, here are some testimonials from our alumni
         </p>

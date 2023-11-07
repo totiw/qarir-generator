@@ -42,7 +42,17 @@ const dataBenefit = [
 
 function Card({ title, desc, icon }) {
   return (
-    <div className="bg-white flex flex-col gap-5 justify-center items-center text-center shadow-md p-5 pb-24 rounded-md mt-20">
+    <div
+      data-aos="fade-up"
+      data-aos-offset="-300"
+      data-aos-delay="100"
+      data-aos-duration="1200"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+      className="bg-white flex flex-col gap-5 justify-center items-center text-center shadow-md p-5 pb-24 rounded-md mt-20"
+    >
       <div className="w-fit bg-gradient-to-t from-orange-2 to-orange-3 p-4 md:p-6 rounded-lg -mt-16">
         {icon}
       </div>
@@ -56,7 +66,17 @@ function Benefit() {
   return (
     <section className="container flex flex-col mt-16">
       <div className="flex flex-col items-center gap-3 text-center py-6">
-        <h2 className="homepage section heading">
+        <h2
+          data-aos="fade-up"
+          data-aos-offset="-300"
+          data-aos-delay="0"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="homepage section heading"
+        >
           Why Choose
           <br className="sm:hidden" />
           <span className="relative">
@@ -65,7 +85,17 @@ function Benefit() {
           </span>
           ?
         </h2>
-        <p className="homepage section desc">
+        <p
+          data-aos="fade-up"
+          data-aos-offset="-300"
+          data-aos-delay="50"
+          data-aos-duration="1200"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+          className="homepage section desc"
+        >
           Qarirgenerator Has Been Proven To Produce Competent Graduates In The
           Industry Through The Bootcamp Program.
         </p>

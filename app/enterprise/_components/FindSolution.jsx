@@ -18,7 +18,17 @@ function FindSolution() {
   ]
   return (
     <section className="bg-green-3 py-20 -mb-28">
-      <div className="container flex flex-col-reverse lg:gap-0 gap-10 lg:flex-row items-center">
+      <div
+        data-aos="fade-up"
+        data-aos-offset="-300"
+        data-aos-delay="0"
+        data-aos-duration="1200"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+        className="container flex flex-col-reverse lg:gap-0 gap-10 lg:flex-row items-center"
+      >
         <div className="lg:w-2/3 flex flex-col gap-10 lg:pr-40">
           <p className="font-bold text-base">FIND SOLUTION</p>
           <h3 className="font-black text-3xl capitalize">

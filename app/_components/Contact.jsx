@@ -7,7 +7,17 @@ import Background from '../../public/ilustration_2.png'
 
 function Contact() {
   return (
-    <section className="relative h-[320px] mt-28 overflow-hidden">
+    <section
+      data-aos="fade-up"
+      data-aos-offset="-300"
+      data-aos-delay="0"
+      data-aos-duration="1200"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+      className="relative h-[320px] mt-28 overflow-hidden"
+    >
       <div
         className="hidden lg:block absolute z-10 top-0 bottom-0 left-0 right-0"
         style={{
@@ -31,15 +41,43 @@ function Contact() {
       />
       <div className="container relative z-10 h-full">
         <div className="flex flex-col gap-4 lg:gap-3 lg:w-1/3 justify-center h-full text-white">
-          <h2 className="font-black text-3xl lg:text-4xl">
+          <h2
+            data-aos="fade-up"
+            data-aos-offset="-300"
+            data-aos-delay="50"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="font-black text-3xl lg:text-4xl"
+          >
             Looking for <br /> Financial Aid?
           </h2>
-          <p className="font-medium text-base">
+          <p
+            data-aos="fade-up"
+            data-aos-offset="-300"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
+            className="font-medium text-base"
+          >
             Finances shouldn&apos;t be the main obstacle to accessing our
             bootcamps. We&apos;re always finding new ways to facilitate payments
             and fundings.
           </p>
           <Link
+            data-aos="fade-up"
+            data-aos-offset="-300"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            data-aos-once="false"
+            data-aos-anchor-placement="top-center"
             href="http://wa.me/+6281110014420?text=Hi%2C+I%27m+interested+to+know+about+QarirGenerator+Bootcamp%2C+My+Name+is....."
             target="_blank"
             className="bg-orange-1 py-3 px-8 md:self-start rounded-full text-center text-white font-bold"

@@ -1,9 +1,10 @@
 'use client'
 
 // Next dependencies
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import AOS from 'aos'
 
 // Assets
 import DataScience from 'public/data_science_2.png'
@@ -186,10 +187,19 @@ function CardProgram({ program }) {
 }
 
 function Programs() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <section
       id="programs"
       className="container flex flex-col xl:flex-row gap-10 pt-20 -mt-40"
+      data-aos="fade-up"
+      data-aos-delay="0"
+      data-aos-duration="1200"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="false"
+      data-aos-once="false"
     >
       {dataProgram.length > 0
         ? dataProgram.map((program, index) => (
