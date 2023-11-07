@@ -11,7 +11,7 @@ import { IoCloseCircleOutline } from 'react-icons/io5'
 function BubbleChat() {
   const [isPop, seIsPop] = useState(true)
   return (
-    <div className="flex flex-row sm:gap-3 gap-2 sm:p-0 px-2 fixed z-[99] bottom-5 sm:bottom-10 sm:right-5">
+    <div className="flex flex-row sm:gap-3 gap-2 sm:p-0 px-2 fixed z-[99] bottom-5 sm:bottom-10 right-2 sm:right-5">
       <span
         className={`${
           isPop ? 'flex' : 'hidden'
