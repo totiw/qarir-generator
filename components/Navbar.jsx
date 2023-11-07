@@ -310,7 +310,7 @@ function Navbar() {
               </button>
             </div>
             {/* Links & Language */}
-            <div className="flex flex-col gap-5">
+            <div className="flex flex-col gap-5 max-h-[75vh] overflow-auto scrollbar-hide pb-5">
               {/* LINKS */}
               <div className="flex flex-col gap-3">
                 <p className="font-bold text-base uppercase text-gray-400">
