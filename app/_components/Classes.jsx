@@ -9,7 +9,7 @@ import Video3 from '../../public/video_3.png'
 
 // Icons
 import { FaPlayCircle } from 'react-icons/fa'
-import Quote from './icons/Quote'
+import Quote from '../../components/icons/Quote'
 
 // DUMMY DATA
 const dataClasses = [

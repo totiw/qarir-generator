@@ -1,14 +1,56 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
+import Link from 'next/link'
+import Accordion from '@/components/Accordion'
+import Checklist from '@/components/icons/Checklist'
 
 function Details() {
   const [distanceToTop, setDistanceToTop] = useState(0)
   const [distanceBottomToTop, setDistanceBottomToTop] = useState(0)
 
+  const dataFaseBelajar = [
+    {
+      title: 'Persiapan',
+      desc: 'QarirGenerator menyediakan persiapan karir. Segera setelah Anda diterima, Anda akan mendapatkan jadwal tetap pemetaan karir & kelas soft skill dengan pelatih kami yang bersemangat. Anda juga akan menerima sekitar 10-20 jam sumber belajar online, yang dikuratori dengan cermat oleh Pakar QarirGenerator agar intuitif dan interaktif. Fase persiapan ini akan memastikan Anda memiliki fondasi yang diperlukan dalam Python sebelum bootcamp dimulai.',
+      icon: <Checklist />,
+      moduleCount: 0,
+    },
+    {
+      title: 'Data Analysis',
+      desc: 'Kuasai penggunaan bahasa pemrograman Python, khususnya untuk aplikasi ilmu data, yang memerlukan kemahiran dalam mengekstraksi data dari basis data relasional, menangani kumpulan data yang luas, dan menghasilkan visualisasi data. Selain itu, dapatkan pemahaman menyeluruh tentang prinsip matematika dasar, seperti statistik dan aljabar linier, untuk memfasilitasi analisis data yang efisien (modul terbaru 2023).',
+      icon: <Checklist />,
+      moduleCount: 1,
+    },
+    {
+      title: 'Decision Science',
+      desc: 'Bayangkan menjadi konsultan data dan menguasai seni menavigasi melalui fase persiapan data dari kumpulan data yang sangat besar. Manfaatkan keahlian Anda dalam menafsirkan hasil statistik yang diperoleh dari berbagai alat seperti model regresi multivariat, pengujian hipotesis, dan interval kepercayaan untuk mengekstrak wawasan yang berharga.',
+      icon: <Checklist />,
+      moduleCount: 2,
+    },
+    {
+      title: 'Machine Learning',
+      desc: 'Jalankan Machine learning, yang melibatkan persiapan data, rekayasa fitur, pemilihan model, evaluasi, dan penyempurnaan. Kembangkan pemahaman tentang prinsip-prinsip matematika dan implementasi numerik dari model Machine Learning.',
+      icon: <Checklist />,
+      moduleCount: 3,
+    },
+    {
+      title: 'Deep Learning',
+      desc: 'Temukan rahasia Deep Learning! Pelajari tentang struktur dan komponen jaringan neural, buat jaringan Anda sendiri untuk memproses gambar, urutan, dan teks, terapkan model yang telah dilatih sebelumnya melalui pembelajaran transfer, dan praktikkan dengan pembuat enkode otomatis, pemrosesan batch, dan pelatihan GPU.',
+      icon: <Checklist />,
+      moduleCount: 4,
+    },
+    {
+      title: 'Machine Learning Engineering',
+      desc: 'Convert your superior handmade models into a Python package for cloud-based replication and training with virtual machines and online databases. Monitor and update performance with new data, and share predictions through APIs or websites (2023 newest module) Ubah model karya Anda yang unggul menjadi paket Python untuk replikasi dan pelatihan berbasis cloud dengan mesin virtual dan database online. Pantau dan perbarui kinerja dengan data baru, dan bagikan prediksi melalui API atau situs web.* (Modul Terbaru 2023)',
+      icon: <Checklist />,
+      moduleCount: 5,
+    },
+  ]
+
   // Cek jarak dari atas element ke atas page
   useEffect(() => {
-    const element = document.getElementById('kocak') // Replace with the actual ID of the element you want to measure.
+    const element = document.getElementById('details') // Replace with the actual ID of the element you want to measure.
 
     const handleScroll = () => {
       if (element) {
@@ -35,7 +77,7 @@ function Details() {
 
   // Cek jarak dari bawah element ke atas page
   useEffect(() => {
-    const element = document.getElementById('kocak') // Replace with the actual ID of the element you want to measure.
+    const element = document.getElementById('details') // Replace with the actual ID of the element you want to measure.
 
     const handleScroll = () => {
       if (element) {
@@ -63,13 +105,13 @@ function Details() {
 
   return (
     <div
-      id="kocak"
-      className="container flex flex-row justify-between bg-blue-500"
+      id="details"
+      className="bg-white container mt-20 xl:mt-0 flex flex-row justify-between"
     >
       <div
         className={`${
           distanceBottomToTop < 300 && 'bottom-0'
-        } relative py-10 bg-red-500 w-1/3`}
+        } relative w-1/4 hidden xl:flex`}
       >
         <div
           className={`${
@@ -78,70 +120,43 @@ function Details() {
               : distanceToTop < 0 && distanceBottomToTop > 300
               ? 'fixed top-10'
               : ''
-          } bg-orange-1 text-white p-3 w-40 h-60`}
+          } p-3 w-10/12 h-60`}
         >
-          Details
+          <div className="flex flex-col">
+            <h3 className="w-3/4 font-black lg:text-2xl">
+              Detail Kursus Data Science
+            </h3>
+            <div className="flex flex-col gap-3">
+              <Link href="#ringkasan" alt="ringkasan">
+                Ringkasan
+              </Link>
+              <Link href="#fase-belajar" alt="fase belajar">
+                Fase Belajar
+              </Link>
+              <Link href="#lokasi-belajar" alt="fase belajar">
+                Lokasi Belajar
+              </Link>
+              <Link href="#cerita-alumni" alt="fase belajar">
+                Cerita Alumni
+              </Link>
+              <Link href="#portfolio-alumni" alt="fase belajar">
+                Portfolio Alumni
+              </Link>
+              <Link href="#portfolio-alumni" alt="fase belajar">
+                Portfolio Alumni
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="p-3 bg-green-1 w-2/3">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
-          modi fugit vero corporis accusantium quas sit, veritatis dolor. Iste
-          vitae deleniti aut recusandae voluptatibus perspiciatis nesciunt neque
-          cumque necessitatibus officia! Labore rem animi repellendus quisquam
-          optio et nam deserunt culpa autem tempora. Accusantium distinctio at
-          sint similique, itaque cumque dolor quis aperiam quam debitis odit
-          autem quod corrupti fuga sapiente minima omnis, expedita, tempora
-          fugiat magni quasi! Commodi corporis nemo reprehenderit excepturi,
-          quas optio eius eos tempore dolores quam beatae sunt quo? Odio,
-          perspiciatis officia maxime accusamus ex numquam saepe praesentium
-          blanditiis expedita dolorem mollitia! Velit numquam veritatis nulla
-          officiis facere eaque omnis! Reprehenderit aperiam nam facilis nulla
-          quo sequi ad tempora sit corporis harum autem vitae ab assumenda quod
-          nobis consequatur rem, veniam expedita quibusdam odio, pariatur culpa.
-          Magnam accusantium quas accusamus repellat aut dolores aliquid commodi
-          quae, beatae ullam vel soluta officia reprehenderit explicabo
-          architecto cum vero quisquam consectetur delectus quidem incidunt
-          cupiditate iste. A corporis error magni eligendi eveniet molestias
-          soluta atque sequi minus, dolor sunt dolore voluptatibus incidunt?
-          Vero aperiam animi omnis, vitae nulla, ea perferendis ut voluptas
-          officia eius dolor ipsam labore aliquam tempore atque dolores sit
-          laudantium suscipit, est repellendus? Qui voluptatibus ipsam fugit
-          laudantium adipisci provident excepturi sapiente ad voluptas nobis
-          quod ipsum similique architecto quas laborum ullam enim officia neque
-          est quo repellendus dolor, placeat labore? Error vitae facilis eius
-          corrupti, architecto doloribus nostrum. Nihil quis minus beatae,
-          excepturi, nobis tenetur reiciendis neque quae cumque autem ducimus
-          porro quidem labore aliquam temporibus voluptates quam possimus eaque
-          quaerat velit blanditiis est fugit vero? A totam recusandae quod
-          nesciunt consequuntur cupiditate error laudantium atque tempora
-          possimus minima vitae modi, earum ipsa delectus necessitatibus
-          dolores, laboriosam, assumenda illum beatae expedita blanditiis
-          sapiente odio. Vel velit ea, sint quas deleniti modi quam qui
-          blanditiis repudiandae. Inventore maiores tenetur natus blanditiis
-          velit exercitationem adipisci? Magni voluptatum, amet fugiat saepe
-          voluptate odit praesentium natus debitis alias molestiae corrupti
-          necessitatibus eum neque recusandae ut rem cum laudantium asperiores
-          suscipit ad. Ullam nesciunt quisquam architecto exercitationem eaque
-          sequi. Est nostrum error qui eveniet magnam non rem nam accusantium in
-          quia? Quo ratione reprehenderit recusandae reiciendis error repellat
-          illum aliquam sint nemo necessitatibus iste in labore tempora
-          praesentium, quaerat veniam architecto soluta est alias, aperiam
-          mollitia consequuntur dolore assumenda. Minima voluptatibus omnis quos
-          sit fugiat facere reprehenderit beatae totam at hic, nulla similique a
-          repudiandae. Fuga in velit aperiam, dolore unde a laborum quos esse ea
-          quia repudiandae magni, soluta rerum! Error omnis laudantium quasi
-          impedit porro, delectus officiis? Minima veritatis nisi consequuntur,
-          nihil eius repudiandae cum, odio unde aliquid optio recusandae sunt
-          dolores totam facere enim voluptate placeat, libero alias provident.
-          Quasi eos amet, dicta voluptatem dolore rem quisquam, consequuntur,
-          neque error porro perferendis molestias. Voluptates repellendus
-          officiis earum, totam veniam quibusdam quia quas excepturi et libero
-          in perferendis aperiam temporibus minima! Veniam placeat nam similique
-          eaque quidem voluptatibus, laborum at dolore provident facilis animi
-          nisi, minus voluptatum nihil temporibus tempore magnam pariatur eos
-          quae, soluta perferendis in vel quod?
-        </p>
+      <div className="p-3 w-full xl:w-3/4">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-2">
+          {dataFaseBelajar.length > 0
+            ? dataFaseBelajar.map((fase, index) => (
+                <Accordion key={index} data={fase} />
+              ))
+            : nul}
+        </div>
       </div>
     </div>
   )

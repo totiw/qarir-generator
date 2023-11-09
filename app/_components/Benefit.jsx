@@ -1,10 +1,10 @@
 // Icons
-import People from './icons/People'
-import Lamp from './icons/Lamp'
-import Book from './icons/Book'
-import HandShake from './icons/HandShake'
-import Globe from './icons/Globe'
-import Stars from './icons/Stars'
+import People from '../../components/icons/People'
+import Lamp from '../../components/icons/Lamp'
+import Book from '../../components/icons/Book'
+import HandShake from '../../components/icons/HandShake'
+import Globe from '../../components/icons/Globe'
+import Stars from '../../components/icons/Stars'
 
 // DUMMY DATA
 const dataBenefit = [
