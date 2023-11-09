@@ -7,7 +7,7 @@ import BannerImage from 'public/ilustration_blue.png'
 
 function Banner() {
   return (
-    <section className="flex flex-col justify-center gap-10 min-h-[80vh]">
+    <section className="bg-white flex flex-col justify-center gap-10 min-h-[80vh]">
       {/* Header */}
       <div className="container grow flex flex-col-reverse xl:flex-row xl:items-center">
         <div className="flex flex-col gap-10">
@@ -42,7 +42,7 @@ function Banner() {
               Daftar Sekarang
             </Link>
             <Link
-              href="#programs"
+              href="https://forms.gle/BMVkjWJ9kKePwoLK6"
               className="w-full lg:w-auto outline outline-1 outline-blue-2 lg:px-10 lg:py-4 py-2 md:self-start rounded-full text-center text-blue-2 font-bold"
             >
               Download Syllabus

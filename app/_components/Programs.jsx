@@ -127,7 +127,13 @@ function CardProgram({ program }) {
 
   return (
     <div className="min-h-[32em] bg-white flex flex-col justify-between gap-5 shadow-md rounded-xl overflow-hidden">
-      <Modal isOpen={openModal} setIsOpen={setOpenModal}>
+      <Modal
+        isOpen={openModal}
+        setIsOpen={setOpenModal}
+        title="Where would you like to learn Digital Marketing Bootcamp?"
+        desc="You can choose to learn digital marketing in over 3 country ready
+        or online. Find now your learning destination!"
+      >
         <div className="flex flex-row flex-wrap gap-4">
           {program.destinations.length > 0 ? (
             program.destinations.map((destination, index) => (

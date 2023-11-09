@@ -1,6 +1,6 @@
 import { MdClose } from 'react-icons/md'
 
-function Modal({ isOpen, setIsOpen, children }) {
+function Modal({ isOpen, setIsOpen, children, title, desc }) {
   return (
     // OVERLAY
     <div
@@ -13,13 +13,8 @@ function Modal({ isOpen, setIsOpen, children }) {
         {/* MODAL HEADER */}
         <div className="flex justify-between text-xl">
           <div className="flex flex-col gap-2">
-            <h2 className="font-black">
-              Where would you like to learn Digital Marketing Bootcamp?
-            </h2>
-            <p className="font-medium text-sm">
-              You can choose to learn digital marketing in over 3 country ready
-              or online. Find now your learning destination!
-            </p>
+            <h2 className="font-black">{title}</h2>
+            <p className="font-medium text-sm">{desc}</p>
           </div>
           <span
             onClick={() => setIsOpen(false)}
