@@ -28,7 +28,7 @@ function DestinationPage({ params }) {
           We will landing soon in {params.destination}
         </h2>
         <p className="font-medium text-xl lg:text-2xl text-slate-500">
-          Explore the world with our International Bootcamp Program.
+          Explore the world with our Global Career Center.
         </p>
         <Link
           href="/"

@@ -4,7 +4,7 @@ import { BiSolidDownArrow } from 'react-icons/bi'
 function Accordion({ data }) {
   const [open, setOpen] = useState(false)
   return (
-    <div className="bg-white basis-1/3 h-fit p-5 flex flex-col gap-5 rounded-lg shadow-md">
+    <div className="bg-white basis-1/3 h-fit p-5 flex flex-col gap-5 rounded-lg shadow-sm">
       <button
         onClick={() => setOpen((prev) => !prev)}
         className="w-full flex flex-row items-center justify-between"

@@ -1,15 +1,30 @@
+'use client'
+
 // Next Dependncies
+import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import AOS from 'aos'
 
 // Assets
 import BannerImage from 'public/ilustration_blue.png'
 
 function Banner() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
-    <section className="bg-white flex flex-col justify-center gap-10 min-h-[80vh]">
+    <section className="bg-white flex flex-col justify-center gap-10 min-h-[70vh]">
       {/* Header */}
-      <div className="container grow flex flex-col-reverse xl:flex-row xl:items-center">
+      <div
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="false"
+        data-aos-once="false"
+        className="container grow flex flex-col-reverse xl:flex-row xl:items-center"
+      >
         <div className="flex flex-col gap-10">
           <h1 className="inline-block xl:flex xl:flex-col xl:gap-5 font-black text-3xl xl:text-5xl leading-normal">
             <span>

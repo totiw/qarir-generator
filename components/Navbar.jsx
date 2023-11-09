@@ -191,8 +191,8 @@ function Navbar() {
               onClick={toggleMenu}
               className="font-semibold flex flex-row items-center gap-3"
             >
-              Course And Location{' '}
-              <BiSolidDownArrow size=".6em" color="#000000" />
+              Programs
+              {/* <BiSolidDownArrow size=".6em" color="#000000" /> */}
             </button>
             <span
               className={`${
@@ -230,7 +230,10 @@ function Navbar() {
             </div>
           </div>
           <Link href="/enterprise" className="hidden md:flex font-semibold">
-            Enterprise
+            Partnership
+          </Link>
+          <Link href="/career" className="hidden md:flex font-semibold">
+            Career
           </Link>
         </div>
 
@@ -322,14 +325,14 @@ function Navbar() {
                     type="button"
                     className=" flex flex-row items-center gap-2 font-bold text-base"
                   >
-                    Course And Location
-                    <BiSolidDownArrow
+                    Programs
+                    {/* <BiSolidDownArrow
                       size=".6em"
                       color="#000000"
                       className={`${
                         menuLinksOpen ? 'rotate-180' : 'rotate-0'
                       } transition-all duration-500 ease-in-out`}
-                    />
+                    /> */}
                   </button>
                   <div
                     className={`${
@@ -354,7 +357,15 @@ function Navbar() {
                     alt="enterprise"
                     className="font-bold text-base cursor-pointer"
                   >
-                    Enterprise
+                    Partnership
+                  </Link>
+                  <Link
+                    onClick={toggleMenuMobel}
+                    href="/career"
+                    alt="career"
+                    className="font-bold text-base cursor-pointer"
+                  >
+                    Career
                   </Link>
                 </div>
               </div>

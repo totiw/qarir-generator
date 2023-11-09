@@ -266,7 +266,7 @@ function Footer() {
             </div>
             <div className="flex flex-col grow gap-3">
               <p className="font-bold text-lg text-orange-1">
-                International <br /> Bootcamp
+                Global Career <br /> Center
               </p>
               <button
                 onClick={() => {
@@ -275,8 +275,14 @@ function Footer() {
                 }}
                 className="self-start font-normal text-base text-white"
               >
-                Bootcamp Indonesia
+                Indonesia
               </button>
+              <Link
+                href="/soon/Malaysia"
+                className="font-normal text-base text-white"
+              >
+                Malaysia
+              </Link>
               <button
                 onClick={() => {
                   setBootcamp(1)
@@ -284,20 +290,8 @@ function Footer() {
                 }}
                 className="self-start font-normal text-base text-white"
               >
-                Bootcamp Istanbul
+                Turkiye
               </button>
-              <Link
-                href="/soon/Tokyo"
-                className="font-normal text-base text-white"
-              >
-                Bootcamp Tokyo
-              </Link>
-              <Link
-                href="/soon/Seoul"
-                className="font-normal text-base text-white"
-              >
-                Bootcamp Seoul
-              </Link>
             </div>
             <div className="flex flex-col grow gap-3">
               <p className="font-bold text-lg text-orange-1 mb-7">Resources</p>
