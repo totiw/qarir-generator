@@ -2,12 +2,12 @@
 import Image from 'next/image'
 
 // Assets
-import Person1 from '../../public/hieronymus_kopong_bali.jpeg'
-import Person2 from '../../public/tyas_fitri_anggarinii.jpeg'
-import Person3 from '../../public/angeline_lie.jpeg'
-import Person4 from '../../public/balad_al_barokah.jpeg'
-import Person5 from '../../public/andhimas_iben_d.jpeg'
-import Person6 from '../../public/agnes_friska_cyntia_puspitasari.jpeg'
+import Person1 from '../../../public/hieronymus_kopong_bali.jpeg'
+import Person2 from '../../../public/tyas_fitri_anggarinii.jpeg'
+import Person3 from '../../../public/angeline_lie.jpeg'
+import Person4 from '../../../public/balad_al_barokah.jpeg'
+import Person5 from '../../../public/andhimas_iben_d.jpeg'
+import Person6 from '../../../public/agnes_friska_cyntia_puspitasari.jpeg'
 
 // DUMMY DATA
 const dataAlumni = [
@@ -52,7 +52,7 @@ const dataAlumni = [
 function Card({ name, role, desc, thumbnail }) {
   return (
     <div
-      data-aos="fade-up"
+      data-aos="fade"
       data-aos-offset="-300"
       data-aos-delay="0"
       data-aos-duration="1200"
