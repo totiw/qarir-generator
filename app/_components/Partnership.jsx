@@ -47,7 +47,7 @@ function Partnership() {
         </p>
         <Link
           href="https://calendar.app.google/6xrDJSLWZhcYxYrs9"
-          className="bg-orange-1 py-3 px-8 md:self-start rounded-full text-center text-white font-bold"
+          className="bg-blue-2 py-3 px-8 md:self-start rounded-full text-center text-white font-bold"
         >
           Contact Our Partnership Team
         </Link>

@@ -38,7 +38,7 @@ function Banner() {
   }, [])
 
   return (
-    <section className="bg-gradient-to-t from-orange-4 to-white flex flex-col gap-10 min-h-[80vh]">
+    <section className="bg-white flex flex-col gap-10 min-h-[80vh]">
       {/* Header */}
       <div
         data-aos="fade-up"
@@ -72,7 +72,7 @@ function Banner() {
             </p>
             <Link
               href="#programs"
-              className="bg-orange-1 py-3 px-8 md:self-start rounded-full text-center text-white font-bold"
+              className="bg-blue-2 py-3 px-8 md:self-start rounded-full text-center text-white font-bold"
             >
               Browse Classes
             </Link>

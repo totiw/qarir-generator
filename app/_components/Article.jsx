@@ -150,7 +150,7 @@ function Article() {
             <Link
               href=""
               alt="article link"
-              className="bg-orange-1 md:self-start font-bold text-center text-white py-2 px-4 rounded-full"
+              className="bg-blue-2 md:self-start font-bold text-center text-white py-2 px-4 rounded-full"
             >
               See article
             </Link>

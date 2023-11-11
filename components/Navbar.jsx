@@ -9,27 +9,23 @@ import { usePathname } from 'next/navigation'
 // Assets
 import LogoBrand from 'public/logo_horizontal_color.png'
 import Indonesia from '@/components/icons/Indonesia'
-import Istanbul from '@/components/icons/Istanbul'
-import Tokyo from '@/components/icons/Tokyo'
-import Seoul from '@/components/icons/Seoul'
 import English from '@/components/icons/English'
-import Rect1 from '@/components/icons/Rect1'
-import Rect2 from '@/components/icons/Rect2'
 
 // Icons
 import { BiSolidDownArrow } from 'react-icons/bi'
 import { BsGlobe2 } from 'react-icons/bs'
 import { LuMenu } from 'react-icons/lu'
 import { IoClose } from 'react-icons/io5'
+import { HiOutlineExternalLink } from 'react-icons/hi'
 
-function Card({ courses, toggleMenuMobel }) {
+function Card({ courses, toggleMenuMobile }) {
   return (
     <div className="flex flex-col gap-3">
       <span className="flex flex-col gap-2 capitalize text-sm">
         {courses?.length > 0 &&
           courses.map((course, index) => (
             <Link
-              onClick={toggleMenuMobel}
+              onClick={toggleMenuMobile}
               href={course.link ?? ''}
               alt={`link course ${course.name}`}
               key={index}
@@ -52,22 +48,35 @@ function Navbar() {
   const [menuMobileOpen, setMenuMobileOpen] = useState(false)
   const [languageOpen, setlanguageOpen] = useState(false)
 
+  const [selectedPrograms, setSelectedPrograms] = useState(0)
+
   const courses = [
     {
-      name: 'data science bootcamp',
-      thumbnail: <Rect1 height="28" />,
-      link: '/data-science/indonesia',
+      name: 'digital marketing',
+      desc: 'Dive into the digital marketing world! Master paid and organic channels, critical thinking skills, and analytical frameworks to boost your digital business.',
+      thumbnail:
+        'https://assets-global.website-files.com/61af164800e38c4f53c60b4e/64d0256eb6c6593d16f4c52d_dm-icon.svg',
+      link: '/digital-marketing',
     },
     {
-      name: 'digital marketing bootcamp',
-      thumbnail: <Rect2 height="28" />,
+      name: 'MBA',
+      desc: 'A Master of Business Administration is a tertiary degree in business management. Originally designed to provide engineers with management skills, today the MBA takes applicants from a wide variety of disciplines. The MBA is considered a professional Master&apos;s degree as well as a traditional academic degree.',
+      thumbnail:
+        'https://assets-global.website-files.com/61af164800e38c4f53c60b4e/64d0256d8416a474a53382f1_ma-icon.svg',
+      link: '/mba',
+    },
+    {
+      name: 'Program AI',
+      desc: 'Step into the AI Revolution with RevoU. Learn from top AI industry experts to boost your skills in Digital Marketing, Data Analytics, and more!',
+      thumbnail:
+        'https://assets-global.website-files.com/61af164800e38c4f53c60b4e/652df06d35eb067c27c36d05_Group%2014.svg',
+      link: '/program-ai',
     },
   ]
 
-  const ctaColor =
-    pathname === '/data-science/indonesia' ? 'blue-2' : 'orange-1'
+  const ctaColor = 'blue-2'
 
-  const toggleMenuMobel = () => {
+  const toggleMenuMobile = () => {
     setMenuMobileOpen((prev) => !prev)
   }
 
@@ -141,22 +150,56 @@ function Navbar() {
             <div
               className={`${
                 menuOpen ? 'flex' : 'hidden'
-              } flex-wrap xl:flex-nowrap flex-row gap-5 bg-gray-50 w-[55vw] border border-slate-200 rounded-md shadow-sm absolute z-10 top-0 translate-y-14 p-5`}
+              } flex-wrap xl:flex-nowrap flex-row gap-5 bg-gray-100 w-[50vw] xl:w-[1000px] border border-slate-200 rounded-lg shadow-sm absolute z-10 top-0 translate-y-14 p-5`}
             >
-              <div className="flex flex-col gap-3">
+              <div className="w-full xl:w-[250px] flex flex-col gap-3">
                 {courses?.length > 0
                   ? courses.map((course, index) => (
-                      <Link
-                        onClick={toggleMenu}
-                        href={course?.link ?? ''}
+                      <button
+                        onClick={() => setSelectedPrograms(index)}
                         key={index}
                         className="bg-white shadow-sm p-3 rounded-md flex flex-row items-center gap-2 capitalize font-bold text-sm text-left"
                       >
-                        {course.thumbnail}
+                        <Image
+                          src={course.thumbnail}
+                          alt="course"
+                          quality={100}
+                          priority={false}
+                          width={100}
+                          height={100}
+                          className="w-8"
+                        />
                         {course.name}
-                      </Link>
+                      </button>
                     ))
                   : null}
+              </div>
+              <div className="xl:w-3/4 h-80 bg-white shadow-sm p-5 flex flex-col justify-between rounded-lg">
+                <div className="flex flex-col gap-3">
+                  <Image
+                    src={courses[selectedPrograms].thumbnail}
+                    alt="course"
+                    quality={100}
+                    priority={false}
+                    width={100}
+                    height={100}
+                    className="w-14"
+                  />
+                  <h3 className="font-semibold text-lg capitalize">
+                    {courses[selectedPrograms].name}
+                  </h3>
+                  <p className="text-sm">{courses[selectedPrograms].desc}</p>
+                  <hr className="h-px mt-3 bg-gray-700 border-0" />
+                </div>
+                <Link
+                  onClick={toggleMenu}
+                  href={courses[selectedPrograms].link}
+                  alt="progrmas link"
+                  className="flex flex-row gap-1 items-center capitalize font-semibold text-sm tracking-wide"
+                >
+                  learn more
+                  <HiOutlineExternalLink size="1.2em" color="#000" />
+                </Link>
               </div>
             </div>
           </div>
@@ -173,9 +216,7 @@ function Navbar() {
           {pathname !== '/enterprise' && (
             <Link
               href="https://calendar.app.google/6xrDJSLWZhcYxYrs9"
-              className={`bg-${
-                ctaColor ?? ''
-              } flex items-center rounded-full py-2 px-5 font-bold text-white`}
+              className={`bg-${ctaColor} flex items-center rounded-full py-2 px-5 font-bold text-white`}
             >
               Book A Call
             </Link>
@@ -214,7 +255,7 @@ function Navbar() {
             </div>
           </div>
           <button
-            onClick={toggleMenuMobel}
+            onClick={toggleMenuMobile}
             className="md:hidden flex opacity-50"
           >
             <LuMenu size="1.6em" color="#000000" />
@@ -230,7 +271,7 @@ function Navbar() {
           <div className="container flex flex-col gap-10 py-5">
             {/* Navbar */}
             <div className="flex flex-row justify-between items-center">
-              <Link onClick={toggleMenuMobel} href="/" alt="qarir home page">
+              <Link onClick={toggleMenuMobile} href="/" alt="qarir home page">
                 <Image
                   src={LogoBrand}
                   alt="qarir logo mobile version"
@@ -239,7 +280,7 @@ function Navbar() {
                   className="w-32"
                 />
               </Link>
-              <button onClick={toggleMenuMobel} type="button" className="p-1">
+              <button onClick={toggleMenuMobile} type="button" className="p-1">
                 <IoClose size="1.5em" color="#000000" className="opacity-50" />
               </button>
             </div>
@@ -272,10 +313,13 @@ function Navbar() {
                         : 'max-h-0 opacity-0 translate-y-52'
                     } relative flex flex-col gap-5 origin-top transition-all duration-500 ease-in-out`}
                   >
-                    <Card courses={courses} toggleMenuMobel={toggleMenuMobel} />
+                    <Card
+                      courses={courses}
+                      toggleMenuMobile={toggleMenuMobile}
+                    />
                   </div>
                   <Link
-                    onClick={toggleMenuMobel}
+                    onClick={toggleMenuMobile}
                     href="/enterprise"
                     alt="enterprise"
                     className="font-bold text-base cursor-pointer"
@@ -283,7 +327,7 @@ function Navbar() {
                     Partnership
                   </Link>
                   <Link
-                    onClick={toggleMenuMobel}
+                    onClick={toggleMenuMobile}
                     href="/career"
                     alt="career"
                     className="font-bold text-base cursor-pointer"

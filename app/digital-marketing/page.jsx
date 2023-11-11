@@ -1,7 +1,7 @@
 import Banner from './_components/Banner'
 import Details from './_components/Details'
 
-function page() {
+function DigitalMarketingPage() {
   return (
     <main>
       <Banner />
@@ -10,4 +10,4 @@ function page() {
   )
 }
 
-export default page
+export default DigitalMarketingPage

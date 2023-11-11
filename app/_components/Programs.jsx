@@ -1,7 +1,7 @@
 'use client'
 
 // Next dependencies
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import AOS from 'aos'
@@ -10,156 +10,41 @@ import AOS from 'aos'
 import DataScience from 'public/data_science_2.png'
 import DigitalMarketing from 'public/digital_marketing.png'
 import WebDev from 'public/software_enginering.png'
-import Indonesia from 'public/indonesia.png'
-import Instanbul from 'public/istanbul.png'
-import Korea from 'public/south_korea.png'
-import Tokyo from 'public/tokyo.jpg'
-
-import Modal from '@/components/Modal'
 
 // Icons
 import { FaArrowRight } from 'react-icons/fa6'
 
 // DUMMY DATA
-const dataProgram = [
+const dataPrograms = [
   {
     id: 1,
     label: 'Enrolled Sept 1, 2023',
-    title: 'Data Science Bootcamp',
-    desc: 'Learn the skills of a Data Scientist and build yours on AI products fromscratch',
-    thumbnail: DataScience,
-    destinations: [
-      {
-        name: 'indonesia',
-        thumbnail: Indonesia,
-        active: true,
-        link: '/data-science/indonesia',
-      },
-      {
-        name: 'istanbul',
-        thumbnail: Instanbul,
-        active: true,
-      },
-      {
-        name: 'tokyo',
-        thumbnail: Tokyo,
-        active: false,
-      },
-      {
-        name: 'seoul',
-        thumbnail: Korea,
-        active: false,
-      },
-    ],
+    title: 'Digital Marketing',
+    desc: 'Learn from Experienced Digital Marketing Experts in SEA and accelerate your career as a Digital Marketing.',
+    thumbnail: DigitalMarketing,
+    link: '/digital-marketing',
   },
   {
     id: 2,
     label: 'Enrolled Sept 1, 2023',
-    title: 'Digital Marketing Bootcamp',
-    desc: 'Learn the skills of a Digital Marketing and build yours on your company',
-    thumbnail: DigitalMarketing,
-    destinations: [
-      {
-        name: 'indonesia',
-        thumbnail: Indonesia,
-        active: true,
-      },
-      {
-        name: 'istanbul',
-        thumbnail: Instanbul,
-        active: true,
-      },
-      {
-        name: 'tokyo',
-        thumbnail: Tokyo,
-        active: false,
-      },
-      {
-        name: 'seoul',
-        thumbnail: Korea,
-        active: false,
-      },
-    ],
+    title: 'MBA',
+    desc: 'Learn from Experienced MBA Experts in SEA and accelerate your career as a Master of Business Administration.',
+    thumbnail: DataScience,
+    link: '/mba',
   },
   {
     id: 3,
     label: 'Full Booked',
-    title: 'Web Development Bootcamp',
-    desc: 'Learn the skills of a Software Engineering and make your product impactful',
+    title: 'Program AI',
+    desc: ' Learn from top AI industry experts to boost your Program AI skills',
     thumbnail: WebDev,
-    destinations: [
-      {
-        name: 'indonesia',
-        thumbnail: Indonesia,
-        active: true,
-      },
-      {
-        name: 'istanbul',
-        thumbnail: Instanbul,
-        active: true,
-      },
-      {
-        name: 'tokyo',
-        thumbnail: Tokyo,
-        active: false,
-      },
-      {
-        name: 'seoul',
-        thumbnail: Korea,
-        active: false,
-      },
-    ],
+    link: '/program-ai',
   },
 ]
 
-function Label() {
-  return (
-    <div className="absolute top-0 right-0 left-0 bottom-0 bg-slate-700 bg-opacity-50 rounded-lg">
-      <p className="absolute top-2 left-2 bg-white w-fit p-1 px-3 text-xs font-bold text-orange-1 rounded-full">
-        Soon
-      </p>
-    </div>
-  )
-}
-
 function CardProgram({ program }) {
-  const [openModal, setOpenModal] = useState(false)
-
   return (
-    <div className="min-h-[32em] bg-white flex flex-col justify-between gap-5 shadow-md rounded-xl overflow-hidden">
-      <Modal
-        isOpen={openModal}
-        setIsOpen={setOpenModal}
-        title="Where would you like to learn Digital Marketing Bootcamp?"
-        desc="You can choose to learn digital marketing in over 3 country ready
-        or online. Find now your learning destination!"
-      >
-        <div className="flex flex-row flex-wrap gap-4">
-          {program.destinations.length > 0 ? (
-            program.destinations.map((destination, index) => (
-              <div key={index} className="flex flex-col gap-2">
-                <div className="relative">
-                  {!destination.active && <Label />}
-                  <Link href={destination?.link ?? '#'}>
-                    <Image
-                      src={destination?.thumbnail}
-                      alt="destination"
-                      quality={100}
-                      priority={false}
-                      className="w-24 h-24 rounded-lg"
-                    />
-                  </Link>
-                </div>
-                <p className="font-bold text-sm capitalize px-1">
-                  {destination?.name}
-                </p>
-              </div>
-            ))
-          ) : (
-            <p>No destination</p>
-          )}
-        </div>
-      </Modal>
+    <div className="min-h-[32em] xl:w-1/3 bg-white flex flex-col justify-between gap-5 shadow-md rounded-xl overflow-hidden">
       <div className="flex flex-col gap-4 px-8 pt-6">
         <p
           className={`${
@@ -172,13 +57,13 @@ function CardProgram({ program }) {
         </p>
         <h3 className="text-2xl lg:text-4xl font-bold">{program.title}</h3>
         <p className="text-slate-500">{program.desc}</p>
-        <button
-          type="button"
-          onClick={() => setOpenModal(true)}
+        <Link
+          href={program.link}
+          alt="link page"
           className="flex flex-row items-center gap-2 font-bold text-orange-1"
         >
           See Detail <FaArrowRight size="1em" color="#FF9500" />
-        </button>
+        </Link>
       </div>
 
       <Image
@@ -207,8 +92,8 @@ function Programs() {
       data-aos-mirror="false"
       data-aos-once="false"
     >
-      {dataProgram.length > 0
-        ? dataProgram.map((program, index) => (
+      {dataPrograms.length > 0
+        ? dataPrograms.map((program, index) => (
             <CardProgram key={index} program={program} />
           ))
         : null}

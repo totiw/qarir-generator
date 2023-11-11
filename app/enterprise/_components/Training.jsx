@@ -57,7 +57,7 @@ function Training() {
         Train Your
         <span className="relative">
           <span className="relative z-10">Business Team</span>
-          <span className="h-3 w-24 xl:w-36 absolute right-0 bottom-0 lg:bottom-1 z-0 bg-green-1"></span>
+          <span className="h-3 w-24 xl:w-36 absolute right-0 bottom-0 lg:bottom-1 z-0 bg-orange-1"></span>
         </span>
         ?
       </h2>
@@ -68,7 +68,7 @@ function Training() {
               key={index}
               className="flex items-center gap-2 font-medium text-base"
             >
-              <FaCircleCheck size="1.2em" color="#1AD079" />
+              <FaCircleCheck size="1.2em" color="#2622B9" />
               {training}
             </p>
           ))}

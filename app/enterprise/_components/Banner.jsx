@@ -10,7 +10,7 @@ import { MdThumbUp } from 'react-icons/md'
 
 function Banner() {
   return (
-    <section className="bg-gradient-to-t from-green-2 to-white flex flex-col justify-center items-center min-h-[80vh] pb-10 xl:p-0">
+    <section className="bg-gradient-to-t from-blue-3 to-white flex flex-col justify-center items-center min-h-[80vh] pb-10 xl:p-0">
       {/* Header */}
       <div className="container flex flex-col">
         <div
@@ -43,12 +43,12 @@ function Banner() {
             </p>
             <Link
               href="#programs"
-              className="bg-green-1 py-3 px-8 md:self-start rounded-full text-center text-white font-bold"
+              className="bg-blue-2 py-3 px-8 md:self-start rounded-full text-center text-white font-bold"
             >
               Find Solution
             </Link>
             <div className="flex flex-row items-center gap-3">
-              <MdThumbUp size="1.8em" color="#1AD079" />
+              <MdThumbUp size="1.8em" color="#2622B9" />
               <p className="font-bold text-sm md:text-base xl:text-xl">
                 Over 100+ organizations satisfied with our work
               </p>

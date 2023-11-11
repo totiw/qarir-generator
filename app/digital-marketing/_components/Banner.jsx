@@ -39,8 +39,8 @@ function Banner() {
           </h1>
           <p className="text-slate-500 font-normal text-sm lg:text-2xl">
             More than learning! Work on projects, get expert mentorship, meet
-            data industry leaders, and get ready to start a career as a data
-            scientist!😎
+            data industry leaders, and get ready to start your digital marketing
+            career!😎
           </p>
           <div className="flex flex-row items-center gap-5">
             <span className="bg-blue-3 font-bold text-sm text-blue-2 rounded-full py-3 px-4">
