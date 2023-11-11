@@ -3,7 +3,7 @@ import { GrInstallOption } from 'react-icons/gr'
 
 function Card({ children, price, excerpt }) {
   return (
-    <div className="flex flex-col rounded-xl overflow-hidden">
+    <div className="flex flex-col rounded-xl overflow-hidden shadow-sm">
       <div className="flex flex-col gap-1 bg-orange-2 bg-opacity-50 p-5">
         <p className="font-black text-lg text-[#8C5200]">{price}</p>
         <p className="font-medium text-sm text-[#8C5200]">{excerpt}</p>
@@ -52,16 +52,6 @@ function StudyFee() {
               <p>{`- Money back guarantee`}</p>
               <p>{`- Free choose 2 add-ons program (for normal full payment)`}</p>
               <p>{`- Access Learning module up to 12 month (for normal full payment)`}</p>
-            </div>
-            <div className="font-normal text-sm flex flex-col gap-1">
-              <p className="flex items-center gap-2">
-                <AiFillClockCircle size="1em" color="#FF9500" /> Down Payment
-                <strong>Rp 2,550,000</strong>
-              </p>
-              <p className="flex items-center gap-2">
-                <GrInstallOption size="1em" color="#FF9500" />
-                Installment <strong>Rp 1,125,000/month x 12 times</strong>
-              </p>
             </div>
           </div>
         </Card>
