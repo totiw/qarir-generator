@@ -22,21 +22,12 @@ import { BsGlobe2 } from 'react-icons/bs'
 import { LuMenu } from 'react-icons/lu'
 import { IoClose } from 'react-icons/io5'
 
-function Card({ location, toggleMenuMobel }) {
+function Card({ courses, toggleMenuMobel }) {
   return (
     <div className="flex flex-col gap-3">
-      <span className="flex flex-row items-center gap-3 capitalize font-bold text-base">
-        {location.thumbnail}
-        {location.name}
-        {!location.active && (
-          <p className="bg-red-500 py-1 px-3 flex flex-row items-center rounded-full text-xs text-white">
-            soon
-          </p>
-        )}
-      </span>
       <span className="flex flex-col gap-2 capitalize text-sm">
-        {location?.courses?.length > 0 &&
-          location.courses.map((course, index) => (
+        {courses?.length > 0 &&
+          courses.map((course, index) => (
             <Link
               onClick={toggleMenuMobel}
               href={course.link ?? ''}
@@ -61,67 +52,15 @@ function Navbar() {
   const [menuMobileOpen, setMenuMobileOpen] = useState(false)
   const [languageOpen, setlanguageOpen] = useState(false)
 
-  const dataLocations = [
+  const courses = [
     {
-      name: 'indonesia',
-      thumbnail: <Indonesia height="28" />,
-      active: true,
-      courses: [
-        {
-          name: 'data science bootcamp',
-          thumbnail: <Rect1 height="28" />,
-          link: '/data-science/indonesia',
-        },
-        {
-          name: 'digital marketing bootcamp',
-          thumbnail: <Rect2 height="28" />,
-        },
-      ],
+      name: 'data science bootcamp',
+      thumbnail: <Rect1 height="28" />,
+      link: '/data-science/indonesia',
     },
     {
-      name: 'istanbul',
-      thumbnail: <Istanbul height="28" />,
-      active: true,
-      courses: [
-        {
-          name: 'data science bootcamp',
-          thumbnail: <Rect1 height="28" />,
-        },
-        {
-          name: 'digital marketing bootcamp',
-          thumbnail: <Rect2 height="28" />,
-        },
-      ],
-    },
-    {
-      name: 'tokyo',
-      thumbnail: <Tokyo height="28" />,
-      active: false,
-      courses: [
-        {
-          name: 'data science bootcamp',
-          thumbnail: <Rect1 height="28" />,
-        },
-        {
-          name: 'digital marketing bootcamp',
-          thumbnail: <Rect2 height="28" />,
-        },
-      ],
-    },
-    {
-      name: 'seoul',
-      thumbnail: <Seoul height="28" />,
-      active: false,
-      courses: [
-        {
-          name: 'data science bootcamp',
-          thumbnail: <Rect1 height="28" />,
-        },
-        {
-          name: 'digital marketing bootcamp',
-          thumbnail: <Rect2 height="28" />,
-        },
-      ],
+      name: 'digital marketing bootcamp',
+      thumbnail: <Rect2 height="28" />,
     },
   ]
 
@@ -204,29 +143,21 @@ function Navbar() {
                 menuOpen ? 'flex' : 'hidden'
               } flex-wrap xl:flex-nowrap flex-row gap-5 bg-gray-50 w-[55vw] border border-slate-200 rounded-md shadow-sm absolute z-10 top-0 translate-y-14 p-5`}
             >
-              {dataLocations.length > 0
-                ? dataLocations.map((location, index) => (
-                    <div key={index} className="flex flex-col gap-3">
-                      <span className="flex flex-row items-center gap-2 capitalize font-black text-base">
-                        {location.thumbnail}
-                        {location.name}
-                      </span>
-                      {location?.courses?.length > 0
-                        ? location.courses.map((course, index) => (
-                            <Link
-                              onClick={toggleMenu}
-                              href={course?.link ?? ''}
-                              key={index}
-                              className="bg-white shadow-sm p-3 rounded-md flex flex-row items-center gap-2 capitalize font-bold text-sm text-left"
-                            >
-                              {course.thumbnail}
-                              {course.name}
-                            </Link>
-                          ))
-                        : null}
-                    </div>
-                  ))
-                : null}
+              <div className="flex flex-col gap-3">
+                {courses?.length > 0
+                  ? courses.map((course, index) => (
+                      <Link
+                        onClick={toggleMenu}
+                        href={course?.link ?? ''}
+                        key={index}
+                        className="bg-white shadow-sm p-3 rounded-md flex flex-row items-center gap-2 capitalize font-bold text-sm text-left"
+                      >
+                        {course.thumbnail}
+                        {course.name}
+                      </Link>
+                    ))
+                  : null}
+              </div>
             </div>
           </div>
           <Link href="/enterprise" className="hidden md:flex font-semibold">
@@ -341,15 +272,7 @@ function Navbar() {
                         : 'max-h-0 opacity-0 translate-y-52'
                     } relative flex flex-col gap-5 origin-top transition-all duration-500 ease-in-out`}
                   >
-                    {dataLocations.length > 0
-                      ? dataLocations.map((location, index) => (
-                          <Card
-                            key={index}
-                            location={location}
-                            toggleMenuMobel={toggleMenuMobel}
-                          />
-                        ))
-                      : null}
+                    <Card courses={courses} toggleMenuMobel={toggleMenuMobel} />
                   </div>
                   <Link
                     onClick={toggleMenuMobel}

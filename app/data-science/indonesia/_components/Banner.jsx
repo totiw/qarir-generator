@@ -28,18 +28,19 @@ function Banner() {
         <div className="flex flex-col gap-10">
           <h1 className="inline-block xl:flex xl:flex-col xl:gap-5 font-black text-3xl xl:text-5xl leading-normal">
             <span>
-              Data Science
+              Accelerate Your
               <span className="bg-blue-2 text-white p-1 px-2 mx-3 rounded-lg">
-                Bootcamp
+                Career
               </span>
+              in
               <br />
-              <span className="text-blue-2">Indonesia</span>
+              <span className="text-blue-2">Digital Marketing</span>
             </span>
           </h1>
           <p className="text-slate-500 font-normal text-sm lg:text-2xl">
-            Lebih dari belajar! Kerjakan proyek, dapatkan bimbingan bersama
-            pakar, bertemu dengan pemimpin industri data, dan bersiaplah memulai
-            karir menjadi data scientists!😎
+            More than learning! Work on projects, get expert mentorship, meet
+            data industry leaders, and get ready to start a career as a data
+            scientist!😎
           </p>
           <div className="flex flex-row items-center gap-5">
             <span className="bg-blue-3 font-bold text-sm text-blue-2 rounded-full py-3 px-4">
@@ -48,13 +49,16 @@ function Banner() {
             <span className="bg-blue-3 font-bold text-sm text-blue-2 rounded-full py-3 px-4">
               Beginner Friendly
             </span>
+            <span className="bg-blue-3 font-bold text-sm text-blue-2 rounded-full py-3 px-4">
+              Expert Instructors
+            </span>
           </div>
           <div className="flex flex-col lg:flex-row lg:items-center gap-4 mt-4">
             <Link
-              href="#programs"
+              href=""
               className="w-full lg:w-auto bg-blue-2 lg:px-10 lg:py-4 py-2 md:self-start rounded-full text-center text-white font-bold"
             >
-              Daftar Sekarang
+              Apply Now
             </Link>
             <Link
               href="https://forms.gle/BMVkjWJ9kKePwoLK6"
