@@ -46,8 +46,8 @@ function AdmissionProcedure() {
       <div className="flex flex-col gap-5">
         {dataAdmission.length > 0
           ? dataAdmission.map((admission, index) => (
-              <div className="flex flex-col gap-5">
-                <Card key={index} data={admission} />
+              <div key={index} className="flex flex-col gap-5">
+                <Card data={admission} />
                 {index < dataAdmission.length - 1 && (
                   <span className="self-center">
                     <FaChevronDown size="1.5em" color="#cccccc" />
