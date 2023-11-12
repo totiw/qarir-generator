@@ -35,12 +35,14 @@ function Banner() {
               in
               <br />
             </span>
-            <span className="text-blue-2">Digital Marketing</span>
+            <span className="text-blue-2">
+              Master of Business Administration
+            </span>
           </h1>
           <p className="text-slate-500 font-normal text-sm lg:text-2xl">
             More than learning! Work on projects, get expert mentorship, meet
-            data industry leaders, and get ready to start your Digital Marketing
-            career!😎
+            data industry leaders, and get ready to start your Master of
+            Business Administration career!😎
           </p>
           <div className="flex flex-row flex-wrap items-center gap-5">
             <span className="bg-blue-3 font-bold text-sm text-blue-2 rounded-full py-3 px-4">

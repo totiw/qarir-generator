@@ -94,7 +94,7 @@ function Details() {
         >
           <div className="w-80 flex flex-col gap-5 px-3">
             <h3 className="w-3/4 font-black lg:text-2xl">
-              Detail Kursus <br /> Digital Marketing
+              Detail Kursus <br /> MBA
             </h3>
             <div className="flex flex-col text-[#A5A5A5] font-medium text-lg">
               <Link

@@ -35,11 +35,11 @@ function Banner() {
               in
               <br />
             </span>
-            <span className="text-blue-2">Digital Marketing</span>
+            <span className="text-blue-2">Program AI</span>
           </h1>
           <p className="text-slate-500 font-normal text-sm lg:text-2xl">
             More than learning! Work on projects, get expert mentorship, meet
-            data industry leaders, and get ready to start your Digital Marketing
+            data industry leaders, and get ready to start your Program AI
             career!😎
           </p>
           <div className="flex flex-row flex-wrap items-center gap-5">
