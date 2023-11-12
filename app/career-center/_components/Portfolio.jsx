@@ -31,8 +31,8 @@ function Card({ data }) {
               alt="icon alumni"
               quality={100}
               priority={false}
-              width={100}
-              height={100}
+              width={1000}
+              height={1000}
               className="w-5 h-5 rounded-full"
             />
             <p className="text-xs">{data.person}</p>

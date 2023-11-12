@@ -17,8 +17,8 @@ function TalenRole() {
           alt="image talent role"
           quality={100}
           priority={false}
-          width={100}
-          height={100}
+          width={1000}
+          height={1000}
           className="w-96"
         />
       </div>
