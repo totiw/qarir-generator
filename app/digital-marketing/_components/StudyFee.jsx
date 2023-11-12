@@ -3,10 +3,10 @@ import { GrInstallOption } from 'react-icons/gr'
 
 function Card({ children, price, excerpt }) {
   return (
-    <div className="flex flex-col rounded-xl overflow-hidden shadow-sm">
-      <div className="flex flex-col gap-1 bg-orange-2 bg-opacity-50 p-5">
-        <p className="font-black text-lg text-[#8C5200]">{price}</p>
-        <p className="font-medium text-sm text-[#8C5200]">{excerpt}</p>
+    <div className="flex flex-col rounded-xl overflow-hidden shadow-md">
+      <div className="flex flex-col gap-1 bg-blue-4 bg-opacity-50 p-5">
+        <p className="font-black text-lg text-blue-2">{price}</p>
+        <p className="font-medium text-sm text-blue-2">{excerpt}</p>
       </div>
       {children}
     </div>

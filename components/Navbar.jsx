@@ -60,7 +60,7 @@ function Navbar() {
     },
     {
       name: 'MBA',
-      desc: 'A Master of Business Administration is a tertiary degree in business management. Originally designed to provide engineers with management skills, today the MBA takes applicants from a wide variety of disciplines. The MBA is considered a professional Master&apos;s degree as well as a traditional academic degree.',
+      desc: `A Master of Business Administration is a tertiary degree in business management. Originally designed to provide engineers with management skills, today the MBA takes applicants from a wide variety of disciplines. The MBA is considered a professional Master's degree as well as a traditional academic degree.`,
       thumbnail:
         'https://assets-global.website-files.com/61af164800e38c4f53c60b4e/64d0256d8416a474a53382f1_ma-icon.svg',
       link: '/mba',
