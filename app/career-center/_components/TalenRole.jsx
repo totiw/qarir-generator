@@ -2,7 +2,7 @@
 import Image from 'next/image'
 
 // Assets
-import Vector5 from 'public/vector 5.svg'
+import Vector5 from 'public/vector5.svg'
 
 // Icons
 import { FaChevronRight } from 'react-icons/fa'
