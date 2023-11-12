@@ -5,8 +5,6 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 // Components
-// import Ringkasan from './Ringkasan'
-// import FaseBelajar from './FaseBelajar'
 import Benefit from './Benefit'
 import GlobalApprenticeship from './GlobalApprenticeship'
 import StudyFee from './StudyFee'
@@ -144,7 +142,7 @@ function Details() {
           </div>
         </div>
       </div>
-      <div className="p-3 w-full xl:w-3/4 flex flex-col gap-20">
+      <div className="relative z-10 p-3 w-full xl:w-3/4 flex flex-col gap-20">
         {/* <Ringkasan /> */}
         <Eligibility />
         <Benefit />
