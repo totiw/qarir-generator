@@ -21,7 +21,7 @@ import { HiOutlineExternalLink } from 'react-icons/hi'
 function Card({ courses, toggleMenuMobile }) {
   return (
     <div className="flex flex-col gap-3">
-      <span className="flex flex-col gap-2 capitalize text-sm">
+      <span className="flex flex-col gap-5 capitalize text-sm">
         {courses?.length > 0 &&
           courses.map((course, index) => (
             <Link
@@ -30,7 +30,18 @@ function Card({ courses, toggleMenuMobile }) {
               alt={`link course ${course.name}`}
               key={index}
             >
-              {course.name}
+              <div className="flex flex-row items-center gap-2">
+                <Image
+                  src={course.thumbnail}
+                  alt="navbar icon"
+                  quality={100}
+                  priority={false}
+                  width={100}
+                  height={100}
+                  className="w-7 h-7"
+                />
+                <span className="font-medium">{course.name}</span>
+              </div>
             </Link>
           ))}
       </span>
@@ -287,24 +298,17 @@ function Navbar() {
             {/* Links & Language */}
             <div className="flex flex-col gap-5 max-h-[75vh] overflow-auto scrollbar-hide pb-5">
               {/* LINKS */}
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-5">
                 <p className="font-bold text-base uppercase text-gray-400">
                   menu
                 </p>
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col">
                   <button
                     onClick={() => setMenuLinksOpen((prev) => !prev)}
                     type="button"
-                    className=" flex flex-row items-center gap-2 font-bold text-base"
+                    className=" flex flex-row items-center font-bold text-base"
                   >
                     Programs
-                    {/* <BiSolidDownArrow
-                      size=".6em"
-                      color="#000000"
-                      className={`${
-                        menuLinksOpen ? 'rotate-180' : 'rotate-0'
-                      } transition-all duration-500 ease-in-out`}
-                    /> */}
                   </button>
                   <div
                     className={`${
@@ -322,7 +326,7 @@ function Navbar() {
                     onClick={toggleMenuMobile}
                     href="/enterprise"
                     alt="enterprise"
-                    className="font-bold text-base cursor-pointer"
+                    className="mt-4 font-bold text-base cursor-pointer"
                   >
                     Partnership
                   </Link>
@@ -330,7 +334,7 @@ function Navbar() {
                     onClick={toggleMenuMobile}
                     href="/career"
                     alt="career"
-                    className="font-bold text-base cursor-pointer"
+                    className="mt-4 font-bold text-base cursor-pointer"
                   >
                     Career
                   </Link>
