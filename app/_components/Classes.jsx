@@ -85,7 +85,7 @@ function Classes() {
             data-aos-anchor-placement="top-center"
             className="homepage section heading"
           >
-            More Than A Bootcamp. Get Hired At Top Tech Companies.
+            More Than a Bootcamp, <br />Get Hired at Top Tech Companies.
           </h2>
           <p
             data-aos="fade-up"
@@ -114,7 +114,7 @@ function Classes() {
             className="flex flex-col lg:flex-row gap-24 py-10"
           >
             <div className="basis-1/4 classes-stats">
-              <span>3K+</span>
+              <span>3.000+</span>
               <span>Alumni</span>
             </div>
             <div className="basis-2/4 classes-stats">
@@ -140,7 +140,7 @@ function Classes() {
           data-aos-anchor-placement="top-center"
           className="text-2xl lg:text-4xl font-black text-white"
         >
-          See Our Class!!
+          See Our Classes
         </h2>
         <div className="flex flex-col lg:flex-row gap-10">
           {dataClasses.length > 0

@@ -125,8 +125,12 @@ function Footer() {
             </div>
             <div className="flex flex-col grow gap-3">
               <p className="font-bold text-lg text-orange-1 mb-7">About</p>
-              <p className="font-normal text-base text-white">Career</p>
-              <p className="font-normal text-base text-white">Partnership</p>
+              <Link 
+              href="/career-center"
+              className="font-normal text-base text-white">Career</Link>
+              <Link 
+              href="/enterprise"
+              className="font-normal text-base text-white">Partnership</Link>
               <p className="font-normal text-base text-white">Pricing</p>
             </div>
           </div>

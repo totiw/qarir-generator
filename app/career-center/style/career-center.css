@@ -1,0 +1,19 @@
+.career-center.banner-title {
+  @apply bg-[#1D476D] text-white px-2 rounded-md;
+}
+
+.career-center.hiringsteps-title {
+  @apply bg-[#101F50] text-[#F98000] px-2 rounded-md;
+}
+
+.career-center.title {
+  @apply text-[#101F50] font-bold py-2 text-xl;
+}
+
+.career-center.hiringsteps-div {
+  @apply flex flex-col items-center;
+}
+
+.career-center > p {
+  @apply text-lg;
+}

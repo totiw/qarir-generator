@@ -217,7 +217,7 @@ function Navbar() {
           <Link href="/enterprise" className="hidden md:flex font-semibold">
             Partnership
           </Link>
-          <Link href="/career" className="hidden md:flex font-semibold">
+          <Link href="/career-center" className="hidden md:flex font-semibold">
             Career
           </Link>
         </div>
