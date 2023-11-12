@@ -7,9 +7,13 @@
 }
 
 .career-center.title {
-  @apply text-[#101F50] font-bold py-5;
+  @apply text-[#101F50] font-bold py-2 text-xl;
 }
 
 .career-center.hiringsteps-div {
-  @apply flex flex-col justify-center items-center;
+  @apply flex flex-col items-center;
+}
+
+.career-center > p {
+  @apply text-lg;
 }
