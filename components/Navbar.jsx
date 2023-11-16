@@ -220,6 +220,9 @@ function Navbar() {
           <Link href="/career-center" className="hidden md:flex font-semibold">
             Career
           </Link>
+          <Link href="/leads" className="hidden md:flex font-semibold">
+            Scholarship
+          </Link>
         </div>
 
         {/* CTA & Language */}
@@ -337,6 +340,14 @@ function Navbar() {
                     className="mt-4 font-bold text-base cursor-pointer"
                   >
                     Career
+                  </Link>
+                  <Link
+                    onClick={toggleMenuMobile}
+                    href="/leads"
+                    alt="career"
+                    className="mt-4 font-bold text-base cursor-pointer"
+                  >
+                    Scholarship
                   </Link>
                 </div>
               </div>
