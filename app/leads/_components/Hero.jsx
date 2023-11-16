@@ -10,13 +10,13 @@ import ResultYellow from '@/app/leads/icons/result-yellow.png'
 
 function Hero() {
   return (
-    <section className="flex flex-col lg:flex-row items-center lg:items-start gap-4 xlmax-h-[80vh]">
+    <section className="container flex flex-col xl:flex-row items-center gap-4 py-10">
       <Image
         src={HeroImage}
         quality={100}
         alt="Hero image"
         priority
-        className="object-cover w-[40%] rounded-2xl"
+        className="h-96 sm:h-[800px] w-auto rounded-2xl"
       />
       <div className="flex flex-col gap-6 pt-8 px-4">
         <h2 className="text-3xl md:text-5xl font-semibold">

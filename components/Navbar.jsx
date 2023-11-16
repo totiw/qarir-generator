@@ -332,7 +332,7 @@ function Navbar() {
                   </Link>
                   <Link
                     onClick={toggleMenuMobile}
-                    href="/career"
+                    href="/career-center"
                     alt="career"
                     className="mt-4 font-bold text-base cursor-pointer"
                   >
