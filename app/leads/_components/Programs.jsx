@@ -109,8 +109,9 @@ function Programs() {
           Your Career? Apply Now!
         </p>
         <Link
-          href="/"
+          href="http://wa.me/+6281110014420?text=Hi%2C+I%27m+interested+to+know+about+QarirGenerator+Bootcamp%2C+My+Name+is....."
           alt="whatsapp qarir generator"
+          target="_blank"
           className="bg-orange-1 py-2 px-4 flex flex-row items-center gap-2 self-start rounded-full text-white"
         >
           <FaWhatsapp />
