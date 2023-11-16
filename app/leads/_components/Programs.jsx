@@ -40,7 +40,7 @@ function Card({ data, count }) {
       <div className="flex flex-col gap-2">
         {data.benefit.length > 0
           ? data.benefit.map((benefit, index) => (
-              <div className="flex flex-row items-center gap-3">
+              <div key={index} className="flex flex-row items-center gap-3">
                 <Image
                   key={index}
                   src={count % 2 != 0 ? ChecklistWhite : ChecklistBlack}
