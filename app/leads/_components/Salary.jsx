@@ -89,7 +89,7 @@ function Salary() {
           What are the salary opportunities in the Digital Industry?
         </h2>
       </div>
-      <div className="lg:w-auto w-screen overflow-auto px-10">
+      <div className="xl:w-auto w-full overflow-auto px-10">
         <div className="w-max flex flex-row gap-10">
           {dataSalary.length > 0
             ? dataSalary.map((salary, index) => (

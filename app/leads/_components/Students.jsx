@@ -65,7 +65,7 @@ function Students() {
       <h2 className="text-5xl font-semibold">
         What QarirGenerator&apos;s Student Say?
       </h2>
-      <div className="xl:w-auto w-screen overflow-auto px-7">
+      <div className="xl:w-auto w-full overflow-auto px-7">
         <div className="flex flex-row gap-10 w-fit">
           {dataStudent.length > 0
             ? dataStudent.map((student, index) => (

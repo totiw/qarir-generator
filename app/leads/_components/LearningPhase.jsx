@@ -5,7 +5,7 @@ import LearingImg from 'public/learning-phase.png'
 function LearningPhase() {
   return (
     <section className="container flex flex-col-reverse lg:flex-row items-center justify-center gap-10 py-20 mt-28">
-      <div className="flex flex-col gap-14">
+      <div className="w-full flex flex-col gap-14">
         <h2 className="font-semibold text-4xl text-center">Learning phase</h2>
         <div className="flex flex-col gap-10">
           <div className="flex flex-row text-white font-medium">
