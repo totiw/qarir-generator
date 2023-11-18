@@ -1,6 +1,10 @@
+'use client'
+
 // Next Dependncies
+import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import AOS from 'aos'
 
 // Assets
 import BannerImage from 'public/career-centerheader.png'
@@ -8,6 +12,10 @@ import BannerImage from 'public/career-centerheader.png'
 // Icons
 
 function Banner() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
     <section
       data-aos="fade-up"

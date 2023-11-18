@@ -1,6 +1,10 @@
+'use client'
+
 // Next Dependncies
+import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import AOS from 'aos'
 
 // Assets
 import BannerImage from 'public/ilustration_enterprise.png'
@@ -9,6 +13,10 @@ import BannerImage from 'public/ilustration_enterprise.png'
 import { MdThumbUp } from 'react-icons/md'
 
 function Banner() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
+
   return (
     <section className="bg-gradient-to-t from-blue-3 to-white flex flex-col justify-center items-center min-h-[80vh] pb-10 xl:p-0">
       {/* Header */}
