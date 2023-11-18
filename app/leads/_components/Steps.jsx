@@ -48,8 +48,11 @@ function Steps() {
         />
         {dataSteps.length > 0
           ? dataSteps.map((step, index) => (
-              <div className="w-full flex flex-col xl:flex-row xl:even:flex-row-reverse gap-10 xl:gap-0 items-center">
-                <div className="xl:w-1/3 flex justify-center">
+              <div
+                key={index}
+                className="w-full flex flex-col xl:flex-row xl:even:flex-row-reverse gap-10 xl:gap-0 items-center"
+              >
+                <div className="xl:w-1/3 order-2 xl:order-none flex justify-center">
                   <Image
                     src={step.icon}
                     alt="steps"
@@ -58,7 +61,7 @@ function Steps() {
                     className="w-20 h-auto"
                   />
                 </div>
-                <div className="xl:w-1/3 flex justify-center text-white px-10">
+                <div className="xl:w-1/3 order-1 xl:order-none flex justify-center text-white px-10">
                   <div className="relative w-full flex flex-row justify-center items-center">
                     <span className="relative z-10 bg-[#101F50] w-14 h-14 xl:w-20 xl:h-20 flex justify-center items-center rounded-full text-2xl xl:text-6xl">
                       {step.id}
@@ -66,7 +69,7 @@ function Steps() {
                     <span className="before:absolute before:z-0 before:top-1/2 before:left-0 before:w-full before:h-0.5 before:bg-slate-200"></span>
                   </div>
                 </div>
-                <p className="xl:w-1/3 flex justify-center font-semibold text-lg xl:text-2xl text-center">
+                <p className="xl:w-1/3 order-3 xl:order-none flex justify-center font-semibold text-lg xl:text-xl text-center">
                   {step.name}
                 </p>
               </div>
