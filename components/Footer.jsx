@@ -98,19 +98,19 @@ function Footer() {
                 Global Career <br /> Center
               </p>
               <Link
-                href="/soon/Indonesia"
+                href="/soon?location=indonesia"
                 className="self-start font-normal text-base text-white"
               >
                 Indonesia
               </Link>
               <Link
-                href="/soon/Malaysia"
+                href="/soon/?location=malaysia"
                 className="font-normal text-base text-white"
               >
                 Malaysia
               </Link>
               <Link
-                href="/soon/Turkiye"
+                href="/soon?location=turkiye"
                 className="self-start font-normal text-base text-white"
               >
                 Turkiye
@@ -125,12 +125,18 @@ function Footer() {
             </div>
             <div className="flex flex-col grow gap-3">
               <p className="font-bold text-lg text-orange-1 mb-7">About</p>
-              <Link 
-              href="/career-center"
-              className="font-normal text-base text-white">Career</Link>
-              <Link 
-              href="/enterprise"
-              className="font-normal text-base text-white">Partnership</Link>
+              <Link
+                href="/career-center"
+                className="font-normal text-base text-white"
+              >
+                Career
+              </Link>
+              <Link
+                href="/enterprise"
+                className="font-normal text-base text-white"
+              >
+                Partnership
+              </Link>
               <p className="font-normal text-base text-white">Pricing</p>
             </div>
           </div>
