@@ -62,7 +62,7 @@ function Students() {
 
   return (
     <section className="container flex flex-col items-center gap-10 xl:gap-14 mt-28">
-      <h2 className="text-5xl font-semibold">
+      <h2 className="text-2xl sm:text-5xl font-semibold">
         What QarirGenerator&apos;s Student Say?
       </h2>
       <div className="xl:w-auto w-full overflow-auto px-7">

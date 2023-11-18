@@ -7,6 +7,8 @@ import Benefit from './_components/Benefit'
 import Salary from './_components/Salary'
 import LearningPhase from './_components/LearningPhase'
 import CourseTimeline from './_components/CourseTimeline'
+import CareerSupport from './_components/CareerSupport'
+import Steps from './_components/Steps'
 
 function LeadsPage() {
   return (
@@ -20,6 +22,8 @@ function LeadsPage() {
       <Salary />
       <LearningPhase />
       <CourseTimeline />
+      <CareerSupport />
+      <Steps />
     </>
   )
 }
