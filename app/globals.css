@@ -25,6 +25,11 @@ html {
   display: none;
 }
 
+.scrollbar-show::-webkit-scrollbar {
+  position: relative;
+  z-index: 10;
+}
+
 /* For IE, Edge and Firefox */
 .scrollbar-hide {
   -ms-overflow-style: none; /* IE and Edge */

@@ -5,10 +5,11 @@ import SalaryIcon from '../icons/salary.png'
 import Thumbnail from 'public/hieronymus_kopong_bali.jpeg'
 import Company from '../icons/company.png'
 import Money from '../icons/money.png'
+import Path from '../icons/Group 35.png'
 
 function Card({ data }) {
   return (
-    <div className="border rounded-xl w-[350px]">
+    <div className="bg-white relative z-10 border-2 rounded-2xl w-[350px]">
       <Image
         src={Student1}
         alt="student"
@@ -75,8 +76,15 @@ function Salary() {
   ]
 
   return (
-    <section className="container flex flex-col items-center gap-20 mt-28">
-      <div className="relative flex flex-col sm:flex-row items-start sm:items-center gap-5">
+    <section className="relative container flex flex-col items-center gap-20 mt-28">
+      <Image
+        src={Path}
+        alt="path"
+        quality={100}
+        priority={false}
+        className="absolute top-0 right-0"
+      />
+      <div className="relative z-10 flex flex-col sm:flex-row items-start sm:items-center gap-5">
         <span className="before:absolute before:z-0 before:left-0 before:top-5 before:w-16 before:h-14 before:bg-blue-1 before:rounded-r-full"></span>
         <Image
           src={SalaryIcon}
@@ -89,7 +97,7 @@ function Salary() {
           What are the salary opportunities in the Digital Industry?
         </h2>
       </div>
-      <div className="xl:w-auto w-full overflow-auto px-10">
+      <div className="relative z-10 xl:w-auto w-full overflow-auto px-10">
         <div className="w-max flex flex-row gap-10">
           {dataSalary.length > 0
             ? dataSalary.map((salary, index) => (

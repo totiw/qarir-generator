@@ -103,14 +103,16 @@ function WhereStart() {
   ]
 
   return (
-    <section className="container flex flex-col items-center gap-40 mt-28">
-      <h2 className="flex flex-row flex-wrap gap-3 relative font-bold text-6xl">
+    <section className="relative container flex flex-col items-center gap-40 mt-28">
+      <span className="absolute blur-3xl top-0 -right-80 w-[600px] h-[600px] rounded-full bg-orange-1 bg-opacity-10"></span>
+      <span className="absolute blur-3xl bottom-0 -left-80 w-[600px] h-[600px] rounded-full bg-[#101F50] bg-opacity-10"></span>
+      <h2 className="relative z-10 flex flex-row flex-wrap gap-3 font-bold text-6xl">
         <span className="relative z-10">Where to </span>
         <span className="text-orange-1 bg-[#101F50] px-2 rounded-lg before:w-8 before:h-8 before:bg-orange-1 before:rounded-full before:absolute before:z-0 before:-left-2 before:-top-2">
           Start?
         </span>
       </h2>
-      <div className="flex flex-col xl:flex-row xl:gap-5 gap-20">
+      <div className="relative z-10 flex flex-col xl:flex-row xl:gap-5 gap-20">
         {dataWhereStart.length > 0
           ? dataWhereStart.map((start, index) => (
               <Card key={index} data={start} />

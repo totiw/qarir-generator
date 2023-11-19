@@ -13,7 +13,7 @@ import Steps from './_components/Steps'
 
 function LeadsPage() {
   return (
-    <>
+    <main className="overflow-hidden">
       <Hero />
       <Programs />
       <Students />
@@ -26,7 +26,7 @@ function LeadsPage() {
       <Steps />
       <CourseTimeline />
       <ClassSchedule />
-    </>
+    </main>
   )
 }
 

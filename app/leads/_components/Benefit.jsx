@@ -73,10 +73,10 @@ function Benefit() {
                 Benefit
               </th>
               <th scope="col" className="px-6 py-7 border-x-2 border-slate-700">
-                Color
+                Campus
               </th>
               <th scope="col" className="px-6 py-7">
-                Category
+                QarirGenerator <br /> Acceleration
               </th>
             </tr>
           </thead>

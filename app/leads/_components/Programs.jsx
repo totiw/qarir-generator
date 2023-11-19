@@ -85,7 +85,8 @@ function Programs() {
   ]
 
   return (
-    <section className="container flex flex-col-reverse xl:flex-row gap-20 xl:gap-60 items-center justify-center mt-28">
+    <section className="relative container flex flex-col-reverse xl:flex-row gap-20 xl:gap-60 items-center justify-center mt-28">
+      <span className="absolute blur-3xl top-20 left-20 w-[1000px] h-[800px] rounded-full bg-orange-1 bg-opacity-20"></span>
       <div className="flex flex-col gap-10">
         {dataPrograms.length > 0
           ? dataPrograms.map((program, index) => (

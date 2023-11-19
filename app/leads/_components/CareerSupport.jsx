@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 // Assets
 import Vector5 from 'public/career-support.png'
+import Ellipse from '../icons/Frame 15.png'
 
 // Icons
 import { FaChevronRight } from 'react-icons/fa'
@@ -67,7 +68,15 @@ function CareerSupport() {
   ]
 
   return (
-    <section className="container flex flex-col lg:flex-row items-center justify-center gap-10 mt-28">
+    <section className="relative container flex flex-col lg:flex-row items-center justify-center gap-10 mt-28">
+      <span className="absolute blur-3xl top-0 -left-80 w-[600px] h-[600px] rounded-full bg-orange-1 bg-opacity-10"></span>
+      <Image
+        src={Ellipse}
+        alt="ellipse"
+        quality={100}
+        priority={false}
+        className="absolute top-0 left-0"
+      />
       <div>
         <Image
           src={Vector5}

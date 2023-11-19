@@ -5,7 +5,8 @@ import BookYellow from '../icons/book-yellow.png'
 
 function CourseTimeline() {
   return (
-    <section className="container flex flex-col lg:flex-row items-center justify-center gap-20 py-20 mt-28">
+    <section className="relative container flex flex-col lg:flex-row items-center justify-center gap-20 py-20 mt-28">
+      <span className="absolute blur-3xl top-20 -right-80 w-[1000px] h-[1000px] rounded-full bg-orange-1 bg-opacity-20"></span>
       <div className="flex flex-col gap-20">
         <div className="relative flex flex-row">
           <Image

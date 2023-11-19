@@ -6,7 +6,7 @@ import Thumbnail from 'public/hieronymus_kopong_bali.jpeg'
 
 function Card({ data }) {
   return (
-    <div className="border rounded-xl w-[350px]">
+    <div className="relative z-10 bg-white border rounded-xl w-[350px]">
       <Image
         src={Student1}
         alt="student"
@@ -61,11 +61,12 @@ function Students() {
   ]
 
   return (
-    <section className="container flex flex-col items-center gap-10 xl:gap-14 mt-28">
-      <h2 className="text-2xl sm:text-5xl font-semibold">
+    <section className="relative container flex flex-col items-center gap-10 xl:gap-14 mt-28">
+      <span className="absolute z-0 blur-[100px] top-40 right-20 w-[600px] h-[600px] rounded-full bg-[#101F50] bg-opacity-20"></span>
+      <h2 className="relative z-10 text-2xl sm:text-5xl font-semibold">
         What QarirGenerator&apos;s Student Say?
       </h2>
-      <div className="xl:w-auto w-full overflow-auto px-7">
+      <div className="relative z-10 xl:w-auto w-full overflow-auto px-7">
         <div className="flex flex-row gap-10 w-fit">
           {dataStudent.length > 0
             ? dataStudent.map((student, index) => (

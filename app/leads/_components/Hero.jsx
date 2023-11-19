@@ -10,7 +10,8 @@ import ResultYellow from '@/app/leads/icons/result-yellow.png'
 
 function Hero() {
   return (
-    <section className="container flex flex-col xl:flex-row items-center gap-4 py-10">
+    <section className="relative container flex flex-col xl:flex-row items-center gap-4 py-10">
+      <span className="absolute blur-[100px] top-40 right-20 w-[600px] h-[600px] rounded-full bg-[#101F50] bg-opacity-20"></span>
       <Image
         src={HeroImage}
         quality={100}

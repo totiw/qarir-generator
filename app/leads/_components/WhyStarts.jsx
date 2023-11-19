@@ -9,7 +9,8 @@ import YellowBlue from '../icons/ellipse-blue-yellow.png'
 
 function WhyStarts() {
   return (
-    <section className="container flex flex-col items-center gap-20 py-20 mt-28">
+    <section className="relative container flex flex-col items-center gap-20 py-20 mt-28">
+      <span className="absolute z-0 blur-[300px] top-40 left-20 w-[1000px] h-[1000px] rounded-full bg-[#101F50] bg-opacity-30"></span>
       <div className="flex flex-row gap-5 items-center">
         <Image
           src={YellowBlue}
