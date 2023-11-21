@@ -1,50 +1,55 @@
 import Image from 'next/image'
+
+// Assets
 import Thumbnail from 'public/benefit-qarir.png'
-import ChecklistBlue from '../icons/checklist-blue.png'
-import CrossYellow from '../icons/cross-yellow.png'
+import Close from '../icons/close.png'
 import Tilde from '../icons/tilde.png'
+
+// Icons
+import { FaCheckCircle } from 'react-icons/fa'
+import { FaWindowClose } from 'react-icons/fa'
 
 function Benefit() {
   const dataBenefit = [
     {
       name: 'Theory development knowledge',
-      campus: ChecklistBlue,
-      qarir: CrossYellow,
+      campus: true,
+      qarir: false,
     },
     {
       name: 'Social Life',
-      campus: ChecklistBlue,
-      qarir: ChecklistBlue,
+      campus: true,
+      qarir: true,
     },
     {
       name: 'Intensive work experience',
-      campus: CrossYellow,
-      qarir: ChecklistBlue,
+      campus: false,
+      qarir: true,
     },
     {
       name: 'Validation of analytical thinking from Hands-on projects',
-      campus: Tilde,
-      qarir: ChecklistBlue,
+      campus: null,
+      qarir: true,
     },
     {
       name: 'Jaringan profesional dan pemimpin industri',
-      campus: CrossYellow,
-      qarir: ChecklistBlue,
+      campus: false,
+      qarir: true,
     },
     {
       name: 'Soft skills management, leadership and communication',
-      campus: Tilde,
-      qarir: ChecklistBlue,
+      campus: null,
+      qarir: true,
     },
     {
       name: 'Connection with HR',
-      campus: ChecklistBlue,
-      qarir: ChecklistBlue,
+      campus: true,
+      qarir: true,
     },
     {
       name: 'Soft skills management, leadership and communication',
-      campus: Tilde,
-      qarir: ChecklistBlue,
+      campus: null,
+      qarir: true,
     },
   ]
 
@@ -94,24 +99,50 @@ function Benefit() {
                     <td className="px-10 py-4 text-left">{benefit.name}</td>
                     <td className="px-6 py-4 border-x-2 border-slate-300">
                       <div className="flex justify-center">
-                        <Image
-                          src={benefit.campus}
-                          alt="benefit"
-                          quality={100}
-                          priority={false}
-                          className="w-8"
-                        />
+                        {benefit?.campus === null ? (
+                          <Image
+                            src={Tilde}
+                            alt="benefit"
+                            quality={100}
+                            priority={false}
+                            className="w-8"
+                          />
+                        ) : benefit?.campus ? (
+                          <FaCheckCircle size="2em" color="#1AD079" />
+                        ) : (
+                          <Image
+                            src={Close}
+                            alt="benefit"
+                            quality={100}
+                            priority={false}
+                            className="w-8"
+                          />
+                          // <FaWindowClose size="2em" color="#FF0000" />
+                        )}
                       </div>
                     </td>
                     <td className="px-6 py-4">
                       <div className="flex justify-center">
-                        <Image
-                          src={benefit.qarir}
-                          alt="benefit"
-                          quality={100}
-                          priority={false}
-                          className="w-8"
-                        />
+                        {benefit?.qarir === null ? (
+                          <Image
+                            src={Tilde}
+                            alt="benefit"
+                            quality={100}
+                            priority={false}
+                            className="w-8"
+                          />
+                        ) : benefit?.qarir ? (
+                          <FaCheckCircle size="2em" color="#1AD079" />
+                        ) : (
+                          <Image
+                            src={Close}
+                            alt="benefit"
+                            quality={100}
+                            priority={false}
+                            className="w-8"
+                          />
+                          // <FaWindowClose size="2em" color="#FF0000" />
+                        )}
                       </div>
                     </td>
                   </tr>
@@ -119,27 +150,22 @@ function Benefit() {
               : null}
             <tr>
               <td colSpan="3" className="px-6 py-4">
-                <div className="w-full flex flex-row gap-5">
+                <div className="w-full flex flex-row items-center gap-5">
                   <div className="flex flex-row items-center gap-1">
                     <Image
-                      src={CrossYellow}
-                      alt="hint"
+                      src={Close}
+                      alt="benefit"
                       quality={100}
                       priority={false}
-                      className="w-7"
+                      className="w-5"
                     />
+                    {/* <FaWindowClose size="1.5em" color="#FF0000" /> */}
                     <span className="text-black text-sm sm:text-base">
                       : Not Available,{' '}
                     </span>
                   </div>
                   <div className="flex flex-row items-center gap-1">
-                    <Image
-                      src={ChecklistBlue}
-                      alt="hint"
-                      quality={100}
-                      priority={false}
-                      className="w-7"
-                    />
+                    <FaCheckCircle size="1.5em" color="#1AD079" />
                     <span className="text-black text-sm sm:text-base">
                       : Available,{' '}
                     </span>

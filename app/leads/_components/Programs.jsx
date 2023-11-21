@@ -86,15 +86,15 @@ function Programs() {
 
   return (
     <section className="relative container flex flex-col-reverse xl:flex-row gap-20 xl:gap-60 items-center justify-center mt-28">
-      <span className="absolute blur-3xl top-20 left-20 w-[1000px] h-[800px] rounded-full bg-orange-1 bg-opacity-20"></span>
-      <div className="flex flex-col gap-10">
+      <span className="absolute z-0 blur-3xl top-20 left-20 w-[1000px] h-[800px] rounded-full bg-orange-1 bg-opacity-20"></span>
+      <div className="relative z-10 flex flex-col gap-10">
         {dataPrograms.length > 0
           ? dataPrograms.map((program, index) => (
               <Card key={index} data={program} count={index + 1} />
             ))
           : null}
       </div>
-      <div className="flex flex-col gap-7 xl:w-[500px]">
+      <div className="relative z-10 flex flex-col gap-7 xl:w-[500px]">
         <Image
           src={BlueYellow}
           quality={100}

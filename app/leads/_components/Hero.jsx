@@ -10,16 +10,15 @@ import ResultYellow from '@/app/leads/icons/result-yellow.png'
 
 function Hero() {
   return (
-    <section className="relative container flex flex-col xl:flex-row items-center gap-4 py-10">
-      <span className="absolute blur-[100px] top-40 right-20 w-[600px] h-[600px] rounded-full bg-[#101F50] bg-opacity-20"></span>
+    <section className="relative container flex flex-col xl:flex-row justify-center items-center gap-10 py-10">
       <Image
         src={HeroImage}
         quality={100}
         alt="Hero image"
         priority
-        className="h-96 sm:h-[800px] w-auto rounded-2xl"
+        className="h-96 sm:h-[600px] w-auto rounded-2xl"
       />
-      <div className="flex flex-col gap-6 pt-8 px-4">
+      <div className="xl:w-1/2 flex flex-col gap-6 px-4">
         <h2 className="text-3xl md:text-5xl font-semibold">
           Partial Scholarship to Archieve Your Dream Faster!
         </h2>

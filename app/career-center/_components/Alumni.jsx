@@ -3,57 +3,17 @@ import Image from 'next/image'
 
 // Assets
 import Person1 from '../../../public/hieronymus_kopong_bali.jpeg'
-import Person2 from '../../../public/tyas_fitri_anggarinii.jpeg'
+import Person2 from '../../../public/zulkhaidir_purwanto.jpg'
 import Person3 from '../../../public/angeline_lie.jpeg'
 import Person4 from '../../../public/balad_al_barokah.jpeg'
-import Person5 from '../../../public/andhimas_iben_d.jpeg'
+import Person5 from '../../../public/yanuar_rizky.jpg'
 import Person6 from '../../../public/agnes_friska_cyntia_puspitasari.jpeg'
 
 // Icons
 import { FaLinkedinIn } from 'react-icons/fa6'
 import Link from 'next/link'
 
-// DUMMY DATA
-const dataAlumni = [
-  {
-    name: 'Hieronymus Kopong Bali',
-    role: 'Marketing Manager at KUMPUL | Digital Marketing & Startup Practitioner | BNSP Certified',
-    desc: `"Here, not only get to attend fun classes, but I also improve my networking and knowledge because of the highly experienced trainer." - Hieronymus`,
-    thumbnail: Person1,
-  },
-  {
-    name: 'Tyas Fitri Anggarini',
-    role: 'Brand Performance & Strategy at majoo Indonesia',
-    desc: `"Turning my dream of working as a performance specialist into reality by starting to learn Digital Marketing Bootcamp!" - Tyas`,
-    thumbnail: Person2,
-  },
-  {
-    name: 'Angeline Lie',
-    role: 'Founder & CEO at Digmo Agency',
-    desc: `"The learning materials are very comprehensive, the classes are well-structured, and the consultation service is satisfying." - Angeline Lie`,
-    thumbnail: Person3,
-  },
-  {
-    name: 'Balad Al Barokah',
-    role: 'Growth Analyst at MGD Digital Marketing Consultant',
-    desc: `"QarirGenerator opens up a new opportunity to work in the digital field!" -Balad`,
-    thumbnail: Person4,
-  },
-  {
-    name: 'Andimas Iben D.',
-    role: 'Msc. Marketing Candidate at RuG | Ex - Tokopedia | LPDP Awardee PK-194',
-    desc: `"QarirGenerator helped me to gain a deeper understanding of data science. After taking their course and staying connected with my mentor, I was able to start working at my dream company using the significantly improved skills." - Andimas Iben`,
-    thumbnail: Person5,
-  },
-  {
-    name: 'Agnes Friska Cyntia Puspitasari',
-    role: 'Co-Founder di PT Visuels Inspirasi Digispora | Digital Marketing Expert | Instagram & Tiktok Content Creator',
-    desc: `"High Quality Program with the best mentors. Their services meet 5 stars" - Agnes Friska`,
-    thumbnail: Person6,
-  },
-]
-
-function Card({ name, role, desc, thumbnail }) {
+function Card({ name, role, desc, thumbnail, link }) {
   return (
     <div
       data-aos="fade"
@@ -83,7 +43,8 @@ function Card({ name, role, desc, thumbnail }) {
         <p className="font-medium text-base">{desc}</p>
       </div>
       <Link
-        href=""
+        href={link}
+        target="_blank"
         className="capitalize bg-[#101F50] text-white flex flex-row justify-center items-center gap-2 p-2 rounded-lg"
       >
         <span className="bg-white rounded-full p-2">
@@ -96,6 +57,51 @@ function Card({ name, role, desc, thumbnail }) {
 }
 
 function Alumni() {
+  // DUMMY DATA
+  const dataAlumni = [
+    {
+      name: 'Hieronymus Kopong Bali',
+      role: 'Full Stack Digital Marketing - Batch 1',
+      desc: `"Here, not only get to attend fun classes, but I also improve my networking and knowledge because of the highly experienced trainer." - Hieronymus`,
+      thumbnail: Person1,
+      link: 'https://www.linkedin.com/in/hieronymuskb/',
+    },
+    {
+      name: 'Zulkhaidir Purwanto',
+      role: 'Data Science - Batch 25',
+      desc: `"QarirGenerator helped me to gain a deeper understanding of data science. After taking their course and staying connected with my mentor, I was able to start working at my dream company using the significantly improved skills." - Zulkhaidir`,
+      thumbnail: Person2,
+      link: 'https://www.linkedin.com/in/zulkhaidirpurwanto/',
+    },
+    {
+      name: 'Agnes Friska Cyntia Puspitasari',
+      role: 'Full Stack Digital Marketing - Batch 6',
+      desc: `"High Quality Program with the best mentors. Their services meet 5 stars" - Agnes Friska`,
+      thumbnail: Person6,
+      link: 'https://www.linkedin.com/in/agnesfcyntia/',
+    },
+    {
+      name: 'Balad Al Barokah',
+      role: 'Full Stack Digital Marketing  Analytics- Batch 8',
+      desc: `"QarirGenerator opens up a new opportunity to work in the digital field!" - Balad`,
+      thumbnail: Person4,
+      link: 'https://www.linkedin.com/in/baladalbarokah/',
+    },
+    {
+      name: 'Angeline Lie',
+      role: 'Founder & CEO at Digmo Agency',
+      desc: `"The learning materials are very comprehensive, the classes are well-structured, and the consultation service is satisfying." - Angeline Lie`,
+      thumbnail: Person3,
+      link: 'https://www.linkedin.com/in/angeline-lie/',
+    },
+    {
+      name: 'Yanuar Rizky',
+      role: 'Full Stack Digital Marketing  Analytics- Batch 12',
+      desc: `"Turning my dream of working as a performance specialist into reality by starting to learn Digital Marketing Bootcamp!" - Yanuar`,
+      thumbnail: Person5,
+      link: 'https://www.linkedin.com/in/yanuar-rizky-1401/',
+    },
+  ]
   return (
     <section className="container mt-32 flex flex-col gap-10">
       <div className="flex flex-col gap-5">
@@ -116,10 +122,11 @@ function Alumni() {
             ? dataAlumni.map((alumni, index) => (
                 <Card
                   key={index}
-                  name={alumni.name}
-                  role={alumni.role}
-                  desc={alumni.desc}
-                  thumbnail={alumni.thumbnail}
+                  name={alumni?.name}
+                  role={alumni?.role}
+                  desc={alumni?.desc}
+                  thumbnail={alumni?.thumbnail}
+                  link={alumni?.link}
                 />
               ))
             : null}
