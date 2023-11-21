@@ -78,7 +78,7 @@ function Navbar() {
     },
     {
       name: 'Program AI',
-      desc: 'Step into the AI Revolution with RevoU. Learn from top AI industry experts to boost your skills in Digital Marketing, Data Analytics, and more!',
+      desc: 'Step into the AI Revolution with QarirGenerator. Learn from top AI industry experts to boost your skills in Digital Marketing, Data Analytics, and more!',
       thumbnail:
         'https://assets-global.website-files.com/61af164800e38c4f53c60b4e/652df06d35eb067c27c36d05_Group%2014.svg',
       link: '/program-ai',
