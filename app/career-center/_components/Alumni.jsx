@@ -76,7 +76,7 @@ function Alumni() {
     {
       name: 'Agnes Friska Cyntia Puspitasari',
       role: 'Full Stack Digital Marketing - Batch 6',
-      desc: `"High Quality Program with the best mentors. Their services meet 5 stars" - Agnes Friska`,
+      desc: `"High Quality Programme with the best mentors. Their services meet 5 stars" - Agnes Friska`,
       thumbnail: Person6,
       link: 'https://www.linkedin.com/in/agnesfcyntia/',
     },

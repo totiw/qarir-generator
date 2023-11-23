@@ -35,8 +35,8 @@ const dataPrograms = [
   {
     id: 3,
     label: 'Full Booked',
-    title: 'Program AI',
-    desc: ' Learn from top AI industry experts to boost your Program AI skills',
+    title: 'Programme AI',
+    desc: ' Learn from top AI industry experts to boost your Programme AI skills',
     thumbnail: WebDev,
     link: '/program-ai',
   },

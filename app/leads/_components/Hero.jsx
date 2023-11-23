@@ -91,7 +91,7 @@ function Hero() {
               priority
               className="w-10 h-10"
             />
-            <p>Dual Mentorship Program</p>
+            <p>Dual Mentorship Programme</p>
           </div>
         </div>
       </div>

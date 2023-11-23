@@ -16,15 +16,15 @@ function Card({ data }) {
       </p>
       <p>{data.desc}</p>
 
-      <div className="flex flex-col">
+      <ul className="px-5">
         {data.list.length > 0
           ? data.list.map((list, index) => (
-              <p key={index} className="text-left">
-                - {list}
-              </p>
+              <li key={index} className="text-left list-disc">
+                {list}
+              </li>
             ))
           : null}
-      </div>
+      </ul>
     </div>
   )
 }

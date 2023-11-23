@@ -20,11 +20,11 @@ function WhyStarts() {
           className="h-10 xl:h-14 w-auto rotate-180"
         />
         <h2 className="text-2xl xl:text-5xl font-semibold">
-          Why Start Your Career with the QarirGenerator Scholarship Program?
+          Why Start Your Career with the QarirGenerator Scholarship Programme?
         </h2>
       </div>
       <div className="flex flex-col xl:flex-row items-center gap-10">
-        <div className="flex flex-col gap-10 xl:gap-80 xl:-translate-y-40">
+        <div className="xl:max-w-lg flex flex-col gap-10 xl:gap-80 xl:-translate-y-40">
           <div className="flex flex-col xl:flex-row xl:items-center gap-3">
             <Image
               src={IncreaseIcon}
@@ -44,7 +44,7 @@ function WhyStarts() {
               priority={false}
             />
             <p className="text-base xl:text-xl font-semibold">
-              Intensive mentoring with a dual mentorship program Experts will
+              Intensive mentoring with a dual mentorship programme Experts will
               help you improve your technology skills and career mentors from HR
               experts will develop your potential and increase your selling
               point!
@@ -58,7 +58,7 @@ function WhyStarts() {
           priority={false}
           className="xl:flex hidden"
         />
-        <div className="flex flex-col gap-10 xl:gap-80 xl:translate-y-20">
+        <div className="xl:max-w-lg flex flex-col gap-10 xl:gap-80 xl:translate-y-20">
           <div className="flex flex-col xl:flex-row xl:items-center gap-3">
             <Image
               src={ClassIcon}

@@ -14,8 +14,8 @@ const dataBenefit = [
     icon: <People height="40" color="white" />,
   },
   {
-    title: 'By Enrichment Program',
-    desc: 'Join our enrichment program in form of internship (part-time) for several projects at corporates/leading startups.',
+    title: 'By Enrichment Programme',
+    desc: 'Join our enrichment programme in form of internship (part-time) for several projects at corporates/leading startups.',
     icon: <Lamp height="40" color="white" />,
   },
   {
@@ -97,7 +97,7 @@ function Benefit() {
           className="homepage section desc"
         >
           Qarirgenerator Has Been Proven To Produce Competent Graduates In The
-          Industry Through The Bootcamp Program.
+          Industry Through The Bootcamp Programme.
         </p>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">

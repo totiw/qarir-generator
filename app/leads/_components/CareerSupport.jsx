@@ -103,7 +103,7 @@ function CareerSupport() {
                       index === currentSelect
                         ? 'bg-orange-1 bg-opacity-30'
                         : 'bg-white'
-                    } hover:bg-orange-1 hover:bg-opacity-30 flex flex-row items-center justify-between gap-5 p-5 rounded-lg text-left text-xl font-semibold`}
+                    } hover:bg-orange-1 hover:bg-opacity-30 flex flex-row items-center justify-between gap-5 p-5 rounded-lg text-left text-xl font-semibold capitalize`}
                     onClick={() => setCurrentSelect(index)}
                   >
                     <span>{support.name}</span>

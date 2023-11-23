@@ -48,7 +48,7 @@ function TalenRole() {
               />
             </button>
             <button className="group flex flex-row items-center justify-between gap-5 p-5 rounded-lg hover:bg-[#101F50] hover:text-white text-xl font-semibold">
-              <span>Program AI</span>
+              <span>Programme AI</span>
               <FaChevronRight
                 size="1em"
                 color="#000"

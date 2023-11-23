@@ -11,7 +11,7 @@ import Student from '../icons/WhereStart/student.png'
 
 function Card({ data }) {
   return (
-    <div className="xl:w-1/3 flex flex-col items-center gap-8 px-5">
+    <div className="xl:w-1/3 flex flex-col items-center gap-8 px-10">
       <div className="bg-[#101F50] p-5 rounded-full">
         <Image
           src={data.thumbnail}
@@ -50,7 +50,7 @@ function WhereStart() {
     {
       title: 'Are you a student?',
       thumbnail: Student,
-      desc: 'Without any degree start studying technology and digital business industry! In this career accelerator program you get:',
+      desc: 'Without any degree start studying technology and digital business industry! In this career accelerator programme you get:',
       points: [
         {
           thumbnail: Career,
@@ -58,18 +58,18 @@ function WhereStart() {
         },
         {
           thumbnail: Apprentice,
-          desc: 'Apprenticeship experience program to build your first work experience',
+          desc: 'Apprenticeship experience programme to build your first work experience',
         },
       ],
     },
     {
       title: 'Are you a Fresh Graduate or Early Career Person?',
       thumbnail: Graduate,
-      desc: 'Starting a career in technology without IT/Statistics experience? Can! In this career accelerator program you get:',
+      desc: 'Starting a career in technology without IT/Statistics experience? Can! In this career accelerator programme you get:',
       points: [
         {
           thumbnail: Apprentice,
-          desc: 'Apprenticeship experience program to build your first work experience',
+          desc: 'Apprenticeship experience programme to build your first work experience',
         },
         {
           thumbnail: Global,
@@ -84,7 +84,7 @@ function WhereStart() {
     {
       title: 'Are you a career switcher?',
       thumbnail: SwitchCareer,
-      desc: 'In this career accelerator program you get:',
+      desc: 'In this career accelerator programme you get:',
       points: [
         {
           thumbnail: Global,

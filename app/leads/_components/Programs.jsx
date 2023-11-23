@@ -103,7 +103,7 @@ function Programs() {
           className="w-8"
         />
         <h3 className="font-semibold text-4xl">
-          Join Our Scholarship Program Today!
+          Join Our Scholarship Programme Today!
         </h3>
         <p className="text-slate-500 font-semibold text-xl">
           We invite you to seize the opportunity of a lifetime. Ready to Propel

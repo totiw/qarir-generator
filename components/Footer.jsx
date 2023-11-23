@@ -73,7 +73,7 @@ function Footer() {
         <div className="lg:w-1/2 flex flex-col gap-10 lg:gap-36">
           <div className="flex flex-col lg:flex-row lg:gap-0 gap-10">
             <div className="flex flex-col grow gap-3">
-              <p className="font-bold text-lg text-orange-1 mb-7">Programs</p>
+              <p className="font-bold text-lg text-orange-1 mb-7">Programmes</p>
               <Link
                 href=""
                 className="font-normal text-base text-white self-start"
@@ -90,7 +90,7 @@ function Footer() {
                 href=""
                 className="font-normal text-base text-white self-start"
               >
-                Program AI
+                Programme AI
               </Link>
             </div>
             <div className="flex flex-col grow gap-3">

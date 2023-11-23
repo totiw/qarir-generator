@@ -77,7 +77,7 @@ function Navbar() {
       link: '/mba',
     },
     {
-      name: 'Program AI',
+      name: 'Programme AI',
       desc: 'Step into the AI Revolution with QarirGenerator. Learn from top AI industry experts to boost your skills in Digital Marketing, Data Analytics, and more!',
       thumbnail:
         'https://assets-global.website-files.com/61af164800e38c4f53c60b4e/652df06d35eb067c27c36d05_Group%2014.svg',
@@ -150,7 +150,7 @@ function Navbar() {
               onClick={toggleMenu}
               className="font-semibold flex flex-row items-center gap-3"
             >
-              Programs
+              Programmes
               {/* <BiSolidDownArrow size=".6em" color="#000000" /> */}
             </button>
             <span
@@ -311,7 +311,7 @@ function Navbar() {
                     type="button"
                     className=" flex flex-row items-center font-bold text-base"
                   >
-                    Programs
+                    Programmes
                   </button>
                   <div
                     className={`${
