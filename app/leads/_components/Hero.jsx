@@ -20,7 +20,7 @@ function Hero() {
       />
       <div className="xl:w-1/2 flex flex-col gap-6 px-4">
         <h2 className="text-3xl md:text-5xl font-semibold">
-          Partial Scholarship to Archieve Your Dream Faster!
+          Partial Scholarship to Achieve Your Dream Faster!
         </h2>
         <div className="px-4 md:px-8 flex flex-col gap-4 font-semibold text-lg md:text-2xl">
           <div className="flex gap-3 items-center">
