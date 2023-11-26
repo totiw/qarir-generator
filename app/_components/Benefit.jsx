@@ -19,7 +19,7 @@ const dataBenefit = [
     icon: <Lamp height="40" color="white" />,
   },
   {
-    title: 'Personalized Curriculum',
+    title: 'Personalised Curriculum',
     desc: 'Our class is limited only for 7-15 and 15-35 students. For all beginners, they can join extra class sessions to accelerate their skills as they wish.',
     icon: <Book height="40" color="white" />,
   },

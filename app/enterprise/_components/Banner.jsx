@@ -58,7 +58,7 @@ function Banner() {
             <div className="flex flex-row items-center gap-3">
               <MdThumbUp size="1.8em" color="#2622B9" />
               <p className="font-bold text-sm md:text-base xl:text-xl">
-                Over 100+ organizations satisfied with our work
+                Over 100+ organisations satisfied with our work
               </p>
             </div>
           </div>

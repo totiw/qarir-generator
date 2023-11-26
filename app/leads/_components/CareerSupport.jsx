@@ -46,7 +46,7 @@ function CareerSupport() {
       points: [
         'Career mapping session to review your personal blind spot as your career blockers',
         'Understanding the growth hack strategy to apply a job',
-        'CV optimization',
+        'CV optimisation',
       ],
     },
     {

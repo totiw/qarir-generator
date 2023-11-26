@@ -20,12 +20,12 @@ const dataClasses = [
   },
   {
     thumbnail: Video2,
-    title: 'What They Say? (Student QnA)',
+    title: 'What They Say?',
     link: 'https://youtu.be/GRLniV4UJPY',
   },
   {
     thumbnail: Video3,
-    title: 'QnA With Trainer (Digital for Newbie)',
+    title: 'QnA With Trainer',
     link: 'https://youtu.be/YX0ncJCCurk',
   },
 ]
@@ -85,7 +85,8 @@ function Classes() {
             data-aos-anchor-placement="top-center"
             className="homepage section heading"
           >
-            More Than a Bootcamp, <br />Get Hired at Top Tech Companies.
+            More Than a Bootcamp, <br />
+            Get Hired at Top Tech Companies.
           </h2>
           <p
             data-aos="fade-up"

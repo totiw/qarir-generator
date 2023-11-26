@@ -36,7 +36,7 @@ function Training() {
   ]
 
   const dataTrainingBenefit = [
-    'Personalized Curriculum',
+    'Personalised Curriculum',
     'More practical, More Fun',
     `World's Best Trainer`,
     `Post-Training Support`,

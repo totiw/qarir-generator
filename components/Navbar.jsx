@@ -145,7 +145,7 @@ function Navbar() {
               priority
             />
           </Link>
-          <div className="hidden md:flex relative" ref={menuRef}>
+          <div className="hidden lg:flex relative" ref={menuRef}>
             <button
               onClick={toggleMenu}
               className="font-semibold flex flex-row items-center gap-3"
@@ -214,14 +214,17 @@ function Navbar() {
               </div>
             </div>
           </div>
-          <Link href="/enterprise" className="hidden md:flex font-semibold">
+          <Link href="/enterprise" className="hidden lg:flex font-semibold">
             Partnership
           </Link>
-          <Link href="/career-center" className="hidden md:flex font-semibold">
+          <Link href="/career-center" className="hidden lg:flex font-semibold">
             Career
           </Link>
-          <Link href="/leads" className="hidden md:flex font-semibold">
+          <Link href="/leads" className="hidden lg:flex font-semibold">
             Scholarship
+          </Link>
+          <Link href="/event" className="hidden lg:flex font-semibold">
+            Events
           </Link>
         </div>
 
@@ -235,10 +238,10 @@ function Navbar() {
               Book A Call
             </Link>
           )}
-          <span className="hidden lg:flex text-slate-300">|</span>
+          <span className="hidden xl:flex text-slate-300">|</span>
           <div
             ref={languageRef}
-            className="hidden relative lg:flex flex-row items-center gap-3 font-bold"
+            className="hidden relative xl:flex flex-row items-center gap-3 font-bold"
           >
             <button
               onClick={toggleLanguage}
@@ -270,7 +273,7 @@ function Navbar() {
           </div>
           <button
             onClick={toggleMenuMobile}
-            className="md:hidden flex opacity-50"
+            className="xl:hidden flex opacity-50"
           >
             <LuMenu size="1.6em" color="#000000" />
           </button>
@@ -280,7 +283,7 @@ function Navbar() {
         <div
           className={`${
             menuMobileOpen ? 'translate-x-0' : '-translate-x-full'
-          } md:hidden fixed top-0 left-0 bottom-0 right-0 z-50 bg-gradient-to-t from-orange-4 to-white flex duration-200 ease-in-out transition-all`}
+          } xl:hidden fixed top-0 left-0 bottom-0 right-0 z-50 bg-gradient-to-t from-orange-4 to-white flex duration-200 ease-in-out transition-all`}
         >
           <div className="container flex flex-col gap-10 py-5">
             {/* Navbar */}
@@ -344,10 +347,18 @@ function Navbar() {
                   <Link
                     onClick={toggleMenuMobile}
                     href="/leads"
-                    alt="career"
+                    alt="Scholarship"
                     className="mt-4 font-bold text-base cursor-pointer"
                   >
                     Scholarship
+                  </Link>
+                  <Link
+                    onClick={toggleMenuMobile}
+                    href="/event"
+                    alt="event"
+                    className="mt-4 font-bold text-base cursor-pointer"
+                  >
+                    Events
                   </Link>
                 </div>
               </div>

@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 // Assets
 import Article1 from 'public/article1.png'
-import Article2 from 'public/article2.png'
-import Article3 from 'public/article3.png'
+// import Article2 from 'public/article2.png'
+// import Article3 from 'public/article3.png'
 import Profile from 'public/hieronymus_kopong_bali.jpeg'
 
 // Icons
