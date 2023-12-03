@@ -81,7 +81,7 @@ function Events() {
       place: 'Jakarta, Indonesia',
       date: 'Tue, 14 November 2023',
       price: 'free',
-      link: '/',
+      link: '/event/detail',
     },
     {
       thumbnail: Article2,
@@ -91,7 +91,7 @@ function Events() {
       place: 'Bandung, Indonesia',
       date: 'Tue, 21 November 2023',
       price: '10',
-      link: '/',
+      link: '/event/detail',
     },
     {
       thumbnail: Article3,
@@ -101,7 +101,7 @@ function Events() {
       place: 'Jakarta, Indonesia',
       date: 'Fri, 17 November 2023',
       price: '20',
-      link: '/',
+      link: '/event/detail',
     },
     {
       thumbnail: Article1,
@@ -111,7 +111,7 @@ function Events() {
       place: 'Jakarta, Indonesia',
       date: 'Tue, 14 November 2023',
       price: 'free',
-      link: '/',
+      link: '/event/detail',
     },
     {
       thumbnail: Article2,
@@ -121,7 +121,7 @@ function Events() {
       place: 'Bandung, Indonesia',
       date: 'Tue, 21 November 2023',
       price: '10',
-      link: '/',
+      link: '/event/detail',
     },
     {
       thumbnail: Article3,
@@ -131,7 +131,7 @@ function Events() {
       place: 'Jakarta, Indonesia',
       date: 'Fri, 17 November 2023',
       price: '20',
-      link: '/',
+      link: '/event/detail',
     },
     {
       thumbnail: Article1,
@@ -141,7 +141,7 @@ function Events() {
       place: 'Jakarta, Indonesia',
       date: 'Tue, 14 November 2023',
       price: 'free',
-      link: '/',
+      link: '/event/detail',
     },
     {
       thumbnail: Article2,
@@ -151,7 +151,7 @@ function Events() {
       place: 'Bandung, Indonesia',
       date: 'Tue, 21 November 2023',
       price: '10',
-      link: '/',
+      link: '/event/detail',
     },
     {
       thumbnail: Article3,
@@ -161,7 +161,7 @@ function Events() {
       place: 'Jakarta, Indonesia',
       date: 'Fri, 17 November 2023',
       price: '20',
-      link: '/',
+      link: '/event/detail',
     },
     {
       thumbnail: Article3,
@@ -171,7 +171,7 @@ function Events() {
       place: 'Jakarta, Indonesia',
       date: 'Fri, 17 November 2023',
       price: '20',
-      link: '/',
+      link: '/event/detail',
     },
   ]
 
