@@ -32,7 +32,7 @@ function Benefit() {
       qarir: true,
     },
     {
-      name: 'Jaringan profesional dan pemimpin industri',
+      name: 'Network of professionals and industry leaders',
       campus: false,
       qarir: true,
     },
