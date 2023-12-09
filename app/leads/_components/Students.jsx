@@ -55,8 +55,8 @@ function Card({ data }) {
       data-aos-delay="0"
       data-aos-duration="1200"
       data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
+      data-aos-mirror="false"
+      data-aos-once="true"
       data-aos-anchor-placement="top-center"
       className="bg-white flex flex-col justify-between gap-5 p-10 border rounded-lg w-96"
     >
