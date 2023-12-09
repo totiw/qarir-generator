@@ -49,17 +49,7 @@ import { FaLinkedinIn } from 'react-icons/fa6'
 
 function Card({ data }) {
   return (
-    <div
-      data-aos="fade"
-      data-aos-offset="-300"
-      data-aos-delay="0"
-      data-aos-duration="1200"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="false"
-      data-aos-once="true"
-      data-aos-anchor-placement="top-center"
-      className="bg-white flex flex-col justify-between gap-5 p-10 border rounded-lg w-96"
-    >
+    <div className="bg-white flex flex-col justify-between gap-5 p-10 border rounded-lg w-96">
       <div className="flex flex-col gap-5">
         <div className="flex flex-row gap-10">
           <Image
