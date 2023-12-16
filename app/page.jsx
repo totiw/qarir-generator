@@ -6,6 +6,7 @@ import Alumni from './career-center/_components/Alumni'
 import Contact from './_components/Contact'
 import Partnership from './_components/Partnership'
 import Article from './_components/Article'
+import Event from './_components/Event'
 
 import './style/homepage.css'
 
@@ -20,6 +21,7 @@ function HomePage() {
       <Contact />
       <Partnership />
       <Article />
+      <Event />
     </main>
   )
 }
