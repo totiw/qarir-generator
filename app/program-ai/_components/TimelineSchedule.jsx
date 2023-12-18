@@ -13,7 +13,7 @@ function Card({ children, title }) {
 
 function TimelineSchedule() {
   return (
-    <section id="timeline-schedule" className="flex flex-col gap-5">
+    <section id="timeline-schedule" className="section flex flex-col gap-5">
       <p className="font-bold text-base text-slate-500">TIMELINE & SCHEDULE</p>
       <h2 className="font-black text-2xl lg:text-4xl">Class</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
@@ -22,11 +22,11 @@ function TimelineSchedule() {
             <div className="flex flex-col gap-2 font-medium text-sm">
               <p className="flex flex-row items-center gap-2">
                 <BsFillCalendarCheckFill size="1em" color="#FF9500" />{' '}
-                {`- Batch 28 First Round : November 2023`}
+                {`Batch 28 First Round : November 2023`}
               </p>
               <p className="flex flex-row items-center gap-2">
                 <BsFillCalendarCheckFill size="1em" color="#FF9500" />
-                {`- Batch 28 Last Round : January 2024`}
+                {`Batch 28 Last Round : January 2024`}
               </p>
             </div>
           </div>
@@ -36,11 +36,11 @@ function TimelineSchedule() {
             <div className="flex flex-col gap-2 font-medium text-sm">
               <p className="flex flex-row items-center gap-2">
                 <BsFillCalendarCheckFill size="1em" color="#FF9500" />
-                {`- Tues & Wed 19.30 - 21.30 WIB`}
+                {`Tues & Wed 19.30 - 21.30 WIB`}
               </p>
               <p className="flex flex-row items-center gap-2">
                 <BsFillCalendarCheckFill size="1em" color="#FF9500" />
-                {`- Saturday 13.00 - 15.00 WIB`}
+                {`Saturday 13.00 - 15.00 WIB`}
               </p>
             </div>
           </div>

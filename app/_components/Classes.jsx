@@ -20,12 +20,12 @@ const dataClasses = [
   },
   {
     thumbnail: Video2,
-    title: 'What They Say?',
+    title: 'What They Say? Student QnA',
     link: 'https://youtu.be/GRLniV4UJPY',
   },
   {
     thumbnail: Video3,
-    title: 'QnA With Trainer',
+    title: 'QnA With Trainer Digital for Newbie',
     link: 'https://youtu.be/YX0ncJCCurk',
   },
 ]
@@ -85,8 +85,8 @@ function Classes() {
             data-aos-anchor-placement="top-center"
             className="homepage section heading"
           >
-            More Than a Bootcamp, <br />
-            Get Hired at Top Tech Companies.
+            Connect and Collaborate! <br />
+            Enrich your potential with QarirGenerator
           </h2>
           <p
             data-aos="fade-up"
@@ -123,8 +123,8 @@ function Classes() {
               <span>Alumni Get a Job Less Than 12 Months</span>
             </div>
             <div className="basis-1/4 classes-stats">
-              <span>88%</span>
-              <span>Completed Rate</span>
+              <span>100+</span>
+              <span> Valuable Partnership</span>
             </div>
           </div>
         </div>

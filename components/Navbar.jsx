@@ -18,21 +18,21 @@ import { LuMenu } from 'react-icons/lu'
 import { IoClose } from 'react-icons/io5'
 import { HiOutlineExternalLink } from 'react-icons/hi'
 
-function Card({ courses, toggleMenuMobile }) {
+function Card({ datas, toggleMenuMobile }) {
   return (
     <div className="flex flex-col gap-3">
       <span className="flex flex-col gap-5 capitalize text-sm">
-        {courses?.length > 0 &&
-          courses.map((course, index) => (
+        {datas?.length > 0 &&
+          datas.map((data, index) => (
             <Link
               onClick={toggleMenuMobile}
-              href={course.link ?? ''}
-              alt={`link course ${course.name}`}
+              href={data.link ?? ''}
+              alt={`link course ${data.name}`}
               key={index}
             >
               <div className="flex flex-row items-center gap-2">
                 <Image
-                  src={course.thumbnail}
+                  src={data.thumbnail}
                   alt="navbar icon"
                   quality={100}
                   priority={false}
@@ -40,7 +40,7 @@ function Card({ courses, toggleMenuMobile }) {
                   height={100}
                   className="w-7 h-7"
                 />
-                <span className="font-medium">{course.name}</span>
+                <span className="font-medium">{data.name}</span>
               </div>
             </Link>
           ))}
@@ -51,15 +51,22 @@ function Card({ courses, toggleMenuMobile }) {
 }
 
 function Navbar() {
-  const menuRef = useRef(null)
-  const languageRef = useRef(null)
   const pathname = usePathname()
+
+  const menuRef = useRef(null)
+  const partnershipRef = useRef(null)
+  const languageRef = useRef(null)
+
+  const [partnerOpen, setPartnerOpen] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+
+  const [partnerLinksOpen, setPartnerLinksOpen] = useState(false)
   const [menuLinksOpen, setMenuLinksOpen] = useState(false)
   const [menuMobileOpen, setMenuMobileOpen] = useState(false)
   const [languageOpen, setlanguageOpen] = useState(false)
 
   const [selectedPrograms, setSelectedPrograms] = useState(0)
+  const [selectedPartnership, setSelectedPartnership] = useState(0)
 
   const courses = [
     {
@@ -78,10 +85,28 @@ function Navbar() {
     },
     {
       name: 'Programme AI',
-      desc: 'Step into the AI Revolution with QarirGenerator. Learn from top AI industry experts to boost your skills in Digital Marketing, Data Analytics, and more!',
+      desc: 'Step into the AI Revolution with QarirGenerator. Join forces with top-notch AI industry experts who will supercharge your tech skills, ensuring you stay ahead in the competitive career game!',
       thumbnail:
         'https://assets-global.website-files.com/61af164800e38c4f53c60b4e/652df06d35eb067c27c36d05_Group%2014.svg',
       link: '/program-ai',
+    },
+  ]
+  const partnerships = [
+    {
+      name: 'Company and Entreprise',
+      desc: `Our training programmes will help your strategists develop the skills they need to drive your
+      company's success and create a sustainable business.`,
+      thumbnail:
+        'https://assets-global.website-files.com/61af164800e38c4f53c60b4e/64d0256eb6c6593d16f4c52d_dm-icon.svg',
+      link: '/enterprise/',
+    },
+    {
+      name: 'QarirEvents',
+      desc: `Making a long-lasting and loyal community for your business is never been easier. Let us help
+      you create an event that will be remembered for years to come!`,
+      thumbnail:
+        'https://assets-global.website-files.com/61af164800e38c4f53c60b4e/64d0256d8416a474a53382f1_ma-icon.svg',
+      link: '/event/',
     },
   ]
 
@@ -89,6 +114,12 @@ function Navbar() {
 
   const toggleMenuMobile = () => {
     setMenuMobileOpen((prev) => !prev)
+  }
+
+  const togglePartnership = () => {
+    setPartnerOpen((prev) => !prev)
+    setlanguageOpen(false)
+    setMenuOpen(false)
   }
 
   const toggleMenu = () => {
@@ -107,20 +138,11 @@ function Navbar() {
       if (!menuRef.current?.contains(event.target)) {
         setMenuOpen(false)
       }
-    }
-
-    window.addEventListener('mousedown', handleOutSideClick)
-
-    return () => {
-      window.removeEventListener('mousedown', handleOutSideClick)
-    }
-  }, [menuRef])
-
-  // Cek klik diluar komponen
-  useEffect(() => {
-    const handleOutSideClick = (event) => {
       if (!languageRef.current?.contains(event.target)) {
         setlanguageOpen(false)
+      }
+      if (!partnershipRef.current?.contains(event.target)) {
+        setPartnerOpen(false)
       }
     }
 
@@ -129,7 +151,7 @@ function Navbar() {
     return () => {
       window.removeEventListener('mousedown', handleOutSideClick)
     }
-  }, [languageRef])
+  }, [menuRef, partnershipRef, languageRef])
 
   return (
     <header className="bg-white">
@@ -214,9 +236,77 @@ function Navbar() {
               </div>
             </div>
           </div>
-          <Link href="/enterprise" className="hidden lg:flex font-semibold">
-            Partnership
-          </Link>
+          <div className="hidden lg:flex relative" ref={partnershipRef}>
+            <button
+              onClick={togglePartnership}
+              className="font-semibold flex flex-row items-center gap-3"
+            >
+              Partnership
+              {/* <BiSolidDownArrow size=".6em" color="#000000" /> */}
+            </button>
+            <span
+              className={`${
+                partnerOpen ? 'flex' : 'hidden'
+              } absolute border -bottom-14 left-10 z-0 w-10 h-10 bg-white shadow-sm rotate-45`}
+            ></span>
+            <div
+              className={`${
+                partnerOpen ? 'flex' : 'hidden'
+              } flex-wrap xl:flex-nowrap flex-row gap-5 bg-gray-100 w-[50vw] xl:w-[1000px] border border-slate-200 rounded-lg shadow-sm absolute z-10 top-0 translate-y-14 p-5`}
+            >
+              <div className="w-full xl:w-[250px] flex flex-col gap-3">
+                {partnerships?.length > 0
+                  ? partnerships.map((partner, index) => (
+                      <button
+                        onClick={() => setSelectedPartnership(index)}
+                        key={index}
+                        className="bg-white shadow-sm p-3 rounded-md flex flex-row items-center gap-2 capitalize font-bold text-sm text-left"
+                      >
+                        <Image
+                          src={partner.thumbnail}
+                          alt="course"
+                          quality={100}
+                          priority={false}
+                          width={100}
+                          height={100}
+                          className="w-8"
+                        />
+                        {partner.name}
+                      </button>
+                    ))
+                  : null}
+              </div>
+              <div className="xl:w-3/4 h-80 bg-white shadow-sm p-5 flex flex-col justify-between rounded-lg">
+                <div className="flex flex-col gap-3">
+                  <Image
+                    src={partnerships[selectedPartnership].thumbnail}
+                    alt="course"
+                    quality={100}
+                    priority={false}
+                    width={100}
+                    height={100}
+                    className="w-14"
+                  />
+                  <h3 className="font-semibold text-lg capitalize">
+                    {partnerships[selectedPartnership].name}
+                  </h3>
+                  <p className="text-sm">
+                    {partnerships[selectedPartnership].desc}
+                  </p>
+                  <hr className="h-px mt-3 bg-gray-700 border-0" />
+                </div>
+                <Link
+                  onClick={toggleMenu}
+                  href={partnerships[selectedPartnership].link}
+                  alt="progrmas link"
+                  className="flex flex-row gap-1 items-center capitalize font-semibold text-sm tracking-wide"
+                >
+                  learn more
+                  <HiOutlineExternalLink size="1.2em" color="#000" />
+                </Link>
+              </div>
+            </div>
+          </div>
           <Link href="/career-center" className="hidden lg:flex font-semibold">
             Career
           </Link>
@@ -225,6 +315,9 @@ function Navbar() {
           </Link>
           <Link href="/event" className="hidden lg:flex font-semibold">
             Events
+          </Link>
+          <Link href="/article" className="hidden lg:flex font-semibold">
+            Article
           </Link>
         </div>
 
@@ -323,19 +416,35 @@ function Navbar() {
                         : 'max-h-0 opacity-0 translate-y-52'
                     } relative flex flex-col gap-5 origin-top transition-all duration-500 ease-in-out`}
                   >
+                    <Card datas={courses} toggleMenuMobile={toggleMenuMobile} />
+                  </div>
+                  <button
+                    onClick={() => setPartnerLinksOpen((prev) => !prev)}
+                    type="button"
+                    className="mt-4 flex flex-row items-center font-bold text-base"
+                  >
+                    Partnership
+                  </button>
+                  <div
+                    className={`${
+                      partnerLinksOpen
+                        ? 'max-h-screen py-5'
+                        : 'max-h-0 opacity-0 translate-y-52'
+                    } relative flex flex-col gap-5 origin-top transition-all duration-500 ease-in-out`}
+                  >
                     <Card
-                      courses={courses}
+                      datas={partnerships}
                       toggleMenuMobile={toggleMenuMobile}
                     />
                   </div>
-                  <Link
+                  {/* <Link
                     onClick={toggleMenuMobile}
                     href="/enterprise"
                     alt="enterprise"
                     className="mt-4 font-bold text-base cursor-pointer"
                   >
                     Partnership
-                  </Link>
+                  </Link> */}
                   <Link
                     onClick={toggleMenuMobile}
                     href="/career-center"
@@ -359,6 +468,14 @@ function Navbar() {
                     className="mt-4 font-bold text-base cursor-pointer"
                   >
                     Events
+                  </Link>
+                  <Link
+                    onClick={toggleMenuMobile}
+                    href="/article"
+                    alt="article"
+                    className="mt-4 font-bold text-base cursor-pointer"
+                  >
+                    Article
                   </Link>
                 </div>
               </div>

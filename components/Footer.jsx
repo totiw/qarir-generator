@@ -34,10 +34,12 @@ function Footer() {
             className="w-36"
           />
           <p className='class="font-normal text-base text-white lg:w-10/12'>
-            Since 2019, QarirGenerator is a career accelerator for freshgraduate
-            and early career stage people to achieve their dream job in tech by
-            bridging them into our hiring partners and even becoming outstanding
-            in the tech industry.
+            QarirGenerator is the FIRST cross border talent enabler for career
+            development to bridge young generation to the industry expert with
+            strong 5 years market presence in South East Asia by today. Since
+            2019, we are helping Indonesian build their portfolios and helping
+            youngsters working in their dream job and increasing their quality
+            of life significantly.
           </p>
           <div className="flex flex-row gap-3">
             <Image
@@ -75,19 +77,19 @@ function Footer() {
             <div className="flex flex-col grow gap-3">
               <p className="font-bold text-lg text-orange-1 mb-7">Programmes</p>
               <Link
-                href=""
+                href="/digital-marketing/"
                 className="font-normal text-base text-white self-start"
               >
                 Digital Marketing
               </Link>
               <Link
-                href=""
+                href="/mba/"
                 className="font-normal text-base text-white self-start"
               >
                 MBA
               </Link>
               <Link
-                href=""
+                href="/program-ai/"
                 className="font-normal text-base text-white self-start"
               >
                 Programme AI
@@ -116,13 +118,13 @@ function Footer() {
                 Turkiye
               </Link>
             </div>
-            <div className="flex flex-col grow gap-3">
+            {/* <div className="flex flex-col grow gap-3">
               <p className="font-bold text-lg text-orange-1 mb-7">Resources</p>
               <p className="font-normal text-base text-white">Certificate</p>
               <p className="font-normal text-base text-white">
                 Privacy & Policy
               </p>
-            </div>
+            </div> */}
             <div className="flex flex-col grow gap-3">
               <p className="font-bold text-lg text-orange-1 mb-7">About</p>
               <Link
@@ -159,6 +161,7 @@ function Footer() {
               </p>
               <p className="text-base">+90 551 402 62 05</p>
             </div>
+            <p className="text-white">Privacy & Policy</p>
           </div>
         </div>
       </div>

@@ -15,7 +15,7 @@ function Card({ children, price, excerpt }) {
 
 function StudyFee() {
   return (
-    <section id="study-fee" className="flex flex-col gap-5">
+    <section id="study-fee" className="section flex flex-col gap-5">
       <p className="font-bold text-base text-slate-500">STUDY FEE</p>
       <h2 className="font-black text-2xl lg:text-4xl">Full Payment</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
@@ -24,13 +24,13 @@ function StudyFee() {
           excerpt="(KTP holders & Non Student of University)"
         >
           <div className="bg-white p-5 flex flex-col gap-4">
-            <div className="flex flex-col gap-2 font-medium text-sm">
-              <p>{`- Hybrid access (Offpne-Onpne) if available -> priority`}</p>
-              <p>{`- Priority 1on1 mentoring access`}</p>
-              <p>{`- Money back guarantee`}</p>
-              <p>{`- Free choose 2 add-ons program (for normal full payment)`}</p>
-              <p>{`- Access Learning module up to 12 month (for normal full payment)`}</p>
-            </div>
+            <ul className="flex flex-col gap-2 list-disc px-4 font-medium text-sm">
+              <li>{`Hybrid access (Offpne-Onpne) if available -> priority`}</li>
+              <li>{`Priority 1on1 mentoring access`}</li>
+              <li>{`Money back guarantee`}</li>
+              <li>{`Free choose 2 add-ons Programme (for normal full payment)`}</li>
+              <li>{`Access Learning module up to 12 month (for normal full payment)`}</li>
+            </ul>
             <div className="font-normal text-sm flex flex-col gap-1">
               <p className="flex items-center gap-2">
                 <AiFillClockCircle size="1em" color="#FF9500" /> Down Payment
@@ -45,22 +45,24 @@ function StudyFee() {
         </Card>
         <Card price="Pro MYR 4,900" excerpt="(General)">
           <div className="bg-white p-5 flex flex-col gap-4">
-            <div className="flex flex-col gap-2 font-medium text-sm">
-              <p>{`- All Lite`}</p>
-              <p>{`- Hybrid access (Offline-Online) if available -> priority`}</p>
-              <p>{`- Priority 1on1 mentoring access`}</p>
-              <p>{`- Money back guarantee`}</p>
-              <p>{`- Free choose 2 add-ons program (for normal full payment)`}</p>
-              <p>{`- Access Learning module up to 12 month (for normal full payment)`}</p>
-            </div>
+            <ul className="flex flex-col gap-2 list-disc px-4 font-medium text-sm">
+              <li>{`All Lite`}</li>
+              <li>{`Hybrid access (Offline-Online) if available -> priority`}</li>
+              <li>{`Priority 1on1 mentoring access`}</li>
+              <li>{`Money back guarantee`}</li>
+              <li>{`Free choose 2 add-ons Programme (for normal full payment)`}</li>
+              <li>{`Access Learning module up to 12 month (for normal full payment)`}</li>
+            </ul>
           </div>
         </Card>
         <Card price="TURKEY" excerpt="">
           <div className="bg-white p-5 flex flex-col gap-4">
             <div className="flex flex-col gap-2 font-medium text-sm">
-              <p>{`- Refugees Price  -> Contact your consultant`}</p>
-              <p>{`- Turkish Citizen  -> Contact your consultant`}</p>
-              <p>{`- Non Turkish  -> Contact your consultant`}</p>
+              <ul className="flex flex-col gap-2 list-disc px-4 font-medium text-sm">
+                <li>{`Refugees Price  -> Contact your consultant`}</li>
+                <li>{`Turkish Citizen  -> Contact your consultant`}</li>
+                <li>{`Non Turkish  -> Contact your consultant`}</li>
+              </ul>
             </div>
           </div>
         </Card>

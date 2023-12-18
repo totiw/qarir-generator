@@ -28,39 +28,37 @@ function Eligibility() {
   const dataEligibility = [
     {
       icon: <FaSchool size="48px" color="#2622B9" />,
-      title: 'Student of university or High school graduated',
+      title: 'Aspiring Business Owners',
       list: [
-        'No Experience in Digital Marketing',
-        '19+ Years old',
-        'Able to work remotely as part time',
-        'Have a good internet connection',
-        'Potential to start career as Digital Marketing Specialist with Salary IDR 5Million / month (Average)',
+        'Want to expand business expertise',
+        'Finding mentorship and guidance',
+        'Develop skillset for business problem',
+        'Try to connect business with current technology',
       ],
     },
     {
       icon: <FaUserGraduate size="48px" color="#2622B9" />,
-      title: 'Fresh Graduate or Early career stage',
+      title: 'Industry-Specific Roles',
       list: [
-        'Switch career person is welcome',
-        '23+ Years old',
-        'Able to work remotely or working hybrid',
-        'Have a good internet connection',
-        'Potential to start career as Digital Marketing Specialist/Analyst with Salary IDR 7-8Million / month (Average)',
+        'Building a strong business network',
+        'Enhancing strategic decision making',
+        'Gaining a competitive edge in the job market',
+        'Strengthening entrepreneurial aspirations',
       ],
     },
     {
       icon: <BsFillPersonLinesFill size="48px" color="#2622B9" />,
-      title: 'Well Experienced or Business People',
+      title: 'Individuals Pursuing Professional Development',
       list: [
-        '28+ Years old',
-        'Able to work remotely or working hybrid',
-        'Have a good internet connection',
-        'Potential to start career as Digital Marketing Specialist/Analyst with Salary IDR 15Million/ month (Average)',
+        'Career advancement and promotion',
+        'Development of business acumen and strategic thinking',
+        'Enhancement of leadership and management skills',
+        'Staying up-to-date with industry trends and practices',
       ],
     },
   ]
   return (
-    <section id="eligibility" className="flex flex-col gap-5">
+    <section id="eligibility" className="section flex flex-col gap-5">
       <p className="font-bold text-base text-slate-500">ELIGIBILITY</p>
       <h2 className="font-black text-2xl lg:text-4xl">Which one are you?</h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mt-6">

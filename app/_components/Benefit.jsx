@@ -14,8 +14,8 @@ const dataBenefit = [
     icon: <People height="40" color="white" />,
   },
   {
-    title: 'By Enrichment Programme',
-    desc: 'Join our enrichment programme in form of internship (part-time) for several projects at corporates/leading startups.',
+    title: 'Real Hands-on Experience',
+    desc: 'It gives you something rather than just reading or hearing a boring theory!',
     icon: <Lamp height="40" color="white" />,
   },
   {
@@ -29,8 +29,8 @@ const dataBenefit = [
     icon: <HandShake height="40" color="white" />,
   },
   {
-    title: 'International Destination',
-    desc: 'You only need to bring your laptop & bag from your home country to find new opportunity, get networking access, learn new culture, and go further with our international bootcamp across the world.',
+    title: 'International Networking',
+    desc: 'Immerse yourself in multicultural friends and gain new opportunities internationally.',
     icon: <Globe height="40" color="white" />,
   },
   {
@@ -94,7 +94,7 @@ function Benefit() {
           data-aos-mirror="true"
           data-aos-once="false"
           data-aos-anchor-placement="top-center"
-          className="homepage section desc"
+          className="homepage section desc hidden"
         >
           Qarirgenerator Has Been Proven To Produce Competent Graduates In The
           Industry Through The Bootcamp Programme.

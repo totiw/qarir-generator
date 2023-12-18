@@ -11,13 +11,13 @@ import Dots from './icons/Dots'
 
 function FindSolution() {
   const dataTrainingBenefit = [
-    'Personalized Curriculum',
-    'Create personalized service you need : from digital marketing services, data consulting, advertising, or recruitment.',
+    'Personalised Curriculum',
+    'Create personalised service you need : from digital marketing services, data consulting, advertising, or recruitment.',
     'Get support 24/7 consultation from our expert from New york city, Istanbul, London, and Jakarta',
     'Reduce your cost and accelerate your level with us.',
   ]
   return (
-    <section className="bg-blue-4 py-20 -mb-28">
+    <section id="programs" className="bg-blue-4 py-20 -mb-28">
       <div
         data-aos="fade-up"
         data-aos-offset="-300"
@@ -53,7 +53,7 @@ function FindSolution() {
             target="_blank"
             className="bg-blue-2 lg:self-start px-10 py-4 rounded-full font-bold text-lg text-white text-center"
           >
-            Allow Us
+            Reach Us
           </Link>
         </div>
         <div className="lg:w-1/3 w-80">

@@ -39,3 +39,11 @@ html {
 .clip {
   clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
 }
+
+/* SIDEBAR */
+.sidebar {
+  @apply relative py-3;
+  &.active {
+    @apply before:absolute before:z-20 before:-translate-x-5 before:bg-blue-2 before:w-1 before:h-full before:top-0 before:left-0;
+  }
+}

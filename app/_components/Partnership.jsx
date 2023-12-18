@@ -39,11 +39,14 @@ function Partnership() {
         className="lg:w-1/2 flex flex-col gap-4 px-4 lg:px-0"
       >
         <h2 className="font-bold text-2xl lg:text-4xl text-black">
-          Are You an Enterprise Looking for Tech Training or Talent ?
+          Are You an Enterprise Looking for a Chance to Accelerate your
+          Workforces?
         </h2>
         <p className="font-medium text-base text-slate-500 lg:text-lg">
-          Transform your teams with QarirGenerator corporate training or hire
-          our tech-alumni now.
+          Elevate your workforce with QarirGenerator Corporate Training
+          Programme and unleash their true potential, or just as easy being our
+          hiring company partner. Our alumni are the cream of the crop, so you
+          know you will get the go to the game-changer.
         </p>
         <Link
           href="https://calendar.app.google/6xrDJSLWZhcYxYrs9"

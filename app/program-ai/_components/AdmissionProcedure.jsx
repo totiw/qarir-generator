@@ -24,7 +24,7 @@ function AdmissionProcedure() {
     },
     {
       icon: <BsFillPersonVcardFill size="48px" color="#2622B9" />,
-      desc: 'Upload your latest cv/resume/student of university card',
+      desc: 'Upload your latest CV/ Resume/ Student university card',
     },
     {
       icon: <TbReportAnalytics size="48px" color="#2622B9" />,
@@ -40,7 +40,7 @@ function AdmissionProcedure() {
     },
   ]
   return (
-    <section id="admission-procedure" className="flex flex-col gap-5">
+    <section id="admission-procedure" className="section flex flex-col gap-5">
       <p className="font-bold text-base text-slate-500">ADMISSION PROCEDURE</p>
       <h2 className="font-black text-2xl lg:text-4xl">Follow the procedure</h2>
       <div className="flex flex-col gap-5">
