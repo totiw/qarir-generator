@@ -191,7 +191,7 @@ function Events() {
   return (
     <section className="container flex flex-col gap-32 lg:-mt-14 lg:py-0 py-10">
       {/* SEARCH INPUT */}
-      <div className="bg-[#101F50] hidden lg:flex flex-col w-3/5 mx-auto px-8 py-5 rounded-lg">
+      <div className="relative bg-[#101F50] hidden lg:flex flex-col w-3/5 mx-auto px-8 py-5 rounded-lg">
         <p className="font-semibold text-white tracking-wide">Looking for</p>
         <div className="flex flex-row gap-5">
           <input

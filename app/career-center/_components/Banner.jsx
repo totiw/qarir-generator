@@ -42,7 +42,7 @@ function Banner() {
           QarirGenerator, your ultimate partner in the world of career
           acceleration.
         </h3>
-        <Image src={BannerImage} className="py-5" />
+        <Image src={BannerImage} className="py-5" alt="career banner" />
         <Link
           href="#"
           className="bg-[#1D476D] py-3 px-8 md:self-center rounded-full text-center text-white m-10 font-bold"

@@ -139,7 +139,12 @@ function Footer() {
               >
                 Partnership
               </Link>
-              <p className="font-normal text-base text-white">Pricing</p>
+              <Link
+                href="/digital-marketing/#study-fee"
+                className="font-normal text-base text-white"
+              >
+                Pricing
+              </Link>
             </div>
           </div>
           <div className="flex flex-col gap-4">

@@ -15,6 +15,7 @@ import TimelineSchedule from './TimelineSchedule'
 import Eligibility from './Eligibility'
 
 function Details() {
+  const [activeSection, setActiveSection] = useState('')
   const [distanceToTop, setDistanceToTop] = useState(0)
   const [distanceBottomToTop, setDistanceBottomToTop] = useState(0)
 
@@ -56,7 +57,6 @@ function Details() {
 
         // Calculate the distance from the top of the element to the top of the viewport.
         const elementDistance = rect.bottom + scrollTop - 200
-        console.log(elementDistance - window.scrollY)
         setDistanceBottomToTop(elementDistance - window.scrollY)
       }
     }
@@ -73,6 +73,28 @@ function Details() {
     }
   }, [])
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll('.section') // Adjust the selector based on your HTML structure
+
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect()
+        const isSectionVisible =
+          rect.top <= window.innerHeight / 10 &&
+          rect.bottom >= window.innerHeight / 10
+
+        if (isSectionVisible) {
+          setActiveSection(section.id)
+        }
+      })
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
     <div
       id="details"
@@ -80,63 +102,92 @@ function Details() {
     >
       <div
         className={`${
-          distanceBottomToTop < 300 && 'bottom-0'
+          distanceBottomToTop < 400 && 'bottom-0'
         } relative w-1/4 hidden xl:flex`}
       >
         <div
           className={`${
-            distanceBottomToTop < 300
+            distanceBottomToTop < 400
               ? 'absolute bottom-0'
-              : distanceToTop < 0 && distanceBottomToTop > 300
+              : distanceToTop < 0 && distanceBottomToTop > 400
               ? 'fixed z-[0] top-10'
               : ''
           } p-3 w-10/12`}
         >
           <div className="w-80 flex flex-col gap-5 px-3">
             <h3 className="w-3/4 font-black lg:text-2xl">
-              Detail Kursus <br /> MBA
+              Detail Kursus <br /> Digital Marketing
             </h3>
             <div className="flex flex-col text-[#A5A5A5] font-medium text-lg">
               <Link
-                className="relative py-3 before:absolute before:z-20 before:-translate-x-5 before:bg-blue-2 before:w-1 before:h-full before:top-0 before:left-0"
+                className={`${
+                  activeSection === 'eligibility' && 'active'
+                } sidebar`}
                 href="#eligibility"
                 alt="eligibility"
               >
                 Eligibility
               </Link>
-              <Link className="relative py-3" href="#benefit" alt="benefit">
+              <Link
+                className={`${activeSection === 'benefit' && 'active'} sidebar`}
+                href="#benefit"
+                alt="benefit"
+              >
                 Why Qarir
               </Link>
               <Link
-                className="relative py-3"
+                className={`${
+                  activeSection === 'global-apprenticeship' && 'active'
+                } sidebar`}
                 href="#global-apprenticeship"
                 alt="global apprenticeship"
               >
                 Global Apprenticeship
               </Link>
-              <Link className="relative py-3" href="#study-fee" alt="study fee">
+              <Link
+                className={`${
+                  activeSection === 'study-fee' && 'active'
+                } sidebar`}
+                href="#study-fee"
+                alt="study fee"
+              >
                 Study Fee
               </Link>
               <Link
-                className="relative py-3"
+                className={`${
+                  activeSection === 'learning-phase' && 'active'
+                } sidebar`}
                 href="#learning-phase"
                 alt="learning phase"
               >
                 Learning Phase
               </Link>
               <Link
-                className="relative py-3"
+                className={`${
+                  activeSection === 'career-support' && 'active'
+                } sidebar`}
                 href="#career-support"
                 alt="career support"
               >
                 Career Support
               </Link>
               <Link
-                className="relative py-3"
+                className={`${
+                  activeSection === 'admission-procedure' && 'active'
+                } sidebar`}
                 href="#admission-procedure"
                 alt="admission procedure"
               >
                 Admission Procedure
+              </Link>
+              <Link
+                className={`${
+                  activeSection === 'timeline-schedule' && 'active'
+                } sidebar`}
+                href="#timeline-schedule"
+                alt="timeline schedule"
+              >
+                Timeline Schedule
               </Link>
             </div>
           </div>

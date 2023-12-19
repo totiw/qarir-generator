@@ -7,7 +7,7 @@ import Link from 'next/link'
 import AOS from 'aos'
 
 // Assets
-import BannerImage from 'public/ilustration_blue.png'
+import BannerImage from 'public/digimar.png'
 
 function Banner() {
   useEffect(() => {

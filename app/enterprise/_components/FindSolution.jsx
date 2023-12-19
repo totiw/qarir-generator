@@ -17,7 +17,7 @@ function FindSolution() {
     'Reduce your cost and accelerate your level with us.',
   ]
   return (
-    <section id="programs" className="bg-blue-4 py-20 -mb-28">
+    <section id="programs" className="bg-blue-4 py-20 mt-28">
       <div
         data-aos="fade-up"
         data-aos-offset="-300"
@@ -32,7 +32,7 @@ function FindSolution() {
         <div className="lg:w-2/3 flex flex-col gap-10 lg:pr-40">
           <p className="font-bold text-base text-slate-500">FIND SOLUTION</p>
           <h3 className="font-black text-3xl capitalize">
-            Achieve New Level, Gain More Revenue, #AllowUs To Make It Happen.
+            Achieve New Level, Gain More Revenue, #ReachUs To Make It Happen.
           </h3>
           <div className="flex flex-col gap-3">
             {dataTrainingBenefit.length > 0 &&
@@ -51,7 +51,7 @@ function FindSolution() {
           <Link
             href="http://wa.me/+6281110014420?text=Hi%2C+I%27m+interested+to+know+about+QarirGenerator+Bootcamp%2C+My+Name+is....."
             target="_blank"
-            className="bg-blue-2 lg:self-start px-10 py-4 rounded-full font-bold text-lg text-white text-center"
+            className="bg-blue-2 lg:self-start px-10 py-3 rounded-full font-bold text-lg text-white text-center"
           >
             Reach Us
           </Link>

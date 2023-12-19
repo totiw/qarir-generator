@@ -90,7 +90,7 @@ function CareerSupport() {
     },
   ]
   return (
-    <section id="career-support" className="flex flex-col gap-5">
+    <section id="career-support" className="section flex flex-col gap-5">
       <p className="font-bold text-base text-slate-500">CAREER SUPPORT</p>
       <h2 className="font-black text-2xl lg:text-4xl">
         Meet your Career Coach and be ready to start your career

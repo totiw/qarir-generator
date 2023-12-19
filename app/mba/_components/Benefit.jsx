@@ -27,7 +27,7 @@ function Benefit() {
     },
     {
       icon: <Book height="48px" color="#2622B9" />,
-      title: 'Global expert center',
+      title: 'Global expert centre',
       desc: 'Connect with British Expert, Turkish Expert, Emirates Expert, Malaysian-Singaporean-Indonesian Expert in Tech & Digital Industry within 1 platform.',
     },
     {
@@ -42,7 +42,7 @@ function Benefit() {
     },
     {
       icon: <HandShake height="48px" color="#2622B9" />,
-      title: 'Dual Mentorship Program',
+      title: 'Dual Mentorship Programme',
       desc: 'Trainer will help you to boost your tech skill and Career mentor from HR expert will develop your potential and raising your value',
     },
     {
@@ -52,16 +52,16 @@ function Benefit() {
     },
     {
       icon: <BiSolidCustomize size="48px" color="#2622B9" />,
-      title: 'Customized Class',
+      title: 'Customised Programme',
       desc: '4 Months program is too long? Need a private session and focus within a month in English class session only? You can access private classes with a global expert mentor 24/7 premium service.',
     },
   ]
   return (
-    <section id="benefit" className="flex flex-col gap-2">
+    <section id="benefit" className="section flex flex-col gap-2">
       <h2 className="font-black text-2xl lg:text-4xl">WHY QARIR ?</h2>
-      <p className="font-normal text-base text-slate-500">
+      {/* <p className="font-normal text-base text-slate-500">
         Master Data Science dan lihat manfaat setelah kelulusan
-      </p>
+      </p> */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mt-6">
         {dataBenefit.length > 0
           ? dataBenefit.map((benefit, index) => (

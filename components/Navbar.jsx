@@ -296,7 +296,7 @@ function Navbar() {
                   <hr className="h-px mt-3 bg-gray-700 border-0" />
                 </div>
                 <Link
-                  onClick={toggleMenu}
+                  onClick={togglePartnership}
                   href={partnerships[selectedPartnership].link}
                   alt="progrmas link"
                   className="flex flex-row gap-1 items-center capitalize font-semibold text-sm tracking-wide"

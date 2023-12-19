@@ -36,7 +36,7 @@ function LearningPhase() {
   ]
 
   return (
-    <section id="learning-phase" className="flex flex-col gap-5">
+    <section id="learning-phase" className="section flex flex-col gap-5">
       <p className="font-bold text-base text-slate-500">LEARNING PHASE</p>
       <h2 className="font-black text-2xl lg:text-4xl">WHAT WILL YOU LEARN</h2>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 mt-6">
