@@ -1,7 +1,7 @@
 import Banner from './_components/Banner'
 import Details from './_components/Details'
 
-function ProgramAiPage() {
+function DataSciencePage() {
   return (
     <main>
       <Banner />
@@ -10,4 +10,4 @@ function ProgramAiPage() {
   )
 }
 
-export default ProgramAiPage
+export default DataSciencePage

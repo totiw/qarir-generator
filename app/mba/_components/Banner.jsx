@@ -25,7 +25,7 @@ function Banner() {
         data-aos-once="false"
         className="container grow flex flex-col-reverse xl:flex-row xl:items-center"
       >
-        <div className="flex flex-col gap-10">
+        <div className="xl:w-2/3 flex flex-col gap-10">
           <h1 className="inline-block xl:flex xl:flex-col xl:gap-5 font-black text-3xl xl:text-5xl leading-normal">
             <span>
               Accelerate Your
@@ -70,7 +70,7 @@ function Banner() {
             </Link>
           </div>
         </div>
-        <div className="">
+        <div className="xl:w-1/3">
           <Image
             src={BannerImage}
             quality={100}

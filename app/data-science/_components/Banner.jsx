@@ -7,7 +7,7 @@ import Link from 'next/link'
 import AOS from 'aos'
 
 // Assets
-import BannerImage from 'public/digimar.png'
+import BannerImage from 'public/datascience.png'
 
 function Banner() {
   useEffect(() => {
@@ -35,13 +35,11 @@ function Banner() {
               in
               <br />
             </span>
-            <span className="text-blue-2">Digital Marketing</span>
+            <span className="text-blue-2">Data Science</span>
           </h1>
           <p className="text-slate-500 font-normal text-sm lg:text-2xl">
-            More than just learning! Immerse yourself in the world of digital
-            marketing with real-world projects, expert mentorship, and
-            connections to industry leaders. Embark on your Digital Marketing
-            adventure today!😎
+            Experience real projects of Data Science and land your dream job
+            within 9 months!😎
           </p>
           <div className="flex flex-row flex-wrap items-center gap-5">
             <span className="bg-blue-3 font-bold text-sm text-blue-2 rounded-full py-3 px-4">
@@ -69,7 +67,7 @@ function Banner() {
             </Link>
           </div>
         </div>
-        <div className="xl:w-1/3">
+        <div className="xl:w-1/3 flex flex-row justify-center">
           <Image
             src={BannerImage}
             quality={100}

@@ -52,9 +52,12 @@ function Event() {
         <h2 className="font-semibold text-4xl">
           Check out the promo before you go!
         </h2>
-        <button className="bg-[#DDF2FF] self-start py-2 px-4 rounded-lg text-blue-500 font-semibold">
+        <Link
+          href="/event"
+          className="bg-[#DDF2FF] self-start py-2 px-4 rounded-lg text-blue-500 font-semibold"
+        >
           See all promo
-        </button>
+        </Link>
       </div>
       <div className="lg:w-2/3 flex flex-col gap-5">
         <div className="flex flex-row flex-wrap gap-3">

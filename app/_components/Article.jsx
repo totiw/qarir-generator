@@ -5,7 +5,7 @@ import Link from 'next/link'
 // Assets
 import Video1 from 'public/video_1.png'
 import Ilustration1 from 'public/ilustration_10.png'
-import Ilustration2 from 'public/ilustration_blue.png'
+import Ilustration2 from 'public/datascience.png'
 
 // Icons
 import { AiTwotoneCalendar } from 'react-icons/ai'
@@ -40,7 +40,7 @@ function Card({ article }) {
         </p>
         <div className="flex flex-row items-center justify-between">
           <Link
-            href=""
+            href="/article"
             alt="article link"
             className="self-start font-bold text-sm py-1 rounded-full"
           >
@@ -148,7 +148,7 @@ function Article() {
               reality by starting to learn Digital Marketing Bootcamp!
             </p>
             <Link
-              href=""
+              href="/article"
               alt="article link"
               className="bg-blue-2 md:self-start font-bold text-center text-white py-2 px-4 rounded-full"
             >

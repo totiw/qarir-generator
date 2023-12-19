@@ -1,7 +1,7 @@
 import Banner from './_components/Banner'
 import Details from './_components/Details'
 
-function DigitalMarketingPage() {
+function MbaPage() {
   return (
     <main>
       <Banner />
@@ -10,4 +10,4 @@ function DigitalMarketingPage() {
   )
 }
 
-export default DigitalMarketingPage
+export default MbaPage

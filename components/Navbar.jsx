@@ -70,6 +70,13 @@ function Navbar() {
 
   const courses = [
     {
+      name: 'data science',
+      desc: 'Step into the world of data science! Learn to analyze data using statistical methods, understand machine learning algorithms, and create compelling visualizations. Develop critical problem-solving skills and use advanced tools to turn data into actionable insights, driving innovation and success across various industries.',
+      thumbnail:
+        'https://assets-global.website-files.com/61af164800e38c4f53c60b4e/64d0256daf049d26cd5624c5_da-icon.svg',
+      link: '/data-science',
+    },
+    {
       name: 'digital marketing',
       desc: 'Dive into the digital marketing world! Master paid and organic channels, critical thinking skills, and analytical frameworks to boost your digital business.',
       thumbnail:
