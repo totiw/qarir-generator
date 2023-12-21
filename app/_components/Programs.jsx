@@ -26,6 +26,14 @@ const dataPrograms = [
   },
   {
     id: 2,
+    label: 'Full Booked',
+    title: 'Data Science',
+    desc: ' Learn from top Data Science industry experts to boost your Data Science skills',
+    thumbnail: WebDev,
+    link: '/data-science',
+  },
+  {
+    id: 3,
     label: 'Enrolled Sept 1, 2023',
     title: 'MBA',
     desc: 'Learn from Experienced MBA Experts in SEA and accelerate your career as a Master of Business Administration.',
@@ -33,7 +41,7 @@ const dataPrograms = [
     link: '/mba',
   },
   {
-    id: 3,
+    id: 4,
     label: 'Full Booked',
     title: 'Programme AI',
     desc: ' Learn from top AI industry experts to boost your Programme AI skills',
